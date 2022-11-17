@@ -2,7 +2,7 @@
 module get_color(
 
 	input real stability, hue,
-	output real r, g, b
+	output int r, g, b
 	
 );
 begin
@@ -84,9 +84,9 @@ begin
 		
 		m = v - chroma;
 		
-		r = r_m + m;
-		g = g_m + m;
-		b = b_m + m;
+		r = int'((r_m + m) * 255);
+		g = int'((g_m + m) * 255);
+		b = int'((b_m + m) * 255);
 
 	end
 endmodule
