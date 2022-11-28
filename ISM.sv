@@ -1,6 +1,8 @@
 module ISM(
-
+	input logic a,
+	output logic b
 );
-begin
+
+assign b = a;
 
 endmodule

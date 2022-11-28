@@ -1,11 +1,10 @@
-'define iterations 100
+`define iterations 100
 module get_color(
 
 	input real stability, hue,
 	output int r, g, b
 	
 );
-begin
 
 	real normalized, h_prime, chroma, x, big_x, m;
 	real h, s, v, r_m, g_m, b_m;

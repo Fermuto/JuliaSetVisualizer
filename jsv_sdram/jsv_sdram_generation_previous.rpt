@@ -1,0 +1,52 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\zdrag\Documents\GitHub\JuliaSetVisualizer\jsv_sdram.qsys --synthesis=VERILOG --output-directory=C:\Users\zdrag\Documents\GitHub\JuliaSetVisualizer\jsv_sdram\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading JuliaSetVisualizer/jsv_sdram.qsys
+Progress: Reading input file
+Progress: Adding bitmap_sdram [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module bitmap_sdram
+Progress: Adding bridge_0 [altera_up_external_bus_to_avalon_bridge 18.0]
+Progress: Parameterizing module bridge_0
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding sdram_pll [altpll 19.1]
+Progress: Parameterizing module sdram_pll
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: jsv_sdram.bitmap_sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Warning: jsv_sdram.bridge_0.avalon_master/sdram_pll.pll_slave: Master bridge_0.avalon_master cannot safely write to slave sdram_pll.pll_slave, because the master data width is narrower than the slave data width. Add byteenable support to the slave to support safe writes from a narrow master.
+Info: jsv_sdram: Generating jsv_sdram "jsv_sdram" for QUARTUS_SYNTH
+Info: bitmap_sdram: Starting RTL generation for module 'jsv_sdram_bitmap_sdram'
+Info: bitmap_sdram:   Generation command is [exec C:/intelfpga/19.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/19.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/19.1/quartus/sopc_builder/bin -I C:/intelfpga/19.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=jsv_sdram_bitmap_sdram --dir=C:/Users/zdrag/AppData/Local/Temp/alt9321_5976410236942704601.dir/0002_bitmap_sdram_gen/ --quartus_dir=C:/intelfpga/19.1/quartus --verilog --config=C:/Users/zdrag/AppData/Local/Temp/alt9321_5976410236942704601.dir/0002_bitmap_sdram_gen//jsv_sdram_bitmap_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: bitmap_sdram: Done RTL generation for module 'jsv_sdram_bitmap_sdram'
+Info: bitmap_sdram: "jsv_sdram" instantiated altera_avalon_new_sdram_controller "bitmap_sdram"
+Info: bridge_0: Starting Generation of External Bus to Avalon Bridge
+Info: bridge_0: "jsv_sdram" instantiated altera_up_external_bus_to_avalon_bridge "bridge_0"
+Info: sdram_pll: "jsv_sdram" instantiated altpll "sdram_pll"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "jsv_sdram" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "jsv_sdram" instantiated altera_reset_controller "rst_controller"
+Info: bridge_0_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "bridge_0_avalon_master_translator"
+Info: sdram_pll_pll_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sdram_pll_pll_slave_translator"
+Info: bridge_0_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "bridge_0_avalon_master_agent"
+Info: sdram_pll_pll_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sdram_pll_pll_slave_agent"
+Info: sdram_pll_pll_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sdram_pll_pll_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv_sdram/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_pll_pll_slave_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_pll_pll_slave_cmd_width_adapter"
+Info: Reusing file C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv_sdram/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: jsv_sdram: Done "jsv_sdram" with 23 modules, 28 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
