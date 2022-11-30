@@ -146,5 +146,7 @@ module visualizer_top(
 		);
 	
 	fractal_calc calc();
+	
+	ISM state_machine();
 
 endmodule

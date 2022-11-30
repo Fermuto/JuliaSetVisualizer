@@ -50,6 +50,8 @@ module vga_interface (
 	input logic SDRAM_X,
 	input logic SDRAM_Y,
 	input logic [7:0] SDRAM_I,
+	
+	input logic [1:0] state,
 
 	// Pass-through for SDRAM pins
 	output wire        sdram_clk_clk,            //    sdram_clk.clk 
@@ -168,81 +170,100 @@ module vga_interface (
 	//    end
 	//end
 
-
+	
 
 
 
 	always_comb
 	begin
-		if (state == 3)
-		row <= drawysig/8'd16;
-		col <= drawxsig/8'd8;
-		f_addr <= (row*8'd80) + col;
-		char_addr <= (f_addr / 4'd4);
-		f_spec <= (f_addr % 4);
-		
-//		sprites = LOCAL_REG[char_addr];
-//		colors = LOCAL_REG[600];
-		case(f_spec)
-			2'b00:
-				 begin
-				 addr[10:4] <= sprites[6:0];
-				 inversion <= sprites[7];
-				 end
-			2'b01:
-				 begin
-				 addr[10:4] <= sprites[14:8];
-				 inversion <= sprites[15];
-				 end
-			2'b10:
-				 begin
-				 addr[10:4] <= sprites[22:16];
-				 inversion <= sprites[23];
-				 end
-			2'b11:
-				 begin
-				 addr[10:4] <= sprites[30:24];
-				 inversion <= sprites[31];
-				 end
-		endcase
-//		F_RED <= colors[12:9];
-//		F_GRE <= colors[8:5];
-//		F_BLU <= colors[4:1];
-//		B_RED <= colors[24:21];
-//		B_GRE <= colors[20:17];
-//		B_BLU <= colors[16:13];
-
-		spritexsig = 7-drawxsig%8;
-		spriteysig = drawysig%16;
-		addr[3:0] = spriteysig;
+		if ((state == 0) || (state == 1))
+		begin
+			row <= drawysig/8'd16;
+			col <= drawxsig/8'd8;
+			f_addr <= (row*8'd80) + col;
+			char_addr <= (f_addr / 4'd4);
+			f_spec <= (f_addr % 4);
+			
+	//		sprites = LOCAL_REG[char_addr];
+	//		colors = LOCAL_REG[600];
+			case(f_spec)
+				2'b00:
+					 begin
+					 addr[10:4] <= sprites[6:0];
+					 inversion <= sprites[7];
+					 end
+				2'b01:
+					 begin
+					 addr[10:4] <= sprites[14:8];
+					 inversion <= sprites[15];
+					 end
+				2'b10:
+					 begin
+					 addr[10:4] <= sprites[22:16];
+					 inversion <= sprites[23];
+					 end
+				2'b11:
+					 begin
+					 addr[10:4] <= sprites[30:24];
+					 inversion <= sprites[31];
+					 end
+			endcase
+	//		F_RED <= colors[12:9];
+	//		F_GRE <= colors[8:5];
+	//		F_BLU <= colors[4:1];
+	//		B_RED <= colors[24:21];
+	//		B_GRE <= colors[20:17];
+	//		B_BLU <= colors[16:13];
+	
+			spritexsig = 7-drawxsig%8;
+			spriteysig = drawysig%16;
+			addr[3:0] = spriteysig;
+		end
 	end
-
-
 
 	always_ff @ (posedge VGA_Clk)
 	begin
-		if(blank == 1'b0)
+		if (((state == 0) || (state == 1))
 		begin
-			red <= 4'h00;
-			green <= 4'h00;
-			blue <= 4'h00;
-		end
-		else 
-		begin
-			if ((inversion && sprite_data[spritexsig]) || (!inversion && !sprite_data[spritexsig])) 
-			begin 
-				red <= 4'hff;
-				green <= 4'hff;
-				blue <= 4'hff;
-			end      
-			
-			else 
-			begin 
+			if(blank == 1'b0)
+			begin
 				red <= 4'h00;
 				green <= 4'h00;
 				blue <= 4'h00;
 			end
+			else 
+			begin
+				if ((inversion && sprite_data[spritexsig]) || (!inversion && !sprite_data[spritexsig])) 
+				begin 
+					red <= 4'hff;
+					green <= 4'hff;
+					blue <= 4'hff;
+				end      
+				
+				else 
+				begin 
+					red <= 4'h00;
+					green <= 4'h00;
+					blue <= 4'h00;
+				end
+			end
 		end
 	end 
+	
+	always_comb
+	begin
+		if (state == 2)
+		begin
+		
+		end
+	end
+	
+	always_ff @ (posedge VGA_Clk)
+	begin
+		if (state == 2)
+		begin
+		
+		end
+	end
 
 endmodule 
