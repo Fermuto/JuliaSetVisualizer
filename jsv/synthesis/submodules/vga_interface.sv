@@ -47,9 +47,12 @@ module vga_interface (
 	
 	// Input from fractal_calc, SDRAM data
 	input logic SDRAM_DRAW,
-	input logic SDRAM_X,
-	input logic SDRAM_Y,
+	input shortint SDRAM_X,
+	input shortint SDRAM_Y,
 	input logic [7:0] SDRAM_I,
+	
+	input logic [1:0] state,
+	input logic [2:0] color,
 
 	// Pass-through for SDRAM pins
 	output wire        sdram_clk_clk,            //    sdram_clk.clk 
@@ -69,16 +72,19 @@ module vga_interface (
 	//put other local variables here
 	logic blank, sync, VGA_Clk, inversion;
 	
-	logic[18:0] SDRAM_ADDR;
+	logic SDRAM_GRAB;
+	logic [18:0] SDRAM_ADDR;
+	logic [3:0] BM_RED, BM_GRE, BM_BLU;
+	shortreal bitmap_intensity_2;
 
-	logic[31:0] row, col, sprites, colors;
-	logic[10:0] addr;
-	logic[9:0] drawxsig, drawysig, char_addr, f_addr;
-	logic[7:0] sprite_data;
-	logic[3:0] F_RED, F_GRE, F_BLU, B_RED, B_GRE, B_BLU;
-	logic[3:0] spriteysig;
-	logic[2:0] spritexsig;
-	logic[1:0] f_spec;
+	logic [31:0] row, col, sprites, colors;
+	logic [10:0] addr;
+	logic [9:0] drawxsig, drawysig, char_addr, f_addr;
+	logic [7:0] sprite_data;
+	logic [3:0] F_RED, F_GRE, F_BLU, B_RED, B_GRE, B_BLU;
+	logic [3:0] spriteysig;
+	logic [2:0] spritexsig;
+	logic [1:0] f_spec;
 
 	//Declare submodules..e.g. VGA controller, ROMS, etc
 	vga_controller vga_0(.Clk(CLK),.Reset(RESET),.hs(hs), .vs(vs), .pixel_clk(VGA_Clk), .blank(blank), .sync(sync), .DrawX(drawxsig), .DrawY(drawysig)); 
@@ -93,11 +99,11 @@ module vga_interface (
 	jsv_sdram sdram(
 		.bridge_0_ext_address     	(SDRAM_ADDR),
 		.bridge_0_ext_byte_enable 	(4'b0011),
-		.bridge_0_ext_read			(1'b0), //ENABLE
+		.bridge_0_ext_read			(SDRAM_GRAB), //ENABLE
 		.bridge_0_ext_write			(SDRAM_DRAW), //ENABLE
 		.bridge_0_ext_write_data	(SDRAM_I),
 		.bridge_0_ext_acknowledge	(),
-		.bridge_0_ext_read_data		(),
+		.bridge_0_ext_read_data		(bitmap_intensity),
 		.clk_clk			(CLK),
 		.reset_reset_n	(RESET),
 		.sdram_clk_clk		(sdram_clk_clk),
@@ -114,7 +120,10 @@ module vga_interface (
 		
 	always_comb
 	begin
-		SDRAM_ADDR = ((SDRAM_X * 80) + SDRAM_Y);
+		if (SDRAM_DRAW == 1)
+			SDRAM_ADDR = (SDRAM_X * 480) + SDRAM_Y;
+		else
+			SDRAM_ADDR = (drawxsig * 480) + drawysig;
 	end
 
 	//	always_comb
@@ -168,11 +177,11 @@ module vga_interface (
 	//    end
 	//end
 
+	
 
 
 
-
-	always_comb
+	always_comb // Calculation for sprite display
 	begin
 		row <= drawysig/8'd16;
 		col <= drawxsig/8'd8;
@@ -215,33 +224,115 @@ module vga_interface (
 		spriteysig = drawysig%16;
 		addr[3:0] = spriteysig;
 	end
-
-
+		
+	always_comb // Calculation for bitmap display
+	begin
+		case (color)
+			3'b000: //White
+				begin
+					BM_RED = 4'b1111;
+					BM_GRE = 4'b1111;
+					BM_BLU = 4'b1111;
+				end
+			3'b001: //Pure Red
+				begin
+					BM_RED = 4'b1111;
+					BM_GRE = 4'b0000;
+					BM_BLU = 4'b0000;
+				end
+			3'b010: //Pure Green
+				begin
+					BM_RED = 4'b0000;
+					BM_GRE = 4'b1111;
+					BM_BLU = 4'b0000;
+				end
+			3'b011: //Pure Blue
+				begin
+					BM_RED = 4'b0000;
+					BM_GRE = 4'b0000;
+					BM_BLU = 4'b1111;
+				end
+			3'b100: //Pure Yellow (RG)
+				begin
+					BM_RED = 4'b1111;
+					BM_GRE = 4'b1111;
+					BM_BLU = 4'b0000;
+				end
+			3'b101: //Pure Purple (RB)
+				begin
+					BM_RED = 4'b1111;
+					BM_GRE = 4'b0000;
+					BM_BLU = 4'b1111;
+				end
+			3'b110: //Pure Cyan (GB)
+				begin
+					BM_RED = 4'b0000;
+					BM_GRE = 4'b1111;
+					BM_BLU = 4'b1111;
+				end
+			3'b111: //Amber Phosphor
+				begin
+					BM_RED = 4'b1111;
+					BM_GRE = 4'b1010;
+					BM_BLU = 4'b0000;
+				end
+			default:
+				begin
+					BM_RED = 4'b1111;
+					BM_GRE = 4'b1111;
+					BM_BLU = 4'b1111;
+				end
+		endcase
+	end
 
 	always_ff @ (posedge VGA_Clk)
 	begin
-		if(blank == 1'b0)
+		if (((state == 0) || (state == 1) || (state == 2)))
 		begin
-			red <= 4'h00;
-			green <= 4'h00;
-			blue <= 4'h00;
-		end
-		else 
-		begin
-			if ((inversion && sprite_data[spritexsig]) || (!inversion && !sprite_data[spritexsig])) 
-			begin 
-				red <= 4'hff;
-				green <= 4'hff;
-				blue <= 4'hff;
-			end      
-			
-			else 
-			begin 
+			if(blank == 1'b0)
+			begin
 				red <= 4'h00;
 				green <= 4'h00;
 				blue <= 4'h00;
 			end
+			else 
+			begin
+				if ((inversion && sprite_data[spritexsig]) || (!inversion && !sprite_data[spritexsig])) 
+				begin 
+					red <= 4'hff;
+					green <= 4'hff;
+					blue <= 4'hff;
+				end      
+				
+				else 
+				begin 
+					red <= 4'h00;
+					green <= 4'h00;
+					blue <= 4'h00;
+				end
+			end
+		end
+		
+		if (state == 3)
+		begin
+			if (SDRAM_DRAW == 1)
+			begin
+				SDRAM_GRAB = 0;
+				red <= 4'h00;
+				green <= 4'h00;
+				blue <= 4'h00;
+			end
+			else if (SDRAM_DRAW == 0)
+			begin
+				SDRAM_GRAB = 1;
+				bitmap_intensity_2 = (bitmap_intensity / 100);
+				red <= 4'(int'(bitmap_intensity_2 * BM_RED));
+				green <= 4'(int'(bitmap_intensity_2 * BM_GRE));
+				blue <= 4'(int'(bitmap_intensity_2 * BM_BLU));
+			end
+			
 		end
 	end 
+
 
 endmodule 

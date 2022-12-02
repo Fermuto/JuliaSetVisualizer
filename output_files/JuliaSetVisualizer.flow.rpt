@@ -1,5 +1,5 @@
 Flow report for JuliaSetVisualizer
-Sat Nov 26 20:56:28 2022
+Thu Dec 01 17:50:54 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Sat Nov 26 20:56:28 2022          ;
+; Flow Status                        ; Flow Failed - Thu Dec 01 17:50:54 2022          ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; JuliaSetVisualizer                              ;
-; Top-level Entity Name              ; JuliaSetVisualizer                              ;
+; Top-level Entity Name              ; visualizer_top                                  ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C7G                                  ;
 ; Timing Models                      ; Final                                           ;
@@ -67,49 +67,50 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/26/2022 20:56:22 ;
+; Start date & time ; 12/01/2022 17:50:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; JuliaSetVisualizer  ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                            ;
-+-------------------------------------+-------------------------------------------------------------+---------------+---------------------+-----------------------------------+
-; Assignment Name                     ; Value                                                       ; Default Value ; Entity Name         ; Section Id                        ;
-+-------------------------------------+-------------------------------------------------------------+---------------+---------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 238300912970249.166951778210360                             ; --            ; --                  ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --            ; --                  ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --            ; --                  ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --            ; --                  ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --            ; --                  ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                           ; --            ; --                  ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                             ; <None>        ; --                  ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                                        ; --            ; --                  ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                          ; --            ; --                  ; --                                ;
-; MESSAGE_DISABLE                     ; 332060                                                      ; --            ; altera_onchip_flash ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                           ; --            ; --                  ; --                                ;
-; MISC_FILE                           ; jsv/synthesis/../jsv.cmp                                    ; --            ; --                  ; --                                ;
-; MISC_FILE                           ; jsv/synthesis/../../jsv.qsys                                ; --            ; --                  ; --                                ;
-; MISC_FILE                           ; jsv_sdram/synthesis/../jsv_sdram.cmp                        ; --            ; --                  ; --                                ;
-; MISC_FILE                           ; jsv_sdram/synthesis/../../jsv_sdram.qsys                    ; --            ; --                  ; --                                ;
-; MISC_FILE                           ; ocm_bb.v                                                    ; --            ; --                  ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                      ; --            ; --                  ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                      ; --            ; --                  ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                      ; --            ; --                  ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                         ; --            ; --                  ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                       ; --            ; --                  ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                ; --            ; --                  ; --                                ;
-; SLD_FILE                            ; jsv/synthesis/jsv.regmap                                    ; --            ; --                  ; --                                ;
-; SLD_FILE                            ; jsv/synthesis/jsv.debuginfo                                 ; --            ; --                  ; --                                ;
-; SLD_FILE                            ; jsv_sdram/synthesis/jsv_sdram.debuginfo                     ; --            ; --                  ; --                                ;
-; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1669432113       ; --            ; jsv                 ; --                                ;
-; SLD_INFO                            ; QSYS_NAME jsv_sdram HAS_SOPCINFO 1 GENERATION_ID 1669421872 ; --            ; jsv_sdram           ; --                                ;
-; SOPCINFO_FILE                       ; jsv/synthesis/../../jsv.sopcinfo                            ; --            ; --                  ; --                                ;
-; SOPCINFO_FILE                       ; jsv_sdram/synthesis/../../jsv_sdram.sopcinfo                ; --            ; --                  ; --                                ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --            ; --                  ; --                                ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --            ; --                  ; --                                ;
-+-------------------------------------+-------------------------------------------------------------+---------------+---------------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                 ;
++-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
+; Assignment Name                     ; Value                                                       ; Default Value      ; Entity Name         ; Section Id                        ;
++-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 238300912970249.166993864616496                             ; --                 ; --                  ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                           ; --                 ; --                  ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                             ; <None>             ; --                  ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                                        ; --                 ; --                  ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                          ; --                 ; --                  ; --                                ;
+; MESSAGE_DISABLE                     ; 332060                                                      ; --                 ; altera_onchip_flash ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                           ; --                 ; --                  ; --                                ;
+; MISC_FILE                           ; jsv/synthesis/../jsv.cmp                                    ; --                 ; --                  ; --                                ;
+; MISC_FILE                           ; jsv/synthesis/../../jsv.qsys                                ; --                 ; --                  ; --                                ;
+; MISC_FILE                           ; jsv_sdram/synthesis/../jsv_sdram.cmp                        ; --                 ; --                  ; --                                ;
+; MISC_FILE                           ; jsv_sdram/synthesis/../../jsv_sdram.qsys                    ; --                 ; --                  ; --                                ;
+; MISC_FILE                           ; ocm_bb.v                                                    ; --                 ; --                  ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                      ; --                 ; visualizer_top      ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                      ; --                 ; visualizer_top      ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                      ; --                 ; visualizer_top      ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                         ; --                 ; --                  ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                       ; --                 ; --                  ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                ; --                 ; --                  ; --                                ;
+; SLD_FILE                            ; jsv/synthesis/jsv.regmap                                    ; --                 ; --                  ; --                                ;
+; SLD_FILE                            ; jsv/synthesis/jsv.debuginfo                                 ; --                 ; --                  ; --                                ;
+; SLD_FILE                            ; jsv_sdram/synthesis/jsv_sdram.debuginfo                     ; --                 ; --                  ; --                                ;
+; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1669872803       ; --                 ; jsv                 ; --                                ;
+; SLD_INFO                            ; QSYS_NAME jsv_sdram HAS_SOPCINFO 1 GENERATION_ID 1669421872 ; --                 ; jsv_sdram           ; --                                ;
+; SOPCINFO_FILE                       ; jsv/synthesis/../../jsv.sopcinfo                            ; --                 ; --                  ; --                                ;
+; SOPCINFO_FILE                       ; jsv_sdram/synthesis/../../jsv_sdram.sopcinfo                ; --                 ; --                  ; --                                ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --                 ; --                  ; --                                ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --                 ; --                  ; --                                ;
+; TOP_LEVEL_ENTITY                    ; visualizer_top                                              ; JuliaSetVisualizer ; --                  ; --                                ;
++-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -117,8 +118,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4738 MB             ; 00:00:12                           ;
-; Total                ; 00:00:06     ; --                      ; --                  ; 00:00:12                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4915 MB             ; 00:00:14                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

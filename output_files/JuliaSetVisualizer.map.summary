@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Sat Nov 26 20:56:28 2022
+Analysis & Synthesis Status : Failed - Thu Dec 01 17:50:54 2022
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 Revision Name : JuliaSetVisualizer
-Top-level Entity Name : JuliaSetVisualizer
+Top-level Entity Name : visualizer_top
 Family : MAX 10
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

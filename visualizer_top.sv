@@ -104,16 +104,27 @@ module visualizer_top(
 	assign VGA_B = Blue[7:4];
 	assign VGA_G = Green[7:4];
 	
-	//SDRAM Platform Designer
+	//=======================================================
+	//  Inter-module declarations
+	//=======================================================
+	logic [8:0] pixel_value;
+	logic [2:0] color_holder;
+	logic [1:0] curr_state, transition_indicators;
+	logic calculating;
+	shortint y_coord, x_coord;
+	logic[31:0] coord_input;
 
-	// custom modules
+	//=======================================================
+	//  MODULES
+	//=======================================================
+	
 	jsv main(
 		.clk_clk 								(MAX10_CLK1_50),
 		.reset_reset_n 						(Reset_h),
 		.hex_digits_export 					({hex_num_4, hex_num_3, hex_num_1, hex_num_0}),
 		.key_external_connection_export 	(KEY),
 		.keycode_export 						(keycode),
-		.leds_export 							(),
+		.leds_export 							(LEDR),
 		.spi0_MISO 								(SPI0_MISO),
 		.spi0_MOSI 								(SPI0_MOSI),
 		.spi0_SCLK 								(SPI0_SCLK),
@@ -122,10 +133,13 @@ module visualizer_top(
 		.usb_irq_export 						(USB_IRQ),
 		.usb_rst_export 						(USB_RST),
 		
-		.vga_interface_bitmap_input_sdram_draw (),
-		.vga_interface_bitmap_input_sdram_x		(),
-		.vga_interface_bitmap_input_sdram_y		(),
-		.vga_interface_bitmap_input_sdram_i		(),
+		.vga_interface_bitmap_input_sdram_draw (calculating),
+		.vga_interface_bitmap_input_sdram_x		(x_coord),
+		.vga_interface_bitmap_input_sdram_y		(y_coord),
+		.vga_interface_bitmap_input_sdram_i		(pixel_value),
+		
+		.vga_interface_misc_state (curr_state),
+		.vga_interface_misc_color (color_holder),
 		
 		.vga_interface_sdram_export_sdram_clk_clk		(DRAM_CLK),
 		.vga_interface_sdram_export_sdram_wire_addr	(DRAM_ADDR),
@@ -142,11 +156,31 @@ module visualizer_top(
 		.vga_interface_vga_export_green 	(VGA_G),
 		.vga_interface_vga_export_blue 	(VGA_B),
 		.vga_interface_vga_export_hs 		(VGA_HS),
-		.vga_interface_vga_export_vs 		(VGA_VS)
+		.vga_interface_vga_export_vs 		(VGA_VS),
+		
+		.state_to_software_export			(curr_state),
+		.color_val_export						(color_holder),
+		.shortreal_val_export				(coord_input),
+		.transition_code_export				(transition_indicators)
 		);
 	
-	fractal_calc calc();
+	fractal_calc calc(
+		.CLK				(MAX10_CLK1_50),
+		.RESET			(Reset_h),
+		.coord_in		(coord_input),
+		.state			(curr_state),
+		.y_draw			(y_coord),
+		.x_draw			(x_coord),
+		.intensity		(pixel_value),
+		.calculating	(calculating)
+		);
 	
-	ISM state_machine();
+	ISM state_machine(
+		.CLK				(MAX10_CLK1_50),
+		.RESET			(Reset_h),
+		.transition		(transition_indicators),
+		.calculating	(calculating),
+		.state			(curr_state)
+		);
 
 endmodule

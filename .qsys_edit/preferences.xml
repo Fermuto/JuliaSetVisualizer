@@ -6,10 +6,11 @@
    <connections preferredWidth="143" />
    <irq preferredWidth="34" />
    <name preferredWidth="211" />
+   <export preferredWidth="314" />
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/Interface Protocols/PCI Express/QSYS Example Designs,Library/Processors and Peripherals/Peripherals,Library/Interface Protocols/PCI Express,Library/Processors and Peripherals,Project,Library,Library/Interface Protocols" />
- <window width="2514" height="1456" x="-8" y="-8" />
+   expandedCategories="Library,Library/Processors and Peripherals/Co-Processors/Nios II Custom Instructions,Library/Processors and Peripherals/Co-Processors,Project,Library/Processors and Peripherals,Library/DSP,Library/DSP/Primitive DSP" />
+ <window width="2498" height="1440" x="0" y="0" />
  <generation block_symbol_file="0" />
 </preferences>

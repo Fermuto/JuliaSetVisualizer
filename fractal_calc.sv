@@ -2,27 +2,42 @@
 `define img_height 480
 `define iterations 100
 module fractal_calc(
+
+	input logic CLK,
+	input logic RESET,
 	
-	input shortreal real_var,
-	input shortreal imag_var,
-	input int state,
-	output int y_draw,
-	output int x_draw,
+	input logic [31:0] coord_in,
+	input logic [1:0] state,
+	output shortint y_draw,
+	output shortint x_draw,
 	output logic [7:0] intensity,
 	output logic calculating
 
 );
 
-	shortreal x_coord, y_coord, z_real, z_imag, z1, z2;
+	int x_coord, y_coord, z_real, z_imag, z1, z2, real_var, imag_var, shortreal_in;
+	logic once;
 	
 	initial
 	begin
-		calculating = 0;
+		once = 0;
+	end
+	
+	assign shortreal_in = coord_in;
+	
+	always_ff @(posedge CLK)
+	begin
+		if (RESET)
+			once = 0;
+		if (state == 2'b00)
+			real_var = shortreal_in;
+		else if (state == 2'b01)
+			imag_var = shortreal_in;
 	end
 
 	always_comb
 	begin
-		if (1)
+		if ((state == 2'b11) && (once == 0))
 		begin
 			calculating = 1;
 			for (int y = 0; y < 480; y++)
@@ -69,19 +84,21 @@ module fractal_calc(
 				end
 			end
 			calculating = 0;
+			once = 1;
 		end
 		
 		else
 		begin
+			calculating = 0;
 			y_draw = 0;
 			x_draw = 0;
 			intensity = 0;
-			x_coord = 0.0;
-			y_coord = 0.0;
-			z_real = 0.0;
-			z_imag = 0.0;
-			z1 = 0.0;
-			z2 = 0.0;
+			x_coord = 0;
+			y_coord = 0;
+			z_real = 0;
+			z_imag = 0;
+			z1 = 0;
+			z2 = 0;
 		end
 	end
 	

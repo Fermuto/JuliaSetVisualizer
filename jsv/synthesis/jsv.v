@@ -5,37 +5,43 @@
 `timescale 1 ps / 1 ps
 module jsv (
 		input  wire        clk_clk,                                     //                        clk.clk
+		output wire [2:0]  color_val_export,                            //                  color_val.export
 		output wire [15:0] hex_digits_export,                           //                 hex_digits.export
 		input  wire [1:0]  key_external_connection_export,              //    key_external_connection.export
 		output wire [7:0]  keycode_export,                              //                    keycode.export
 		output wire [13:0] leds_export,                                 //                       leds.export
 		input  wire        reset_reset_n,                               //                      reset.reset_n
+		output wire [31:0] shortreal_val_export,                        //              shortreal_val.export
 		input  wire        spi0_MISO,                                   //                       spi0.MISO
 		output wire        spi0_MOSI,                                   //                           .MOSI
 		output wire        spi0_SCLK,                                   //                           .SCLK
 		output wire        spi0_SS_n,                                   //                           .SS_n
+		input  wire [2:0]  state_to_software_export,                    //          state_to_software.export
+		output wire [1:0]  transition_code_export,                      //            transition_code.export
 		input  wire        usb_gpx_export,                              //                    usb_gpx.export
 		input  wire        usb_irq_export,                              //                    usb_irq.export
 		output wire        usb_rst_export,                              //                    usb_rst.export
 		input  wire        vga_interface_bitmap_input_sdram_draw,       // vga_interface_bitmap_input.sdram_draw
-		input  wire        vga_interface_bitmap_input_sdram_x,          //                           .sdram_x
-		input  wire        vga_interface_bitmap_input_sdram_y,          //                           .sdram_y
+		input  wire [15:0] vga_interface_bitmap_input_sdram_x,          //                           .sdram_x
+		input  wire [15:0] vga_interface_bitmap_input_sdram_y,          //                           .sdram_y
 		input  wire [7:0]  vga_interface_bitmap_input_sdram_i,          //                           .sdram_i
+		input  wire [1:0]  vga_interface_misc_state,                    //         vga_interface_misc.state
+		input  wire [2:0]  vga_interface_misc_color,                    //                           .color
 		output wire        vga_interface_sdram_export_sdram_clk_clk,    // vga_interface_sdram_export.sdram_clk_clk
 		output wire [11:0] vga_interface_sdram_export_sdram_wire_addr,  //                           .sdram_wire_addr
-		output wire        vga_interface_sdram_export_sdram_wire_we_n,  //                           .sdram_wire_we_n
-		output wire        vga_interface_sdram_export_sdram_wire_ras_n, //                           .sdram_wire_ras_n
-		output wire [1:0]  vga_interface_sdram_export_sdram_wire_dqm,   //                           .sdram_wire_dqm
-		inout  wire [15:0] vga_interface_sdram_export_sdram_wire_dq,    //                           .sdram_wire_dq
-		output wire        vga_interface_sdram_export_sdram_wire_cs_n,  //                           .sdram_wire_cs_n
+		output wire        vga_interface_sdram_export_sdram_wire_ba,    //                           .sdram_wire_ba
 		output wire        vga_interface_sdram_export_sdram_wire_cke,   //                           .sdram_wire_cke
 		output wire        vga_interface_sdram_export_sdram_wire_cas_n, //                           .sdram_wire_cas_n
-		output wire        vga_interface_sdram_export_sdram_wire_ba,    //                           .sdram_wire_ba
-		output wire [3:0]  vga_interface_vga_export_red,                //   vga_interface_vga_export.red
+		output wire        vga_interface_sdram_export_sdram_wire_cs_n,  //                           .sdram_wire_cs_n
+		inout  wire [15:0] vga_interface_sdram_export_sdram_wire_dq,    //                           .sdram_wire_dq
+		output wire [1:0]  vga_interface_sdram_export_sdram_wire_dqm,   //                           .sdram_wire_dqm
+		output wire        vga_interface_sdram_export_sdram_wire_ras_n, //                           .sdram_wire_ras_n
+		output wire        vga_interface_sdram_export_sdram_wire_we_n,  //                           .sdram_wire_we_n
+		output wire        vga_interface_vga_export_hs,                 //   vga_interface_vga_export.hs
+		output wire        vga_interface_vga_export_vs,                 //                           .vs
+		output wire [3:0]  vga_interface_vga_export_red,                //                           .red
 		output wire [3:0]  vga_interface_vga_export_green,              //                           .green
-		output wire [3:0]  vga_interface_vga_export_blue,               //                           .blue
-		output wire        vga_interface_vga_export_hs,                 //                           .hs
-		output wire        vga_interface_vga_export_vs                  //                           .vs
+		output wire [3:0]  vga_interface_vga_export_blue                //                           .blue
 	);
 
 	wire  [31:0] nios2_gen2_0_data_master_readdata;                           // mm_interconnect_0:nios2_gen2_0_data_master_readdata -> nios2_gen2_0:d_readdata
@@ -57,13 +63,13 @@ module jsv (
 	wire         mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read;        // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_read -> jtag_uart_0:av_read_n
 	wire         mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write;       // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_write -> jtag_uart_0:av_write_n
 	wire  [31:0] mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_writedata;   // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_writedata -> jtag_uart_0:av_writedata
-	wire         mm_interconnect_0_vga_interface_avalon_slave_1_chipselect;   // mm_interconnect_0:vga_interface_avalon_slave_1_chipselect -> vga_interface:AVL_CS
-	wire  [31:0] mm_interconnect_0_vga_interface_avalon_slave_1_readdata;     // vga_interface:AVL_READDATA -> mm_interconnect_0:vga_interface_avalon_slave_1_readdata
-	wire   [9:0] mm_interconnect_0_vga_interface_avalon_slave_1_address;      // mm_interconnect_0:vga_interface_avalon_slave_1_address -> vga_interface:AVL_ADDR
-	wire         mm_interconnect_0_vga_interface_avalon_slave_1_read;         // mm_interconnect_0:vga_interface_avalon_slave_1_read -> vga_interface:AVL_READ
-	wire   [3:0] mm_interconnect_0_vga_interface_avalon_slave_1_byteenable;   // mm_interconnect_0:vga_interface_avalon_slave_1_byteenable -> vga_interface:AVL_BYTE_EN
-	wire         mm_interconnect_0_vga_interface_avalon_slave_1_write;        // mm_interconnect_0:vga_interface_avalon_slave_1_write -> vga_interface:AVL_WRITE
-	wire  [31:0] mm_interconnect_0_vga_interface_avalon_slave_1_writedata;    // mm_interconnect_0:vga_interface_avalon_slave_1_writedata -> vga_interface:AVL_WRITEDATA
+	wire         mm_interconnect_0_vga_interface_avalon_slave_0_chipselect;   // mm_interconnect_0:vga_interface_avalon_slave_0_chipselect -> vga_interface:AVL_CS
+	wire  [31:0] mm_interconnect_0_vga_interface_avalon_slave_0_readdata;     // vga_interface:AVL_READDATA -> mm_interconnect_0:vga_interface_avalon_slave_0_readdata
+	wire   [9:0] mm_interconnect_0_vga_interface_avalon_slave_0_address;      // mm_interconnect_0:vga_interface_avalon_slave_0_address -> vga_interface:AVL_ADDR
+	wire         mm_interconnect_0_vga_interface_avalon_slave_0_read;         // mm_interconnect_0:vga_interface_avalon_slave_0_read -> vga_interface:AVL_READ
+	wire   [3:0] mm_interconnect_0_vga_interface_avalon_slave_0_byteenable;   // mm_interconnect_0:vga_interface_avalon_slave_0_byteenable -> vga_interface:AVL_BYTE_EN
+	wire         mm_interconnect_0_vga_interface_avalon_slave_0_write;        // mm_interconnect_0:vga_interface_avalon_slave_0_write -> vga_interface:AVL_WRITE
+	wire  [31:0] mm_interconnect_0_vga_interface_avalon_slave_0_writedata;    // mm_interconnect_0:vga_interface_avalon_slave_0_writedata -> vga_interface:AVL_WRITEDATA
 	wire  [31:0] mm_interconnect_0_sysid_qsys_0_control_slave_readdata;       // sysid_qsys_0:readdata -> mm_interconnect_0:sysid_qsys_0_control_slave_readdata
 	wire   [0:0] mm_interconnect_0_sysid_qsys_0_control_slave_address;        // mm_interconnect_0:sysid_qsys_0_control_slave_address -> sysid_qsys_0:address
 	wire  [31:0] mm_interconnect_0_onchip_flash_0_csr_readdata;               // onchip_flash_0:avmm_csr_readdata -> mm_interconnect_0:onchip_flash_0_csr_readdata
@@ -125,6 +131,23 @@ module jsv (
 	wire         mm_interconnect_0_onchip_memory2_1_s1_write;                 // mm_interconnect_0:onchip_memory2_1_s1_write -> onchip_memory2_1:write
 	wire  [31:0] mm_interconnect_0_onchip_memory2_1_s1_writedata;             // mm_interconnect_0:onchip_memory2_1_s1_writedata -> onchip_memory2_1:writedata
 	wire         mm_interconnect_0_onchip_memory2_1_s1_clken;                 // mm_interconnect_0:onchip_memory2_1_s1_clken -> onchip_memory2_1:clken
+	wire         mm_interconnect_0_transition_s1_chipselect;                  // mm_interconnect_0:transition_s1_chipselect -> transition:chipselect
+	wire  [31:0] mm_interconnect_0_transition_s1_readdata;                    // transition:readdata -> mm_interconnect_0:transition_s1_readdata
+	wire   [1:0] mm_interconnect_0_transition_s1_address;                     // mm_interconnect_0:transition_s1_address -> transition:address
+	wire         mm_interconnect_0_transition_s1_write;                       // mm_interconnect_0:transition_s1_write -> transition:write_n
+	wire  [31:0] mm_interconnect_0_transition_s1_writedata;                   // mm_interconnect_0:transition_s1_writedata -> transition:writedata
+	wire         mm_interconnect_0_color_s1_chipselect;                       // mm_interconnect_0:color_s1_chipselect -> color:chipselect
+	wire  [31:0] mm_interconnect_0_color_s1_readdata;                         // color:readdata -> mm_interconnect_0:color_s1_readdata
+	wire   [1:0] mm_interconnect_0_color_s1_address;                          // mm_interconnect_0:color_s1_address -> color:address
+	wire         mm_interconnect_0_color_s1_write;                            // mm_interconnect_0:color_s1_write -> color:write_n
+	wire  [31:0] mm_interconnect_0_color_s1_writedata;                        // mm_interconnect_0:color_s1_writedata -> color:writedata
+	wire         mm_interconnect_0_shortreal_val_s1_chipselect;               // mm_interconnect_0:shortreal_val_s1_chipselect -> shortreal_val:chipselect
+	wire  [31:0] mm_interconnect_0_shortreal_val_s1_readdata;                 // shortreal_val:readdata -> mm_interconnect_0:shortreal_val_s1_readdata
+	wire   [1:0] mm_interconnect_0_shortreal_val_s1_address;                  // mm_interconnect_0:shortreal_val_s1_address -> shortreal_val:address
+	wire         mm_interconnect_0_shortreal_val_s1_write;                    // mm_interconnect_0:shortreal_val_s1_write -> shortreal_val:write_n
+	wire  [31:0] mm_interconnect_0_shortreal_val_s1_writedata;                // mm_interconnect_0:shortreal_val_s1_writedata -> shortreal_val:writedata
+	wire  [31:0] mm_interconnect_0_state_s1_readdata;                         // state:readdata -> mm_interconnect_0:state_s1_readdata
+	wire   [1:0] mm_interconnect_0_state_s1_address;                          // mm_interconnect_0:state_s1_address -> state:address
 	wire         mm_interconnect_0_spi_0_spi_control_port_chipselect;         // mm_interconnect_0:spi_0_spi_control_port_chipselect -> spi_0:spi_select
 	wire  [15:0] mm_interconnect_0_spi_0_spi_control_port_readdata;           // spi_0:data_to_cpu -> mm_interconnect_0:spi_0_spi_control_port_readdata
 	wire   [2:0] mm_interconnect_0_spi_0_spi_control_port_address;            // mm_interconnect_0:spi_0_spi_control_port_address -> spi_0:mem_addr
@@ -135,9 +158,20 @@ module jsv (
 	wire         irq_mapper_receiver1_irq;                                    // timer_0:irq -> irq_mapper:receiver1_irq
 	wire         irq_mapper_receiver2_irq;                                    // spi_0:irq -> irq_mapper:receiver2_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [hex_digits_pio:reset_n, irq_mapper:reset, jtag_uart_0:rst_n, key:reset_n, keycode:reset_n, leds_pio:reset_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_flash_0:reset_n, onchip_memory2_1:reset, rst_translator:in_reset, spi_0:reset_n, sysid_qsys_0:reset_n, timer_0:reset_n, usb_gpx:reset_n, usb_irq:reset_n, usb_rst:reset_n, vga_interface:RESET]
+	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [color:reset_n, hex_digits_pio:reset_n, irq_mapper:reset, jtag_uart_0:rst_n, key:reset_n, keycode:reset_n, leds_pio:reset_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_flash_0:reset_n, onchip_memory2_1:reset, rst_translator:in_reset, shortreal_val:reset_n, spi_0:reset_n, state:reset_n, sysid_qsys_0:reset_n, timer_0:reset_n, transition:reset_n, usb_gpx:reset_n, usb_irq:reset_n, usb_rst:reset_n, vga_interface:RESET]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_gen2_0:reset_req, onchip_memory2_1:reset_req, rst_translator:reset_req_in]
 	wire         nios2_gen2_0_debug_reset_request_reset;                      // nios2_gen2_0:debug_reset_request -> rst_controller:reset_in1
+
+	jsv_color color (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_color_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_color_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_color_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_color_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_color_s1_readdata),   //                    .readdata
+		.out_port   (color_val_export)                       // external_connection.export
+	);
 
 	jsv_hex_digits_pio hex_digits_pio (
 		.clk        (clk_clk),                                        //                 clk.clk
@@ -301,6 +335,17 @@ module jsv (
 		.freeze     (1'b0)                                              // (terminated)
 	);
 
+	jsv_shortreal_val shortreal_val (
+		.clk        (clk_clk),                                       //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),               //               reset.reset_n
+		.address    (mm_interconnect_0_shortreal_val_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_shortreal_val_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_shortreal_val_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_shortreal_val_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_shortreal_val_s1_readdata),   //                    .readdata
+		.out_port   (shortreal_val_export)                           // external_connection.export
+	);
+
 	jsv_spi_0 spi_0 (
 		.clk           (clk_clk),                                             //              clk.clk
 		.reset_n       (~rst_controller_reset_out_reset),                     //            reset.reset_n
@@ -315,6 +360,14 @@ module jsv (
 		.MOSI          (spi0_MOSI),                                           //                 .export
 		.SCLK          (spi0_SCLK),                                           //                 .export
 		.SS_n          (spi0_SS_n)                                            //                 .export
+	);
+
+	jsv_state state (
+		.clk      (clk_clk),                             //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),     //               reset.reset_n
+		.address  (mm_interconnect_0_state_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_state_s1_readdata), //                    .readdata
+		.in_port  (state_to_software_export)             // external_connection.export
 	);
 
 	jsv_sysid_qsys_0 sysid_qsys_0 (
@@ -333,6 +386,17 @@ module jsv (
 		.chipselect (mm_interconnect_0_timer_0_s1_chipselect), //      .chipselect
 		.write_n    (~mm_interconnect_0_timer_0_s1_write),     //      .write_n
 		.irq        (irq_mapper_receiver1_irq)                 //   irq.irq
+	);
+
+	jsv_transition transition (
+		.clk        (clk_clk),                                    //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),            //               reset.reset_n
+		.address    (mm_interconnect_0_transition_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_transition_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_transition_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_transition_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_transition_s1_readdata),   //                    .readdata
+		.out_port   (transition_code_export)                      // external_connection.export
 	);
 
 	jsv_usb_gpx usb_gpx (
@@ -368,32 +432,34 @@ module jsv (
 	) vga_interface (
 		.CLK              (clk_clk),                                                   //          clock.clk
 		.RESET            (rst_controller_reset_out_reset),                            //          reset.reset
-		.red              (vga_interface_vga_export_red),                              //     vga_export.red
+		.hs               (vga_interface_vga_export_hs),                               //     vga_export.hs
+		.vs               (vga_interface_vga_export_vs),                               //               .vs
+		.red              (vga_interface_vga_export_red),                              //               .red
 		.green            (vga_interface_vga_export_green),                            //               .green
 		.blue             (vga_interface_vga_export_blue),                             //               .blue
-		.hs               (vga_interface_vga_export_hs),                               //               .hs
-		.vs               (vga_interface_vga_export_vs),                               //               .vs
+		.sdram_clk_clk    (vga_interface_sdram_export_sdram_clk_clk),                  //   sdram_export.sdram_clk_clk
+		.sdram_wire_addr  (vga_interface_sdram_export_sdram_wire_addr),                //               .sdram_wire_addr
+		.sdram_wire_ba    (vga_interface_sdram_export_sdram_wire_ba),                  //               .sdram_wire_ba
+		.sdram_wire_cke   (vga_interface_sdram_export_sdram_wire_cke),                 //               .sdram_wire_cke
+		.sdram_wire_cas_n (vga_interface_sdram_export_sdram_wire_cas_n),               //               .sdram_wire_cas_n
+		.sdram_wire_cs_n  (vga_interface_sdram_export_sdram_wire_cs_n),                //               .sdram_wire_cs_n
+		.sdram_wire_dq    (vga_interface_sdram_export_sdram_wire_dq),                  //               .sdram_wire_dq
+		.sdram_wire_dqm   (vga_interface_sdram_export_sdram_wire_dqm),                 //               .sdram_wire_dqm
+		.sdram_wire_ras_n (vga_interface_sdram_export_sdram_wire_ras_n),               //               .sdram_wire_ras_n
+		.sdram_wire_we_n  (vga_interface_sdram_export_sdram_wire_we_n),                //               .sdram_wire_we_n
+		.state            (vga_interface_misc_state),                                  //           misc.state
+		.color            (vga_interface_misc_color),                                  //               .color
 		.SDRAM_DRAW       (vga_interface_bitmap_input_sdram_draw),                     //   bitmap_input.sdram_draw
 		.SDRAM_X          (vga_interface_bitmap_input_sdram_x),                        //               .sdram_x
 		.SDRAM_Y          (vga_interface_bitmap_input_sdram_y),                        //               .sdram_y
 		.SDRAM_I          (vga_interface_bitmap_input_sdram_i),                        //               .sdram_i
-		.sdram_clk_clk    (vga_interface_sdram_export_sdram_clk_clk),                  //   sdram_export.sdram_clk_clk
-		.sdram_wire_addr  (vga_interface_sdram_export_sdram_wire_addr),                //               .sdram_wire_addr
-		.sdram_wire_we_n  (vga_interface_sdram_export_sdram_wire_we_n),                //               .sdram_wire_we_n
-		.sdram_wire_ras_n (vga_interface_sdram_export_sdram_wire_ras_n),               //               .sdram_wire_ras_n
-		.sdram_wire_dqm   (vga_interface_sdram_export_sdram_wire_dqm),                 //               .sdram_wire_dqm
-		.sdram_wire_dq    (vga_interface_sdram_export_sdram_wire_dq),                  //               .sdram_wire_dq
-		.sdram_wire_cs_n  (vga_interface_sdram_export_sdram_wire_cs_n),                //               .sdram_wire_cs_n
-		.sdram_wire_cke   (vga_interface_sdram_export_sdram_wire_cke),                 //               .sdram_wire_cke
-		.sdram_wire_cas_n (vga_interface_sdram_export_sdram_wire_cas_n),               //               .sdram_wire_cas_n
-		.sdram_wire_ba    (vga_interface_sdram_export_sdram_wire_ba),                  //               .sdram_wire_ba
-		.AVL_READ         (mm_interconnect_0_vga_interface_avalon_slave_1_read),       // avalon_slave_1.read
-		.AVL_WRITE        (mm_interconnect_0_vga_interface_avalon_slave_1_write),      //               .write
-		.AVL_CS           (mm_interconnect_0_vga_interface_avalon_slave_1_chipselect), //               .chipselect
-		.AVL_BYTE_EN      (mm_interconnect_0_vga_interface_avalon_slave_1_byteenable), //               .byteenable
-		.AVL_ADDR         (mm_interconnect_0_vga_interface_avalon_slave_1_address),    //               .address
-		.AVL_WRITEDATA    (mm_interconnect_0_vga_interface_avalon_slave_1_writedata),  //               .writedata
-		.AVL_READDATA     (mm_interconnect_0_vga_interface_avalon_slave_1_readdata)    //               .readdata
+		.AVL_ADDR         (mm_interconnect_0_vga_interface_avalon_slave_0_address),    // avalon_slave_0.address
+		.AVL_BYTE_EN      (mm_interconnect_0_vga_interface_avalon_slave_0_byteenable), //               .byteenable
+		.AVL_CS           (mm_interconnect_0_vga_interface_avalon_slave_0_chipselect), //               .chipselect
+		.AVL_READ         (mm_interconnect_0_vga_interface_avalon_slave_0_read),       //               .read
+		.AVL_READDATA     (mm_interconnect_0_vga_interface_avalon_slave_0_readdata),   //               .readdata
+		.AVL_WRITE        (mm_interconnect_0_vga_interface_avalon_slave_0_write),      //               .write
+		.AVL_WRITEDATA    (mm_interconnect_0_vga_interface_avalon_slave_0_writedata)   //               .writedata
 	);
 
 	jsv_mm_interconnect_0 mm_interconnect_0 (
@@ -411,6 +477,11 @@ module jsv (
 		.nios2_gen2_0_instruction_master_waitrequest    (nios2_gen2_0_instruction_master_waitrequest),                 //                                         .waitrequest
 		.nios2_gen2_0_instruction_master_read           (nios2_gen2_0_instruction_master_read),                        //                                         .read
 		.nios2_gen2_0_instruction_master_readdata       (nios2_gen2_0_instruction_master_readdata),                    //                                         .readdata
+		.color_s1_address                               (mm_interconnect_0_color_s1_address),                          //                                 color_s1.address
+		.color_s1_write                                 (mm_interconnect_0_color_s1_write),                            //                                         .write
+		.color_s1_readdata                              (mm_interconnect_0_color_s1_readdata),                         //                                         .readdata
+		.color_s1_writedata                             (mm_interconnect_0_color_s1_writedata),                        //                                         .writedata
+		.color_s1_chipselect                            (mm_interconnect_0_color_s1_chipselect),                       //                                         .chipselect
 		.hex_digits_pio_s1_address                      (mm_interconnect_0_hex_digits_pio_s1_address),                 //                        hex_digits_pio_s1.address
 		.hex_digits_pio_s1_write                        (mm_interconnect_0_hex_digits_pio_s1_write),                   //                                         .write
 		.hex_digits_pio_s1_readdata                     (mm_interconnect_0_hex_digits_pio_s1_readdata),                //                                         .readdata
@@ -463,12 +534,19 @@ module jsv (
 		.onchip_memory2_1_s1_byteenable                 (mm_interconnect_0_onchip_memory2_1_s1_byteenable),            //                                         .byteenable
 		.onchip_memory2_1_s1_chipselect                 (mm_interconnect_0_onchip_memory2_1_s1_chipselect),            //                                         .chipselect
 		.onchip_memory2_1_s1_clken                      (mm_interconnect_0_onchip_memory2_1_s1_clken),                 //                                         .clken
+		.shortreal_val_s1_address                       (mm_interconnect_0_shortreal_val_s1_address),                  //                         shortreal_val_s1.address
+		.shortreal_val_s1_write                         (mm_interconnect_0_shortreal_val_s1_write),                    //                                         .write
+		.shortreal_val_s1_readdata                      (mm_interconnect_0_shortreal_val_s1_readdata),                 //                                         .readdata
+		.shortreal_val_s1_writedata                     (mm_interconnect_0_shortreal_val_s1_writedata),                //                                         .writedata
+		.shortreal_val_s1_chipselect                    (mm_interconnect_0_shortreal_val_s1_chipselect),               //                                         .chipselect
 		.spi_0_spi_control_port_address                 (mm_interconnect_0_spi_0_spi_control_port_address),            //                   spi_0_spi_control_port.address
 		.spi_0_spi_control_port_write                   (mm_interconnect_0_spi_0_spi_control_port_write),              //                                         .write
 		.spi_0_spi_control_port_read                    (mm_interconnect_0_spi_0_spi_control_port_read),               //                                         .read
 		.spi_0_spi_control_port_readdata                (mm_interconnect_0_spi_0_spi_control_port_readdata),           //                                         .readdata
 		.spi_0_spi_control_port_writedata               (mm_interconnect_0_spi_0_spi_control_port_writedata),          //                                         .writedata
 		.spi_0_spi_control_port_chipselect              (mm_interconnect_0_spi_0_spi_control_port_chipselect),         //                                         .chipselect
+		.state_s1_address                               (mm_interconnect_0_state_s1_address),                          //                                 state_s1.address
+		.state_s1_readdata                              (mm_interconnect_0_state_s1_readdata),                         //                                         .readdata
 		.sysid_qsys_0_control_slave_address             (mm_interconnect_0_sysid_qsys_0_control_slave_address),        //               sysid_qsys_0_control_slave.address
 		.sysid_qsys_0_control_slave_readdata            (mm_interconnect_0_sysid_qsys_0_control_slave_readdata),       //                                         .readdata
 		.timer_0_s1_address                             (mm_interconnect_0_timer_0_s1_address),                        //                               timer_0_s1.address
@@ -476,6 +554,11 @@ module jsv (
 		.timer_0_s1_readdata                            (mm_interconnect_0_timer_0_s1_readdata),                       //                                         .readdata
 		.timer_0_s1_writedata                           (mm_interconnect_0_timer_0_s1_writedata),                      //                                         .writedata
 		.timer_0_s1_chipselect                          (mm_interconnect_0_timer_0_s1_chipselect),                     //                                         .chipselect
+		.transition_s1_address                          (mm_interconnect_0_transition_s1_address),                     //                            transition_s1.address
+		.transition_s1_write                            (mm_interconnect_0_transition_s1_write),                       //                                         .write
+		.transition_s1_readdata                         (mm_interconnect_0_transition_s1_readdata),                    //                                         .readdata
+		.transition_s1_writedata                        (mm_interconnect_0_transition_s1_writedata),                   //                                         .writedata
+		.transition_s1_chipselect                       (mm_interconnect_0_transition_s1_chipselect),                  //                                         .chipselect
 		.usb_gpx_s1_address                             (mm_interconnect_0_usb_gpx_s1_address),                        //                               usb_gpx_s1.address
 		.usb_gpx_s1_readdata                            (mm_interconnect_0_usb_gpx_s1_readdata),                       //                                         .readdata
 		.usb_irq_s1_address                             (mm_interconnect_0_usb_irq_s1_address),                        //                               usb_irq_s1.address
@@ -485,13 +568,13 @@ module jsv (
 		.usb_rst_s1_readdata                            (mm_interconnect_0_usb_rst_s1_readdata),                       //                                         .readdata
 		.usb_rst_s1_writedata                           (mm_interconnect_0_usb_rst_s1_writedata),                      //                                         .writedata
 		.usb_rst_s1_chipselect                          (mm_interconnect_0_usb_rst_s1_chipselect),                     //                                         .chipselect
-		.vga_interface_avalon_slave_1_address           (mm_interconnect_0_vga_interface_avalon_slave_1_address),      //             vga_interface_avalon_slave_1.address
-		.vga_interface_avalon_slave_1_write             (mm_interconnect_0_vga_interface_avalon_slave_1_write),        //                                         .write
-		.vga_interface_avalon_slave_1_read              (mm_interconnect_0_vga_interface_avalon_slave_1_read),         //                                         .read
-		.vga_interface_avalon_slave_1_readdata          (mm_interconnect_0_vga_interface_avalon_slave_1_readdata),     //                                         .readdata
-		.vga_interface_avalon_slave_1_writedata         (mm_interconnect_0_vga_interface_avalon_slave_1_writedata),    //                                         .writedata
-		.vga_interface_avalon_slave_1_byteenable        (mm_interconnect_0_vga_interface_avalon_slave_1_byteenable),   //                                         .byteenable
-		.vga_interface_avalon_slave_1_chipselect        (mm_interconnect_0_vga_interface_avalon_slave_1_chipselect)    //                                         .chipselect
+		.vga_interface_avalon_slave_0_address           (mm_interconnect_0_vga_interface_avalon_slave_0_address),      //             vga_interface_avalon_slave_0.address
+		.vga_interface_avalon_slave_0_write             (mm_interconnect_0_vga_interface_avalon_slave_0_write),        //                                         .write
+		.vga_interface_avalon_slave_0_read              (mm_interconnect_0_vga_interface_avalon_slave_0_read),         //                                         .read
+		.vga_interface_avalon_slave_0_readdata          (mm_interconnect_0_vga_interface_avalon_slave_0_readdata),     //                                         .readdata
+		.vga_interface_avalon_slave_0_writedata         (mm_interconnect_0_vga_interface_avalon_slave_0_writedata),    //                                         .writedata
+		.vga_interface_avalon_slave_0_byteenable        (mm_interconnect_0_vga_interface_avalon_slave_0_byteenable),   //                                         .byteenable
+		.vga_interface_avalon_slave_0_chipselect        (mm_interconnect_0_vga_interface_avalon_slave_0_chipselect)    //                                         .chipselect
 	);
 
 	jsv_irq_mapper irq_mapper (
