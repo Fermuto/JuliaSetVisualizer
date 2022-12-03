@@ -15,7 +15,7 @@ module fractal_calc(
 
 );
 
-	logic signed [31:0] x_coord, y_coord, z_real, z_imag, z1, z2, real_var, imag_var, shortreal_in, ln_0y, ln_1y;
+	logic signed [31:0] x_coord, y_coord, z_real, z_imag, z1, z2, real_var, imag_var, ln_0y, ln_1y;
 	logic [9:0] hc, vc;
 	logic once;
 	int ln_0x;
@@ -40,9 +40,9 @@ module fractal_calc(
 
 	always_ff @(posedge CLK)
 	begin
-		if (state == 0)
+		if (state == 2'b00)
 			real_var = coord_in;
-		else if (state == 1)
+		else if (state == 2'b01)
 			imag_var = coord_in;
 	end
 
@@ -50,6 +50,8 @@ module fractal_calc(
 	begin: counter_proc
 		if ( RESET ) 
 		begin 
+			real_var = 32'b0000000000000000_0000000000000000;
+			imag_var = 32'b0000000000000000_0000000000000000;
 			once = 0;
 			hc <= 10'b0000000000;
 			vc <= 10'b0000000000;
