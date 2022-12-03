@@ -14,16 +14,14 @@ module fractal_calc(
 	output logic calculating
 
 );
-
-	logic signed [31:0] x_coord, y_coord, z_real, z_imag, z1, z2, real_var, imag_var, ln_0y, ln_1y;
+	logic signed [63:0] z1, z2, multiplicand;
+	logic signed [31:0] x_coord, y_coord, z_real, z_imag, z_real_2, z_imag_2, z_real_abs, z_image_abs, real_var, imag_var, ln_0y, increaser;
 	logic [9:0] hc, vc;
 	logic once;
 	int ln_0x;
 	parameter [9:0] hpixels = 10'b1100011111;
-    parameter [9:0] vlines = 10'b1000001100;
-	parameter [31:0] ln_1y = 32'b0000000000000100_1001110101111000;
-	
-	assign shortreal_in = coord_in << 16; // CHANGE???
+   parameter [9:0] vlines = 10'b1000001100;
+	parameter [31:0] ln_1y_fractional = 32'b0000000000000000_0010110110011000;
 
 	initial
 	begin
@@ -39,16 +37,8 @@ module fractal_calc(
 	end
 
 	always_ff @(posedge CLK)
-	begin
-		if (state == 2'b00)
-			real_var = coord_in;
-		else if (state == 2'b01)
-			imag_var = coord_in;
-	end
-
-	always_ff @(posedge CLK)
 	begin: counter_proc
-		if ( RESET ) 
+		if (RESET) 
 		begin 
 			real_var = 32'b0000000000000000_0000000000000000;
 			imag_var = 32'b0000000000000000_0000000000000000;
@@ -56,9 +46,15 @@ module fractal_calc(
 			hc <= 10'b0000000000;
 			vc <= 10'b0000000000;
 		end
+		
 				
 		else 
 		begin
+			if (state == 2'b00)
+				real_var = coord_in;
+			else if (state == 2'b01)
+				imag_var = coord_in;
+				
 			if (calculating == 1)
 			begin
 				if (hc == hpixels)  //If hc has reached the end of pixel count
@@ -82,37 +78,46 @@ module fractal_calc(
     assign y_draw = vc;
 
 	naturallog ln_0(.x (ln_0x), .y (ln_0y));
+	
+	absolute_val abs_0(.in_val (z_real_2), .out_val (z_real_abs));
+	absolute_val abs_1(.in_val (z_imag_2), .out_val (z_imag_abs));
 
 	always_comb
 	begin: pixel_calc
 		if (calculating == 1)
 		begin
-			x_coord = x-(32'b0000000000000010_1000000000000000);
-			y_coord = y-(32'b0000000000000001_1110000000000000);
+			x_coord = hc - (32'b0000000000000010_1000000000000000);
+			y_coord = vc - (32'b0000000000000001_1110000000000000);
 
 			z_real = x_coord;
 			z_imag = y_coord;	
+			
 			for (int n = 0; n < 100; n++)
 			begin
-				z1 = ((z_real * z_real)[47:16] - (z_imag * z_imag)[47:16]) + real_var;
-				z2 = (2 * z_real * z_imag)[47:16] + imag_var;
-				z_real = z1;
-				z_imag = z2;
+				z1 = ((z_real * z_real) - (z_imag * z_imag));
+				z2 = (2 * z_real * z_imag);
+				
+				z_real_2 = z1[47:16] + real_var;
+				z_imag_2 = z2[47:16] + imag_var;
 
-				if (($abs(z_real) + $abs(z_imag)) > 5)
+				if ((z_real_abs + z_imag_abs) > 5)
 				begin
 					ln_0x = n + 1;
+					
+					multiplicand = (ln_0y - 32'b0000000000000001_0000000000000000) * (ln_1y_fractional);
 
-					intensity = 8'(int'(((ln_0y - 32'b0000000000000001_0000000000000000) / (ln_1y + 32'b0000000000000001_0000000000000000) * 2) * 100));
+					increaser = (multiplicand[47:16] + multiplicand[47:16]);
+					
+					intensity = (increaser[15:8]);
 							
-					if (intensity < 8'd0)
+					if (increaser < 0)
 					begin
-						intensity = 8'd0;
+						intensity = 8'b00000000;
 					end
 
-					else if (intensity > 8'd100)
+					else if (increaser[16] == 1'b1)
 					begin
-						intensity = 8'd100;
+						intensity = 8'b11111111;
 					end
 							
 					break;
@@ -120,7 +125,7 @@ module fractal_calc(
 
 				else
 				begin
-					intensity = 8'd0;
+					intensity = 8'b00000000;
 				end
 			end
 		end
@@ -133,8 +138,12 @@ module fractal_calc(
 			y_coord = 32'b0000000000000000_0000000000000000;
 			z_real = 32'b0000000000000000_0000000000000000;
 			z_imag = 32'b0000000000000000_0000000000000000;
-			z1 = 32'b0000000000000000_0000000000000000;
-			z2 = 32'b0000000000000000_0000000000000000;
+			z_real_2 = 32'b0000000000000000_0000000000000000;
+			z_imag_2 = 32'b0000000000000000_0000000000000000;
+			z1 = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
+			z2 = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
+			multiplicand = 32'b0000000000000000_0000000000000000;
+			increaser = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
 		end
 	end
 endmodule

@@ -49,7 +49,7 @@ module jsv_sysid_qsys_0 (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1669872803 : 0;
+  assign readdata = address ? 1670045069 : 0;
 
 endmodule
 

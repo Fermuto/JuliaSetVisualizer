@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="jsv" kind="system" version="19.1" fabric="QSYS">
  <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
- <!-- 2022.11.30.23:33:47 -->
+ <!-- 2022.12.02.23:24:53 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1669872803</value>
+  <value>1670045069</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -13158,7 +13158,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1669872803</value>
+   <value>1670045069</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -13178,7 +13178,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1669872803</value>
+   <value>1670045069</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -13194,7 +13194,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1669872803</value>
+   <value>1670045069</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -17892,13 +17892,13 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>SDRAM_X</name>
     <direction>Input</direction>
-    <width>16</width>
+    <width>10</width>
     <role>sdram_x</role>
    </port>
    <port>
     <name>SDRAM_Y</name>
     <direction>Input</direction>
-    <width>16</width>
+    <width>10</width>
     <role>sdram_y</role>
    </port>
    <port>
@@ -29941,5 +29941,5 @@ parameters are a RESULT of the module parameters. -->
   <version>19.1</version>
  </plugin>
  <reportVersion>19.1 670</reportVersion>
- <uniqueIdentifier>54AF9735283300000184CC2CEC58</uniqueIdentifier>
+ <uniqueIdentifier>54AF9735283300000184D6717CD3</uniqueIdentifier>
 </EnsembleReport>

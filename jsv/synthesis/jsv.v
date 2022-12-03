@@ -22,8 +22,8 @@ module jsv (
 		input  wire        usb_irq_export,                              //                    usb_irq.export
 		output wire        usb_rst_export,                              //                    usb_rst.export
 		input  wire        vga_interface_bitmap_input_sdram_draw,       // vga_interface_bitmap_input.sdram_draw
-		input  wire [15:0] vga_interface_bitmap_input_sdram_x,          //                           .sdram_x
-		input  wire [15:0] vga_interface_bitmap_input_sdram_y,          //                           .sdram_y
+		input  wire [9:0]  vga_interface_bitmap_input_sdram_x,          //                           .sdram_x
+		input  wire [9:0]  vga_interface_bitmap_input_sdram_y,          //                           .sdram_y
 		input  wire [7:0]  vga_interface_bitmap_input_sdram_i,          //                           .sdram_i
 		input  wire [1:0]  vga_interface_misc_state,                    //         vga_interface_misc.state
 		input  wire [2:0]  vga_interface_misc_color,                    //                           .color

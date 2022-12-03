@@ -1,5 +1,5 @@
 Analysis & Synthesis report for JuliaSetVisualizer
-Thu Dec 01 17:50:54 2022
+Fri Dec 02 23:47:30 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Dec 01 17:50:54 2022               ;
+; Analysis & Synthesis Status        ; Failed - Fri Dec 02 23:47:30 2022               ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; JuliaSetVisualizer                              ;
 ; Top-level Entity Name              ; visualizer_top                                  ;
@@ -368,10 +368,12 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
-    Info: Processing started: Thu Dec 01 17:50:45 2022
+    Info: Processing started: Fri Dec 02 23:47:20 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off JuliaSetVisualizer -c JuliaSetVisualizer
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file naturallog.sv
+    Info (12023): Found entity 1: naturallog File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/naturallog.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file jsv/synthesis/jsv.v
     Info (12023): Found entity 1: jsv File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/jsv.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file jsv/synthesis/submodules/altera_reset_controller.v
@@ -419,9 +421,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file jsv/syn
     Info (12023): Found entity 1: vga_controller File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/VGA_controller.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file jsv/synthesis/submodules/font_rom.sv
     Info (12023): Found entity 1: font_rom File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/font_rom.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at vga_interface.sv(302): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 302
-Warning (10229): Verilog HDL Expression warning at vga_interface.sv(303): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 303
-Warning (10229): Verilog HDL Expression warning at vga_interface.sv(304): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 304
+Warning (10229): Verilog HDL Expression warning at vga_interface.sv(306): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 306
+Warning (10229): Verilog HDL Expression warning at vga_interface.sv(307): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 307
+Warning (10229): Verilog HDL Expression warning at vga_interface.sv(308): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 308
 Info (12021): Found 1 design units, including 1 entities, in source file jsv/synthesis/submodules/vga_interface.sv
     Info (12023): Found entity 1: vga_interface File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file jsv/synthesis/submodules/jsv_usb_rst.v
@@ -588,17 +590,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file visuali
     Info (12023): Found entity 1: visualizer_top File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/visualizer_top.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ism.sv
     Info (12023): Found entity 1: ISM File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/ISM.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at vga_interface.sv(302): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 302
-Warning (10229): Verilog HDL Expression warning at vga_interface.sv(303): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 303
-Warning (10229): Verilog HDL Expression warning at vga_interface.sv(304): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 304
+Warning (10229): Verilog HDL Expression warning at vga_interface.sv(306): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 306
+Warning (10229): Verilog HDL Expression warning at vga_interface.sv(307): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 307
+Warning (10229): Verilog HDL Expression warning at vga_interface.sv(308): truncated literal to match 4 bits File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 308
 Info (12021): Found 1 design units, including 1 entities, in source file vga_interface.sv
     Info (12023): Found entity 1: vga_interface File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file ocm.v
     Info (12023): Found entity 1: ocm File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/ocm.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at vga_interface.sv(94): created implicit net for "RAM_OUT" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 94
-Warning (10236): Verilog HDL Implicit Net warning at vga_interface.sv(106): created implicit net for "bitmap_intensity" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 106
-Warning (10236): Verilog HDL Implicit Net warning at vga_interface.sv(94): created implicit net for "RAM_OUT" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 94
-Warning (10236): Verilog HDL Implicit Net warning at vga_interface.sv(106): created implicit net for "bitmap_intensity" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 106
+Info (12021): Found 1 design units, including 1 entities, in source file absolute_val.sv
+    Info (12023): Found entity 1: absolute_val File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/absolute_val.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at fractal_calc.sv(83): created implicit net for "z_imag_abs" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 83
+Warning (10236): Verilog HDL Implicit Net warning at vga_interface.sv(96): created implicit net for "RAM_OUT" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/vga_interface.sv Line: 96
+Warning (10236): Verilog HDL Implicit Net warning at vga_interface.sv(96): created implicit net for "RAM_OUT" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/vga_interface.sv Line: 96
 Warning (10037): Verilog HDL or VHDL warning at jsv_spi_0.v(402): conditional expression evaluates to a constant File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/jsv_spi_0.v Line: 402
 Warning (10037): Verilog HDL or VHDL warning at jsv_sdram_bitmap_sdram.v(318): conditional expression evaluates to a constant File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv_sdram/synthesis/submodules/jsv_sdram_bitmap_sdram.v Line: 318
 Warning (10037): Verilog HDL or VHDL warning at jsv_sdram_bitmap_sdram.v(328): conditional expression evaluates to a constant File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv_sdram/synthesis/submodules/jsv_sdram_bitmap_sdram.v Line: 328
@@ -835,15 +838,60 @@ Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "jsv:ma
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "jsv:main|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "jsv:main|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv/synthesis/submodules/altera_reset_controller.v Line: 220
 Info (12128): Elaborating entity "fractal_calc" for hierarchy "fractal_calc:calc" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/visualizer_top.sv Line: 176
-Warning (10230): Verilog HDL assignment warning at fractal_calc.sv(45): truncated value with size 32 to match size of target (16) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 45
-Warning (10230): Verilog HDL assignment warning at fractal_calc.sv(48): truncated value with size 32 to match size of target (16) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 48
-Error (10174): Verilog HDL Unsupported Feature error at fractal_calc.sv(65): system function "$ln" is not supported for synthesis File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at fractal_calc.sv(69): truncated value with size 32 to match size of target (10) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 69
+Warning (10230): Verilog HDL assignment warning at fractal_calc.sv(72): truncated value with size 32 to match size of target (10) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 72
+Warning (10230): Verilog HDL assignment warning at fractal_calc.sv(146): truncated value with size 64 to match size of target (32) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 146
+Warning (10240): Verilog HDL Always Construct warning at fractal_calc.sv(86): inferring latch(es) for variable "ln_0x", which holds its previous value in one or more paths through the always construct File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 86
+Warning (10240): Verilog HDL Always Construct warning at fractal_calc.sv(86): inferring latch(es) for variable "multiplicand", which holds its previous value in one or more paths through the always construct File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 86
+Warning (10240): Verilog HDL Always Construct warning at fractal_calc.sv(86): inferring latch(es) for variable "increaser", which holds its previous value in one or more paths through the always construct File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 86
+Warning (10240): Verilog HDL Always Construct warning at fractal_calc.sv(86): inferring latch(es) for variable "intensity", which holds its previous value in one or more paths through the always construct File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 86
+Error (10166): SystemVerilog RTL Coding error at fractal_calc.sv(86): always_comb construct does not infer purely combinational logic. File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 86
+Info (10041): Inferred latch for "intensity[0]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[1]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[2]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[3]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[4]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[5]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[6]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "intensity[7]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[0]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[1]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[2]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[3]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[4]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[5]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[6]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[7]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[8]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[9]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[10]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[11]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[12]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[13]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[14]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[15]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[16]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[17]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[18]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[19]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[20]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[21]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[22]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[23]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[24]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[25]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[26]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[27]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[28]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[29]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[30]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
+Info (10041): Inferred latch for "ln_0x[31]" at fractal_calc.sv(135) File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/fractal_calc.sv Line: 135
 Error (12152): Can't elaborate user hierarchy "fractal_calc:calc" File: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/visualizer_top.sv Line: 176
 Info (144001): Generated suppressed messages file C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/output_files/JuliaSetVisualizer.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 33 warnings
-    Error: Peak virtual memory: 4915 megabytes
-    Error: Processing ended: Thu Dec 01 17:50:56 2022
-    Error: Elapsed time: 00:00:11
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 37 warnings
+    Error: Peak virtual memory: 4950 megabytes
+    Error: Processing ended: Fri Dec 02 23:47:32 2022
+    Error: Elapsed time: 00:00:12
     Error: Total CPU time (on all processors): 00:00:17
 
 

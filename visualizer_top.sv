@@ -111,7 +111,7 @@ module visualizer_top(
 	logic [2:0] color_holder;
 	logic [1:0] curr_state, transition_indicators;
 	logic calculating;
-	shortint y_coord, x_coord;
+	logic [9:0] y_coord, x_coord;
 	logic[31:0] coord_input;
 
 	//=======================================================

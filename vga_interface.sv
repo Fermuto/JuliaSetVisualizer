@@ -47,8 +47,8 @@ module vga_interface (
 	
 	// Input from fractal_calc, SDRAM data
 	input logic SDRAM_DRAW,
-	input shortint SDRAM_X,
-	input shortint SDRAM_Y,
+	input logic [9:0] SDRAM_X,
+	input logic [9:0] SDRAM_Y,
 	input logic [7:0] SDRAM_I,
 	
 	input logic [1:0] state,
@@ -73,9 +73,10 @@ module vga_interface (
 	logic blank, sync, VGA_Clk, inversion;
 	
 	logic SDRAM_GRAB;
-	logic [18:0] SDRAM_ADDR;
-	logic [3:0] BM_RED, BM_GRE, BM_BLU;
-	shortreal bitmap_intensity_2;
+	logic [32:0] BM_RED_MUL, BM_GRE_MUL, BM_BLU_MUL;
+	logic [22:0] SDRAM_ADDR;
+	logic [15:0] BM_RED, BM_GRE, BM_BLU, bitmap_intensity_2;
+	logic [7:0] bitmap_intensity;
 
 	logic [31:0] row, col, sprites, colors;
 	logic [10:0] addr;
@@ -85,6 +86,7 @@ module vga_interface (
 	logic [3:0] spriteysig;
 	logic [2:0] spritexsig;
 	logic [1:0] f_spec;
+	
 
 	//Declare submodules..e.g. VGA controller, ROMS, etc
 	vga_controller vga_0(.Clk(CLK),.Reset(RESET),.hs(hs), .vs(vs), .pixel_clk(VGA_Clk), .blank(blank), .sync(sync), .DrawX(drawxsig), .DrawY(drawysig)); 
@@ -120,10 +122,12 @@ module vga_interface (
 		
 	always_comb
 	begin
+		
 		if (SDRAM_DRAW == 1)
 			SDRAM_ADDR = (SDRAM_X * 480) + SDRAM_Y;
 		else
 			SDRAM_ADDR = (drawxsig * 480) + drawysig;
+		
 	end
 
 	//	always_comb
@@ -230,57 +234,57 @@ module vga_interface (
 		case (color)
 			3'b000: //White
 				begin
-					BM_RED = 4'b1111;
-					BM_GRE = 4'b1111;
-					BM_BLU = 4'b1111;
+					BM_RED = 16'b00001111_00000000;
+					BM_GRE = 16'b00001111_00000000;
+					BM_BLU = 16'b00001111_00000000;
 				end
 			3'b001: //Pure Red
 				begin
-					BM_RED = 4'b1111;
-					BM_GRE = 4'b0000;
-					BM_BLU = 4'b0000;
+					BM_RED = 16'b00001111_00000000;
+					BM_GRE = 16'b00000000_00000000;
+					BM_BLU = 16'b00000000_00000000;
 				end
 			3'b010: //Pure Green
 				begin
-					BM_RED = 4'b0000;
-					BM_GRE = 4'b1111;
-					BM_BLU = 4'b0000;
+					BM_RED = 16'b00000000_00000000;
+					BM_GRE = 16'b00001111_00000000;
+					BM_BLU = 16'b00000000_00000000;
 				end
 			3'b011: //Pure Blue
 				begin
-					BM_RED = 4'b0000;
-					BM_GRE = 4'b0000;
-					BM_BLU = 4'b1111;
+					BM_RED = 16'b00000000_00000000;
+					BM_GRE = 16'b00000000_00000000;
+					BM_BLU = 16'b00001111_00000000;
 				end
 			3'b100: //Pure Yellow (RG)
 				begin
-					BM_RED = 4'b1111;
-					BM_GRE = 4'b1111;
-					BM_BLU = 4'b0000;
+					BM_RED = 16'b00001111_00000000;
+					BM_GRE = 16'b00001111_00000000;
+					BM_BLU = 16'b00000000_00000000;
 				end
 			3'b101: //Pure Purple (RB)
 				begin
-					BM_RED = 4'b1111;
-					BM_GRE = 4'b0000;
-					BM_BLU = 4'b1111;
+					BM_RED = 16'b00001111_00000000;
+					BM_GRE = 16'b00000000_00000000;
+					BM_BLU = 16'b00001111_00000000;
 				end
 			3'b110: //Pure Cyan (GB)
 				begin
-					BM_RED = 4'b0000;
-					BM_GRE = 4'b1111;
-					BM_BLU = 4'b1111;
+					BM_RED = 16'b00000000_00000000;
+					BM_GRE = 16'b00001111_00000000;
+					BM_BLU = 16'b00001111_00000000;
 				end
 			3'b111: //Amber Phosphor
 				begin
-					BM_RED = 4'b1111;
-					BM_GRE = 4'b1010;
-					BM_BLU = 4'b0000;
+					BM_RED = 16'b00001111_00000000;
+					BM_GRE = 16'b00001010_00000000;
+					BM_BLU = 16'b00000000_00000000;
 				end
 			default:
 				begin
-					BM_RED = 4'b1111;
-					BM_GRE = 4'b1111;
-					BM_BLU = 4'b1111;
+					BM_RED = 16'b00001111_00000000;
+					BM_GRE = 16'b00001111_00000000;
+					BM_BLU = 16'b00001111_00000000;
 				end
 		endcase
 	end
@@ -325,10 +329,22 @@ module vga_interface (
 			else if (SDRAM_DRAW == 0)
 			begin
 				SDRAM_GRAB = 1;
-				bitmap_intensity_2 = (bitmap_intensity / 100);
-				red <= 4'(int'(bitmap_intensity_2 * BM_RED));
-				green <= 4'(int'(bitmap_intensity_2 * BM_GRE));
-				blue <= 4'(int'(bitmap_intensity_2 * BM_BLU));
+				bitmap_intensity_2 = {8'b00000000, bitmap_intensity};
+				BM_RED_MUL = (bitmap_intensity_2 * BM_RED);
+				BM_GRE_MUL = (bitmap_intensity_2 * BM_GRE);
+				BM_BLU_MUL = (bitmap_intensity_2 * BM_BLU);
+				if (bitmap_intensity == 8'b11111111)
+				begin
+					red <= BM_RED[11:8];
+					green <= BM_GRE[11:8];
+					blue <= BM_BLU[11:8];
+				end
+				else
+				begin
+					red <= BM_RED_MUL[19:16];
+					green <= BM_GRE_MUL[19:16];
+					blue <= BM_BLU_MUL[19:16];
+				end
 			end
 			
 		end

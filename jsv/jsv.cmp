@@ -18,8 +18,8 @@
 			usb_irq_export                              : in    std_logic                     := 'X';             -- export
 			usb_rst_export                              : out   std_logic;                                        -- export
 			vga_interface_bitmap_input_sdram_draw       : in    std_logic                     := 'X';             -- sdram_draw
-			vga_interface_bitmap_input_sdram_x          : in    std_logic_vector(15 downto 0) := (others => 'X'); -- sdram_x
-			vga_interface_bitmap_input_sdram_y          : in    std_logic_vector(15 downto 0) := (others => 'X'); -- sdram_y
+			vga_interface_bitmap_input_sdram_x          : in    std_logic_vector(9 downto 0)  := (others => 'X'); -- sdram_x
+			vga_interface_bitmap_input_sdram_y          : in    std_logic_vector(9 downto 0)  := (others => 'X'); -- sdram_y
 			vga_interface_bitmap_input_sdram_i          : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- sdram_i
 			vga_interface_misc_state                    : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- state
 			vga_interface_misc_color                    : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- color

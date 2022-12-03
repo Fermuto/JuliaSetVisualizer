@@ -9,8 +9,7 @@
    <export preferredWidth="314" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library,Library/Processors and Peripherals/Co-Processors/Nios II Custom Instructions,Library/Processors and Peripherals/Co-Processors,Project,Library/Processors and Peripherals,Library/DSP,Library/DSP/Primitive DSP" />
+ <library expandedCategories="Library,Project" />
  <window width="2498" height="1440" x="0" y="0" />
  <generation block_symbol_file="0" />
 </preferences>
