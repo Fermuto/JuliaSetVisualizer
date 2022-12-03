@@ -326,9 +326,9 @@ module vga_interface (
 				green <= 4'h00;
 				blue <= 4'h00;
 			end
-			else if (SDRAM_DRAW == 0)
+			else if (SDRAM_DRAW == 0) 
 			begin
-				SDRAM_GRAB = 1;
+				SDRAM_GRAB = 1; // hopefully not X
 				bitmap_intensity_2 = {8'b00000000, bitmap_intensity};
 				BM_RED_MUL = (bitmap_intensity_2 * BM_RED);
 				BM_GRE_MUL = (bitmap_intensity_2 * BM_GRE);

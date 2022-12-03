@@ -1,6 +1,8 @@
 //`define img_width 640
 //`define img_height 480
 //`define iterations 100
+
+// might have propogation timing issues w/ final intensity value to vga_interface
 module fractal_calc(
 
 	input logic CLK,
@@ -14,18 +16,20 @@ module fractal_calc(
 	output logic calculating
 
 );
-	logic signed [63:0] z1, z2, multiplicand;
-	logic signed [31:0] x_coord, y_coord, z_real, z_imag, z_real_2, z_imag_2, z_real_abs, z_image_abs, real_var, imag_var, ln_0y, increaser;
+	
+	logic signed [31:0] x_coord, y_coord, z_real, z_imag, real_var, imag_var;
 	logic [9:0] hc, vc;
-	logic once;
-	int ln_0x;
+	logic once, iter_done;
+	
 	parameter [9:0] hpixels = 10'b1100011111;
-   parameter [9:0] vlines = 10'b1000001100;
-	parameter [31:0] ln_1y_fractional = 32'b0000000000000000_0010110110011000;
+    parameter [9:0] vlines = 10'b1000001100;
+	
 
 	initial
 	begin
 		once = 0;
+		iteration_start = 0;
+		iter_done = 0;
 	end
 
 	always_comb
@@ -34,6 +38,11 @@ module fractal_calc(
 			calculating = 1;
 		else
 			calculating = 0;
+
+		if (iter_done == 1)
+			iteration_start = 0;
+		else
+			iteration_start = 1;
 	end
 
 	always_ff @(posedge CLK)
@@ -55,7 +64,7 @@ module fractal_calc(
 			else if (state == 2'b01)
 				imag_var = coord_in;
 				
-			if (calculating == 1)
+			if ((calculating == 1) && (iteration_start == 0))
 			begin
 				if (hc == hpixels)  //If hc has reached the end of pixel count
 				begin 
@@ -77,10 +86,7 @@ module fractal_calc(
     assign x_draw = hc;
     assign y_draw = vc;
 
-	naturallog ln_0(.x (ln_0x), .y (ln_0y));
-	
-	absolute_val abs_0(.in_val (z_real_2), .out_val (z_real_abs));
-	absolute_val abs_1(.in_val (z_imag_2), .out_val (z_imag_abs));
+	iteration_calc iter_pixel();
 
 	always_comb
 	begin: pixel_calc
@@ -91,59 +97,17 @@ module fractal_calc(
 
 			z_real = x_coord;
 			z_imag = y_coord;	
-			
-			for (int n = 0; n < 100; n++)
-			begin
-				z1 = ((z_real * z_real) - (z_imag * z_imag));
-				z2 = (2 * z_real * z_imag);
-				
-				z_real_2 = z1[47:16] + real_var;
-				z_imag_2 = z2[47:16] + imag_var;
 
-				if ((z_real_abs + z_imag_abs) > 5)
-				begin
-					ln_0x = n + 1;
-					
-					multiplicand = (ln_0y - 32'b0000000000000001_0000000000000000) * (ln_1y_fractional);
-
-					increaser = (multiplicand[47:16] + multiplicand[47:16]);
-					
-					intensity = (increaser[15:8]);
-							
-					if (increaser < 0)
-					begin
-						intensity = 8'b00000000;
-					end
-
-					else if (increaser[16] == 1'b1)
-					begin
-						intensity = 8'b11111111;
-					end
-							
-					break;
-				end
-
-				else
-				begin
-					intensity = 8'b00000000;
-				end
-			end
+			iteration_start = 1;
+			//ITERATION CALCULATIONS SHOULD START
 		end
 
 		else
 		begin
-			ln_0x = 1;
-			intensity = 8'b00000000;
 			x_coord = 32'b0000000000000000_0000000000000000;
 			y_coord = 32'b0000000000000000_0000000000000000;
 			z_real = 32'b0000000000000000_0000000000000000;
 			z_imag = 32'b0000000000000000_0000000000000000;
-			z_real_2 = 32'b0000000000000000_0000000000000000;
-			z_imag_2 = 32'b0000000000000000_0000000000000000;
-			z1 = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
-			z2 = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
-			multiplicand = 32'b0000000000000000_0000000000000000;
-			increaser = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
 		end
 	end
 endmodule
