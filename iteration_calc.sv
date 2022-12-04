@@ -37,7 +37,7 @@ module iteration_calc(
         curr_state <= 8'd101;
     end
 
-    always_ff @ (posedge CLK))
+    always_ff @ (posedge CLK)
     begin
         if (RESET)
             curr_state <= 8'd101;
@@ -53,18 +53,23 @@ module iteration_calc(
         begin
             done = 0;
             next_state = 8'd0;
+				n = 0;
         end
         else if (curr_state == 100)
         begin
             done = 1;
             next_state = 101;
+				n = curr_state;
         end
         else if (curr_state == 101)
         begin
+				done = 1;
             next_state = 101;
+				n = curr_state;
         end
         else
         begin
+				done = 0;
             next_state = curr_state + 1;
             n = curr_state;
         end
@@ -101,18 +106,27 @@ module iteration_calc(
                 begin
                     intensity = 8'b11111111;
                 end
-                        
-                next_state = 8'd101;
+							
             end
 
             else
             begin
                 intensity = 8'b00000000;
+					 ln_0x = 0;
+					 multiplicand = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
+					 increaser = 32'b0000000000000000_0000000000000000;
             end
         end
         else
         begin
-
+				z1 = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
+				z2 = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
+				z_real_2 = 32'b0000000000000000_0000000000000000;
+				z_imag_2 = 32'b0000000000000000_0000000000000000;
+				intensity = 8'b00000000;
+				ln_0x = 0;
+				multiplicand = 64'b00000000000000000000000000000000_00000000000000000000000000000000;
+				increaser = 32'b0000000000000000_0000000000000000;
         end
     end
 

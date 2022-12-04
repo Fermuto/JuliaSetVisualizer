@@ -1,5 +1,5 @@
 Flow report for JuliaSetVisualizer
-Fri Dec 02 23:47:30 2022
+Sat Dec 03 18:25:50 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Dec 02 23:47:30 2022          ;
+; Flow Status                        ; Flow Failed - Sat Dec 03 18:25:50 2022          ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; JuliaSetVisualizer                              ;
 ; Top-level Entity Name              ; visualizer_top                                  ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2022 23:47:21 ;
+; Start date & time ; 12/03/2022 18:25:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; JuliaSetVisualizer  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
 ; Assignment Name                     ; Value                                                       ; Default Value      ; Entity Name         ; Section Id                        ;
 +-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 238300912970249.167004644133676                             ; --                 ; --                  ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 238300912970249.167011354028596                             ; --                 ; --                  ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_signal_integrity ;
@@ -103,7 +103,7 @@ https://fpgasoftware.intel.com/eula.
 ; SLD_FILE                            ; jsv/synthesis/jsv.regmap                                    ; --                 ; --                  ; --                                ;
 ; SLD_FILE                            ; jsv/synthesis/jsv.debuginfo                                 ; --                 ; --                  ; --                                ;
 ; SLD_FILE                            ; jsv_sdram/synthesis/jsv_sdram.debuginfo                     ; --                 ; --                  ; --                                ;
-; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670045069       ; --                 ; jsv                 ; --                                ;
+; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670113445       ; --                 ; jsv                 ; --                                ;
 ; SLD_INFO                            ; QSYS_NAME jsv_sdram HAS_SOPCINFO 1 GENERATION_ID 1669421872 ; --                 ; jsv_sdram           ; --                                ;
 ; SOPCINFO_FILE                       ; jsv/synthesis/../../jsv.sopcinfo                            ; --                 ; --                  ; --                                ;
 ; SOPCINFO_FILE                       ; jsv_sdram/synthesis/../../jsv_sdram.sopcinfo                ; --                 ; --                  ; --                                ;
@@ -118,8 +118,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4950 MB             ; 00:00:15                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:15                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4971 MB             ; 00:00:18                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

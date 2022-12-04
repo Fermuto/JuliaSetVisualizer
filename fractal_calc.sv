@@ -19,7 +19,7 @@ module fractal_calc(
 	
 	logic signed [31:0] x_coord, y_coord, z_real, z_imag, real_var, imag_var;
 	logic [9:0] hc, vc;
-	logic once, iter_done;
+	logic once, iter_done, iteration_start;
 	
 	parameter [9:0] hpixels = 10'b1100011111;
     parameter [9:0] vlines = 10'b1000001100;
@@ -30,19 +30,6 @@ module fractal_calc(
 		once = 0;
 		iteration_start = 0;
 		iter_done = 0;
-	end
-
-	always_comb
-	begin
-		if (state == 2'b11 && once == 0)
-			calculating = 1;
-		else
-			calculating = 0;
-
-		if (iter_done == 1)
-			iteration_start = 0;
-		else
-			iteration_start = 1;
 	end
 
 	always_ff @(posedge CLK)
@@ -86,10 +73,20 @@ module fractal_calc(
     assign x_draw = hc;
     assign y_draw = vc;
 
-	iteration_calc iter_pixel();
+	iteration_calc iter_pixel(.CLK (CLK), .RESET (RESET), .start (iteration_start), .z_real (z_real), .z_imag (z_imag), .real_var (real_var), .imag_var (imag_var), .intensity (intensity), .done(iter_done));
 
 	always_comb
 	begin: pixel_calc
+		if (state == 2'b11 && once == 0)
+			calculating = 1;
+		else
+			calculating = 0;
+
+		if (iter_done == 1)
+			iteration_start = 0;
+		else
+			iteration_start = 1;
+			
 		if (calculating == 1)
 		begin
 			x_coord = hc - (32'b0000000000000010_1000000000000000);
@@ -108,6 +105,7 @@ module fractal_calc(
 			y_coord = 32'b0000000000000000_0000000000000000;
 			z_real = 32'b0000000000000000_0000000000000000;
 			z_imag = 32'b0000000000000000_0000000000000000;
+			iteration_start = 0;
 		end
 	end
 endmodule
