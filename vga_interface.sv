@@ -49,22 +49,25 @@ module vga_interface (
 	input logic SDRAM_DRAW,
 	input logic [9:0] SDRAM_X,
 	input logic [9:0] SDRAM_Y,
-	input logic [7:0] SDRAM_I,
+//	input logic [7:0] SDRAM_I,
+	output logic SDRAM_GRAB,
+	output logic [22:0] SDRAM_ADDR,
+	input logic [7:0] bitmap_intensity,
 	
 	input logic [1:0] state,
-	input logic [2:0] color,
+	input logic [2:0] color
 
 	// Pass-through for SDRAM pins
-	output wire        sdram_clk_clk,            //    sdram_clk.clk 
-	output wire [11:0] sdram_wire_addr,          //   sdram_wire.addr
-	output wire        sdram_wire_ba,            //             .ba
-	output wire        sdram_wire_cas_n,         //             .cas_n
-	output wire        sdram_wire_cke,           //             .cke
-	output wire        sdram_wire_cs_n,          //             .cs_n
-	inout  wire [15:0] sdram_wire_dq,            //             .dq
-	output wire [1:0]  sdram_wire_dqm,           //             .dqm
-	output wire        sdram_wire_ras_n,         //             .ras_n
-	output wire        sdram_wire_we_n           //             .we_n
+//	output wire        sdram_clk_clk,            //    sdram_clk.clk 
+//	output wire [11:0] sdram_wire_addr,          //   sdram_wire.addr
+//	output wire        sdram_wire_ba,            //             .ba
+//	output wire        sdram_wire_cas_n,         //             .cas_n
+//	output wire        sdram_wire_cke,           //             .cke
+//	output wire        sdram_wire_cs_n,          //             .cs_n
+//	inout  wire [15:0] sdram_wire_dq,            //             .dq
+//	output wire [1:0]  sdram_wire_dqm,           //             .dqm
+//	output wire        sdram_wire_ras_n,         //             .ras_n
+//	output wire        sdram_wire_we_n           //             .we_n
 );
 
 	//logic [31:0] LOCAL_REG       [`NUM_REGS]; // Registers
@@ -72,11 +75,11 @@ module vga_interface (
 	//put other local variables here
 	logic blank, sync, VGA_Clk, inversion;
 	
-	logic SDRAM_GRAB;
+//	logic SDRAM_GRAB;
 	logic [32:0] BM_RED_MUL, BM_GRE_MUL, BM_BLU_MUL;
-	logic [22:0] SDRAM_ADDR;
+//	logic [22:0] SDRAM_ADDR;
 	logic [15:0] BM_RED, BM_GRE, BM_BLU, bitmap_intensity_2;
-	logic [7:0] bitmap_intensity;
+//	logic [7:0] bitmap_intensity;
 
 	logic [31:0] row, col, sprites, colors;
 	logic [10:0] addr;
@@ -93,32 +96,32 @@ module vga_interface (
 										 
 	font_rom characters(.addr(addr), .data(sprite_data));
 
-	ocm memoree(.address_a (AVL_ADDR), .byteena_a (AVL_BYTE_EN), .data_a (AVL_WRITEDATA), .rden_a (AVL_READ), .wren_a (AVL_WRITE), .q_a (RAM_OUT),
+	ocm memory(.address_a (AVL_ADDR), .byteena_a (AVL_BYTE_EN), .data_a (AVL_WRITEDATA), .rden_a (AVL_READ), .wren_a (AVL_WRITE), .q_a (RAM_OUT),
 					.address_b (char_addr), .byteena_b (4'b1111), .data_b (32'b00000000000000000000000000000000), .rden_b (1'b1), .wren_b (1'b0), .q_b (sprites),
 					.clock (CLK));
 					
 					
-	jsv_sdram sdram(
-		.bridge_0_ext_address     	(SDRAM_ADDR),
-		.bridge_0_ext_byte_enable 	(4'b0011),
-		.bridge_0_ext_read			(SDRAM_GRAB), //ENABLE
-		.bridge_0_ext_write			(SDRAM_DRAW), //ENABLE
-		.bridge_0_ext_write_data	(SDRAM_I),
-		.bridge_0_ext_acknowledge	(),
-		.bridge_0_ext_read_data		(bitmap_intensity),
-		.clk_clk			(CLK),
-		.reset_reset_n	(RESET),
-		.sdram_clk_clk		(sdram_clk_clk),
-		.sdram_wire_addr	(sdram_wire_addr),
-		.sdram_wire_ba		(sdram_wire_ba),
-		.sdram_wire_cas_n	(sdram_wire_cas_n),
-		.sdram_wire_cke	(sdram_wire_cke),
-		.sdram_wire_cs_n	(sdram_wire_cs_n),
-		.sdram_wire_dq		(sdram_wire_dq),
-		.sdram_wire_dqm	(sdram_wire_dqm),
-		.sdram_wire_ras_n	(sdram_wire_ras_n),
-		.sdram_wire_we_n	(sdram_wire_we_n)
-		);
+//	jsv_sdram sdram(
+//		.bridge_0_ext_address     	(SDRAM_ADDR),
+//		.bridge_0_ext_byte_enable 	(4'b0011),
+//		.bridge_0_ext_read			(SDRAM_GRAB), //ENABLE
+//		.bridge_0_ext_write			(SDRAM_DRAW), //ENABLE
+//		.bridge_0_ext_write_data	(SDRAM_I),
+//		.bridge_0_ext_acknowledge	(),
+//		.bridge_0_ext_read_data		(bitmap_intensity),
+//		.clk_clk			(CLK),
+//		.reset_reset_n	(RESET),
+//		.sdram_clk_clk		(sdram_clk_clk),
+//		.sdram_wire_addr	(sdram_wire_addr),
+//		.sdram_wire_ba		(sdram_wire_ba),
+//		.sdram_wire_cas_n	(sdram_wire_cas_n),
+//		.sdram_wire_cke	(sdram_wire_cke),
+//		.sdram_wire_cs_n	(sdram_wire_cs_n),
+//		.sdram_wire_dq		(sdram_wire_dq),
+//		.sdram_wire_dqm	(sdram_wire_dqm),
+//		.sdram_wire_ras_n	(sdram_wire_ras_n),
+//		.sdram_wire_we_n	(sdram_wire_we_n)
+//		);
 		
 	always_comb
 	begin

@@ -65,6 +65,30 @@
          type = "String";
       }
    }
+   element jsv
+   {
+      datum _originalDeviceFamily
+      {
+         value = "MAX 10";
+         type = "String";
+      }
+   }
+   element jsv
+   {
+      datum _originalDeviceFamily
+      {
+         value = "MAX 10";
+         type = "String";
+      }
+   }
+   element jsv
+   {
+      datum _originalDeviceFamily
+      {
+         value = "MAX 10";
+         type = "String";
+      }
+   }
    element jtag_uart_0
    {
       datum _sortIndex
@@ -431,7 +455,10 @@
    dir="end" />
  <interface
    name="vga_interface_bitmap_input"
-   internal="vga_interface.bitmap_input"
+   internal="vga_interface.bitmap_input" />
+ <interface
+   name="vga_interface_bitmap_io"
+   internal="vga_interface.bitmap_IO"
    type="conduit"
    dir="end" />
  <interface
@@ -441,9 +468,7 @@
    dir="end" />
  <interface
    name="vga_interface_sdram_export"
-   internal="vga_interface.sdram_export"
-   type="conduit"
-   dir="end" />
+   internal="vga_interface.sdram_export" />
  <interface
    name="vga_interface_vga_export"
    internal="vga_interface.vga_export"

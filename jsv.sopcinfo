@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="jsv" kind="jsv" version="1.0" fabric="QSYS">
  <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
- <!-- 2022.12.03.18:24:06 -->
+ <!-- 2022.12.06.17:01:31 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1670113445</value>
+  <value>1670367691</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -13400,7 +13400,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1670113445</value>
+   <value>1670367691</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -13420,7 +13420,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1670113445</value>
+   <value>1670367691</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -13436,7 +13436,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1670113445</value>
+   <value>1670367691</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -17750,7 +17750,7 @@ the requested settings for a module instance. -->
    <type>java.math.BigInteger</type>
    <value>799</value>
    <derived>false</derived>
-   <enabled>true</enabled>
+   <enabled>false</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -17758,7 +17758,7 @@ the requested settings for a module instance. -->
    <type>java.math.BigInteger</type>
    <value>524</value>
    <derived>false</derived>
-   <enabled>true</enabled>
+   <enabled>false</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -17937,105 +17937,6 @@ parameters are a RESULT of the module parameters. -->
     <role>blue</role>
    </port>
   </interface>
-  <interface name="sdram_export" kind="conduit_end" version="19.1">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedClock">
-    <type>java.lang.String</type>
-    <value>clock</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="associatedReset">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>conduit</type>
-   <isStart>false</isStart>
-   <port>
-    <name>sdram_clk_clk</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_clk_clk</role>
-   </port>
-   <port>
-    <name>sdram_wire_addr</name>
-    <direction>Output</direction>
-    <width>12</width>
-    <role>sdram_wire_addr</role>
-   </port>
-   <port>
-    <name>sdram_wire_ba</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_wire_ba</role>
-   </port>
-   <port>
-    <name>sdram_wire_cke</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_wire_cke</role>
-   </port>
-   <port>
-    <name>sdram_wire_cas_n</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_wire_cas_n</role>
-   </port>
-   <port>
-    <name>sdram_wire_cs_n</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_wire_cs_n</role>
-   </port>
-   <port>
-    <name>sdram_wire_dq</name>
-    <direction>Bidir</direction>
-    <width>16</width>
-    <role>sdram_wire_dq</role>
-   </port>
-   <port>
-    <name>sdram_wire_dqm</name>
-    <direction>Output</direction>
-    <width>2</width>
-    <role>sdram_wire_dqm</role>
-   </port>
-   <port>
-    <name>sdram_wire_ras_n</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_wire_ras_n</role>
-   </port>
-   <port>
-    <name>sdram_wire_we_n</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>sdram_wire_we_n</role>
-   </port>
-  </interface>
   <interface name="misc" kind="conduit_end" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
@@ -18085,69 +17986,6 @@ parameters are a RESULT of the module parameters. -->
     <direction>Input</direction>
     <width>3</width>
     <role>color</role>
-   </port>
-  </interface>
-  <interface name="bitmap_input" kind="conduit_end" version="19.1">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedClock">
-    <type>java.lang.String</type>
-    <value>clock</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="associatedReset">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>conduit</type>
-   <isStart>false</isStart>
-   <port>
-    <name>SDRAM_DRAW</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>sdram_draw</role>
-   </port>
-   <port>
-    <name>SDRAM_X</name>
-    <direction>Input</direction>
-    <width>10</width>
-    <role>sdram_x</role>
-   </port>
-   <port>
-    <name>SDRAM_Y</name>
-    <direction>Input</direction>
-    <width>10</width>
-    <role>sdram_y</role>
-   </port>
-   <port>
-    <name>SDRAM_I</name>
-    <direction>Input</direction>
-    <width>8</width>
-    <role>sdram_i</role>
    </port>
   </interface>
   <interface name="avalon_slave_0" kind="avalon_slave" version="19.1">
@@ -18525,6 +18363,81 @@ parameters are a RESULT of the module parameters. -->
     <direction>Input</direction>
     <width>32</width>
     <role>writedata</role>
+   </port>
+  </interface>
+  <interface name="bitmap_IO" kind="conduit_end" version="19.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>SDRAM_DRAW</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>sdram_draw</role>
+   </port>
+   <port>
+    <name>bitmap_intensity</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>bitmap_intensity</role>
+   </port>
+   <port>
+    <name>SDRAM_GRAB</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>sdram_grab</role>
+   </port>
+   <port>
+    <name>SDRAM_ADDR</name>
+    <direction>Output</direction>
+    <width>23</width>
+    <role>sdram_addr</role>
+   </port>
+   <port>
+    <name>SDRAM_X</name>
+    <direction>Input</direction>
+    <width>10</width>
+    <role>sdram_x</role>
+   </port>
+   <port>
+    <name>SDRAM_Y</name>
+    <direction>Input</direction>
+    <width>10</width>
+    <role>sdram_y</role>
    </port>
   </interface>
  </module>
@@ -22285,7 +22198,7 @@ parameters are a RESULT of the module parameters. -->
   <version>19.1</version>
  </plugin>
  <plugin>
-  <instanceCount>16</instanceCount>
+  <instanceCount>15</instanceCount>
   <name>conduit_end</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>

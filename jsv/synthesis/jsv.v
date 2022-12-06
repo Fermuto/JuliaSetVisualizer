@@ -4,44 +4,36 @@
 
 `timescale 1 ps / 1 ps
 module jsv (
-		input  wire        clk_clk,                                     //                        clk.clk
-		output wire [2:0]  color_val_export,                            //                  color_val.export
-		output wire [15:0] hex_digits_export,                           //                 hex_digits.export
-		input  wire [1:0]  key_external_connection_export,              //    key_external_connection.export
-		output wire [7:0]  keycode_export,                              //                    keycode.export
-		output wire [13:0] leds_export,                                 //                       leds.export
-		input  wire        reset_reset_n,                               //                      reset.reset_n
-		output wire [31:0] shortreal_val_export,                        //              shortreal_val.export
-		input  wire        spi0_MISO,                                   //                       spi0.MISO
-		output wire        spi0_MOSI,                                   //                           .MOSI
-		output wire        spi0_SCLK,                                   //                           .SCLK
-		output wire        spi0_SS_n,                                   //                           .SS_n
-		input  wire [2:0]  state_to_software_export,                    //          state_to_software.export
-		output wire [1:0]  transition_code_export,                      //            transition_code.export
-		input  wire        usb_gpx_export,                              //                    usb_gpx.export
-		input  wire        usb_irq_export,                              //                    usb_irq.export
-		output wire        usb_rst_export,                              //                    usb_rst.export
-		input  wire        vga_interface_bitmap_input_sdram_draw,       // vga_interface_bitmap_input.sdram_draw
-		input  wire [9:0]  vga_interface_bitmap_input_sdram_x,          //                           .sdram_x
-		input  wire [9:0]  vga_interface_bitmap_input_sdram_y,          //                           .sdram_y
-		input  wire [7:0]  vga_interface_bitmap_input_sdram_i,          //                           .sdram_i
-		input  wire [1:0]  vga_interface_misc_state,                    //         vga_interface_misc.state
-		input  wire [2:0]  vga_interface_misc_color,                    //                           .color
-		output wire        vga_interface_sdram_export_sdram_clk_clk,    // vga_interface_sdram_export.sdram_clk_clk
-		output wire [11:0] vga_interface_sdram_export_sdram_wire_addr,  //                           .sdram_wire_addr
-		output wire        vga_interface_sdram_export_sdram_wire_ba,    //                           .sdram_wire_ba
-		output wire        vga_interface_sdram_export_sdram_wire_cke,   //                           .sdram_wire_cke
-		output wire        vga_interface_sdram_export_sdram_wire_cas_n, //                           .sdram_wire_cas_n
-		output wire        vga_interface_sdram_export_sdram_wire_cs_n,  //                           .sdram_wire_cs_n
-		inout  wire [15:0] vga_interface_sdram_export_sdram_wire_dq,    //                           .sdram_wire_dq
-		output wire [1:0]  vga_interface_sdram_export_sdram_wire_dqm,   //                           .sdram_wire_dqm
-		output wire        vga_interface_sdram_export_sdram_wire_ras_n, //                           .sdram_wire_ras_n
-		output wire        vga_interface_sdram_export_sdram_wire_we_n,  //                           .sdram_wire_we_n
-		output wire        vga_interface_vga_export_hs,                 //   vga_interface_vga_export.hs
-		output wire        vga_interface_vga_export_vs,                 //                           .vs
-		output wire [3:0]  vga_interface_vga_export_red,                //                           .red
-		output wire [3:0]  vga_interface_vga_export_green,              //                           .green
-		output wire [3:0]  vga_interface_vga_export_blue                //                           .blue
+		input  wire        clk_clk,                                  //                      clk.clk
+		output wire [2:0]  color_val_export,                         //                color_val.export
+		output wire [15:0] hex_digits_export,                        //               hex_digits.export
+		input  wire [1:0]  key_external_connection_export,           //  key_external_connection.export
+		output wire [7:0]  keycode_export,                           //                  keycode.export
+		output wire [13:0] leds_export,                              //                     leds.export
+		input  wire        reset_reset_n,                            //                    reset.reset_n
+		output wire [31:0] shortreal_val_export,                     //            shortreal_val.export
+		input  wire        spi0_MISO,                                //                     spi0.MISO
+		output wire        spi0_MOSI,                                //                         .MOSI
+		output wire        spi0_SCLK,                                //                         .SCLK
+		output wire        spi0_SS_n,                                //                         .SS_n
+		input  wire [2:0]  state_to_software_export,                 //        state_to_software.export
+		output wire [1:0]  transition_code_export,                   //          transition_code.export
+		input  wire        usb_gpx_export,                           //                  usb_gpx.export
+		input  wire        usb_irq_export,                           //                  usb_irq.export
+		output wire        usb_rst_export,                           //                  usb_rst.export
+		input  wire        vga_interface_bitmap_io_sdram_draw,       //  vga_interface_bitmap_io.sdram_draw
+		input  wire [7:0]  vga_interface_bitmap_io_bitmap_intensity, //                         .bitmap_intensity
+		output wire        vga_interface_bitmap_io_sdram_grab,       //                         .sdram_grab
+		output wire [22:0] vga_interface_bitmap_io_sdram_addr,       //                         .sdram_addr
+		input  wire [9:0]  vga_interface_bitmap_io_sdram_x,          //                         .sdram_x
+		input  wire [9:0]  vga_interface_bitmap_io_sdram_y,          //                         .sdram_y
+		input  wire [1:0]  vga_interface_misc_state,                 //       vga_interface_misc.state
+		input  wire [2:0]  vga_interface_misc_color,                 //                         .color
+		output wire        vga_interface_vga_export_hs,              // vga_interface_vga_export.hs
+		output wire        vga_interface_vga_export_vs,              //                         .vs
+		output wire [3:0]  vga_interface_vga_export_red,             //                         .red
+		output wire [3:0]  vga_interface_vga_export_green,           //                         .green
+		output wire [3:0]  vga_interface_vga_export_blue             //                         .blue
 	);
 
 	wire  [31:0] nios2_gen2_0_data_master_readdata;                           // mm_interconnect_0:nios2_gen2_0_data_master_readdata -> nios2_gen2_0:d_readdata
@@ -426,10 +418,11 @@ module jsv (
 		.out_port   (usb_rst_export)                           // external_connection.export
 	);
 
-	vga_controller #(
-		.hpixels (12'b001100011111),
-		.vlines  (12'b001000001100)
-	) vga_interface (
+//	vga_controller #(
+//		.hpixels (12'b001100011111),
+//		.vlines  (12'b001000001100)
+//	) 
+	vga_interface (
 		.CLK              (clk_clk),                                                   //          clock.clk
 		.RESET            (rst_controller_reset_out_reset),                            //          reset.reset
 		.hs               (vga_interface_vga_export_hs),                               //     vga_export.hs
@@ -437,29 +430,21 @@ module jsv (
 		.red              (vga_interface_vga_export_red),                              //               .red
 		.green            (vga_interface_vga_export_green),                            //               .green
 		.blue             (vga_interface_vga_export_blue),                             //               .blue
-		.sdram_clk_clk    (vga_interface_sdram_export_sdram_clk_clk),                  //   sdram_export.sdram_clk_clk
-		.sdram_wire_addr  (vga_interface_sdram_export_sdram_wire_addr),                //               .sdram_wire_addr
-		.sdram_wire_ba    (vga_interface_sdram_export_sdram_wire_ba),                  //               .sdram_wire_ba
-		.sdram_wire_cke   (vga_interface_sdram_export_sdram_wire_cke),                 //               .sdram_wire_cke
-		.sdram_wire_cas_n (vga_interface_sdram_export_sdram_wire_cas_n),               //               .sdram_wire_cas_n
-		.sdram_wire_cs_n  (vga_interface_sdram_export_sdram_wire_cs_n),                //               .sdram_wire_cs_n
-		.sdram_wire_dq    (vga_interface_sdram_export_sdram_wire_dq),                  //               .sdram_wire_dq
-		.sdram_wire_dqm   (vga_interface_sdram_export_sdram_wire_dqm),                 //               .sdram_wire_dqm
-		.sdram_wire_ras_n (vga_interface_sdram_export_sdram_wire_ras_n),               //               .sdram_wire_ras_n
-		.sdram_wire_we_n  (vga_interface_sdram_export_sdram_wire_we_n),                //               .sdram_wire_we_n
 		.state            (vga_interface_misc_state),                                  //           misc.state
 		.color            (vga_interface_misc_color),                                  //               .color
-		.SDRAM_DRAW       (vga_interface_bitmap_input_sdram_draw),                     //   bitmap_input.sdram_draw
-		.SDRAM_X          (vga_interface_bitmap_input_sdram_x),                        //               .sdram_x
-		.SDRAM_Y          (vga_interface_bitmap_input_sdram_y),                        //               .sdram_y
-		.SDRAM_I          (vga_interface_bitmap_input_sdram_i),                        //               .sdram_i
 		.AVL_ADDR         (mm_interconnect_0_vga_interface_avalon_slave_0_address),    // avalon_slave_0.address
 		.AVL_BYTE_EN      (mm_interconnect_0_vga_interface_avalon_slave_0_byteenable), //               .byteenable
 		.AVL_CS           (mm_interconnect_0_vga_interface_avalon_slave_0_chipselect), //               .chipselect
 		.AVL_READ         (mm_interconnect_0_vga_interface_avalon_slave_0_read),       //               .read
 		.AVL_READDATA     (mm_interconnect_0_vga_interface_avalon_slave_0_readdata),   //               .readdata
 		.AVL_WRITE        (mm_interconnect_0_vga_interface_avalon_slave_0_write),      //               .write
-		.AVL_WRITEDATA    (mm_interconnect_0_vga_interface_avalon_slave_0_writedata)   //               .writedata
+		.AVL_WRITEDATA    (mm_interconnect_0_vga_interface_avalon_slave_0_writedata),  //               .writedata
+		.SDRAM_DRAW       (vga_interface_bitmap_io_sdram_draw),                        //      bitmap_IO.sdram_draw
+		.bitmap_intensity (vga_interface_bitmap_io_bitmap_intensity),                  //               .bitmap_intensity
+		.SDRAM_GRAB       (vga_interface_bitmap_io_sdram_grab),                        //               .sdram_grab
+		.SDRAM_ADDR       (vga_interface_bitmap_io_sdram_addr),                        //               .sdram_addr
+		.SDRAM_X          (vga_interface_bitmap_io_sdram_x),                           //               .sdram_x
+		.SDRAM_Y          (vga_interface_bitmap_io_sdram_y)                            //               .sdram_y
 	);
 
 	jsv_mm_interconnect_0 mm_interconnect_0 (

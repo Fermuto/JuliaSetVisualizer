@@ -100,9 +100,9 @@ module visualizer_top(
 	assign {Reset_h}=~ (KEY[0]);
 
 	//Our A/D converter is only 12 bit
-	assign VGA_R = Red[7:4];
-	assign VGA_B = Blue[7:4];
-	assign VGA_G = Green[7:4];
+//	assign VGA_R = Red[7:4];
+//	assign VGA_B = Blue[7:4];
+//	assign VGA_G = Green[7:4];
 	
 	//=======================================================
 	//  Inter-module declarations
@@ -113,6 +113,12 @@ module visualizer_top(
 	logic calculating;
 	logic [9:0] y_coord, x_coord;
 	logic[31:0] coord_input;
+	
+	logic SDRAM_DRAW;
+	logic [22:0] SDRAM_ADDR;
+	logic SDRAM_GRAB;
+	logic [7:0] SDRAM_I;
+	logic [7:0] bitmap_intensity;
 
 	//=======================================================
 	//  MODULES
@@ -133,25 +139,27 @@ module visualizer_top(
 		.usb_irq_export 						(USB_IRQ),
 		.usb_rst_export 						(USB_RST),
 		
-		.vga_interface_bitmap_input_sdram_draw (calculating),
-		.vga_interface_bitmap_input_sdram_x		(x_coord),
-		.vga_interface_bitmap_input_sdram_y		(y_coord),
-		.vga_interface_bitmap_input_sdram_i		(pixel_value),
+		.vga_interface_bitmap_io_sdram_draw 	(calculating),
+		.vga_interface_bitmap_io_sdram_grab		(SDRAM_GRAB),
+		.vga_interface_bitmap_io_sdram_addr		(SDRAM_ADDR),
+		.vga_interface_bitmap_io_bitmap_intensity		(bitmap_intensity),
+		.vga_interface_bitmap_io_sdram_x			(x_coord),
+		.vga_interface_bitmap_io_sdram_y			(y_coord),
 		
 		.vga_interface_misc_state (curr_state),
 		.vga_interface_misc_color (color_holder),
 		
-		.vga_interface_sdram_export_sdram_clk_clk		(DRAM_CLK),
-		.vga_interface_sdram_export_sdram_wire_addr	(DRAM_ADDR),
-		.vga_interface_sdram_export_sdram_wire_ba		(DRAM_BA),
-		.vga_interface_sdram_export_sdram_wire_cas_n	(DRAM_CAS_N),
-		.vga_interface_sdram_export_sdram_wire_cke	(DRAM_CKE),
-		.vga_interface_sdram_export_sdram_wire_cs_n	(DRAM_CS_N),
-		.vga_interface_sdram_export_sdram_wire_dq		(DRAM_DQ),
-		.vga_interface_sdram_export_sdram_wire_dqm	({DRAM_UDQM, DRAM_LDQM}),
-		.vga_interface_sdram_export_sdram_wire_ras_n	(DRAM_RAS_N),
-		.vga_interface_sdram_export_sdram_wire_we_n	(DRAM_WE_N),
-		
+//		.vga_interface_sdram_export_sdram_clk_clk		(DRAM_CLK),
+//		.vga_interface_sdram_export_sdram_wire_addr	(DRAM_ADDR),
+//		.vga_interface_sdram_export_sdram_wire_ba		(DRAM_BA),
+//		.vga_interface_sdram_export_sdram_wire_cas_n	(DRAM_CAS_N),
+//		.vga_interface_sdram_export_sdram_wire_cke	(DRAM_CKE),
+//		.vga_interface_sdram_export_sdram_wire_cs_n	(DRAM_CS_N),
+//		.vga_interface_sdram_export_sdram_wire_dq		(DRAM_DQ),
+//		.vga_interface_sdram_export_sdram_wire_dqm	({DRAM_UDQM, DRAM_LDQM}),
+//		.vga_interface_sdram_export_sdram_wire_ras_n	(DRAM_RAS_N),
+//		.vga_interface_sdram_export_sdram_wire_we_n	(DRAM_WE_N),
+//		
 		.vga_interface_vga_export_red 	(VGA_R),
 		.vga_interface_vga_export_green 	(VGA_G),
 		.vga_interface_vga_export_blue 	(VGA_B),
@@ -164,6 +172,30 @@ module visualizer_top(
 		.transition_code_export				(transition_indicators)
 		);
 	
+	
+		
+	jsv_sdram sdram(
+		.bridge_0_ext_address     	(SDRAM_ADDR),
+		.bridge_0_ext_byte_enable 	(4'b0011),
+		.bridge_0_ext_read			(SDRAM_GRAB), //ENABLE
+		.bridge_0_ext_write			(calculating), //ENABLE
+		.bridge_0_ext_write_data	(SDRAM_I),
+		.bridge_0_ext_acknowledge	(),
+		.bridge_0_ext_read_data		(bitmap_intensity),
+		.clk_clk			(MAX10_CLK1_50),
+		.reset_reset_n	(Reset_h),
+		.sdram_clk_clk		(sdram_clk_clk),
+		.sdram_wire_addr	(sdram_wire_addr),
+		.sdram_wire_ba		(sdram_wire_ba),
+		.sdram_wire_cas_n	(sdram_wire_cas_n),
+		.sdram_wire_cke	(sdram_wire_cke),
+		.sdram_wire_cs_n	(sdram_wire_cs_n),
+		.sdram_wire_dq		(sdram_wire_dq),
+		.sdram_wire_dqm	(sdram_wire_dqm),
+		.sdram_wire_ras_n	(sdram_wire_ras_n),
+		.sdram_wire_we_n	(sdram_wire_we_n)
+		);
+	
 	fractal_calc calc(
 		.CLK				(MAX10_CLK1_50),
 		.RESET			(Reset_h),
@@ -171,7 +203,7 @@ module visualizer_top(
 		.state			(curr_state),
 		.y_draw			(y_coord),
 		.x_draw			(x_coord),
-		.intensity		(pixel_value),
+		.intensity		(SDRAM_I),
 		.calculating	(calculating)
 		);
 	
