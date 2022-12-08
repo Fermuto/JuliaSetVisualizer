@@ -49,6 +49,14 @@
          type = "String";
       }
    }
+   element imag_val
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+   }
    element jsv
    {
       datum _originalDeviceFamily
@@ -214,7 +222,7 @@
          type = "String";
       }
    }
-   element shortreal_val
+   element real_val
    {
       datum _sortIndex
       {
@@ -222,7 +230,7 @@
          type = "int";
       }
    }
-   element shortreal_val.s1
+   element real_val.s1
    {
       datum baseAddress
       {
@@ -358,7 +366,7 @@
          type = "String";
       }
    }
-   element vga_interface
+   element vga_interface_0
    {
       datum _sortIndex
       {
@@ -366,7 +374,7 @@
          type = "int";
       }
    }
-   element vga_interface.avalon_slave_0
+   element vga_interface_0.avalon_slave_0
    {
       datum baseAddress
       {
@@ -407,6 +415,11 @@
    type="conduit"
    dir="end" />
  <interface
+   name="imag_val"
+   internal="imag_val.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
    name="key_external_connection"
    internal="key.external_connection"
    type="conduit"
@@ -421,12 +434,12 @@
    internal="leds_pio.external_connection"
    type="conduit"
    dir="end" />
- <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface
-   name="shortreal_val"
-   internal="shortreal_val.external_connection"
+   name="real_val"
+   internal="real_val.external_connection"
    type="conduit"
    dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface name="spi0" internal="spi_0.external" type="conduit" dir="end" />
  <interface
    name="state_to_software"
@@ -455,23 +468,23 @@
    dir="end" />
  <interface
    name="vga_interface_bitmap_input"
-   internal="vga_interface.bitmap_input" />
+   internal="vga_interface_0.bitmap_input" />
  <interface
    name="vga_interface_bitmap_io"
-   internal="vga_interface.bitmap_IO"
+   internal="vga_interface_0.bitmap_IO"
    type="conduit"
    dir="end" />
  <interface
    name="vga_interface_misc"
-   internal="vga_interface.misc"
+   internal="vga_interface_0.misc"
    type="conduit"
    dir="end" />
  <interface
    name="vga_interface_sdram_export"
-   internal="vga_interface.sdram_export" />
+   internal="vga_interface_0.sdram_export" />
  <interface
    name="vga_interface_vga_export"
-   internal="vga_interface.vga_export"
+   internal="vga_interface_0.vga_export"
    type="conduit"
    dir="end" />
  <module name="clk_0" kind="clock_source" version="19.1" enabled="1">
@@ -511,6 +524,20 @@
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="16" />
+ </module>
+ <module name="imag_val" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="4294967295" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
  </module>
  <module
    name="jtag_uart_0"
@@ -597,7 +624,7 @@
   <parameter name="dataAddrWidth" value="21" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='key.s1' start='0x50' end='0x60' type='altera_avalon_pio.s1' /><slave name='timer_0.s1' start='0x80' end='0xC0' type='altera_avalon_timer.s1' /><slave name='spi_0.spi_control_port' start='0xC0' end='0xE0' type='altera_avalon_spi.spi_control_port' /><slave name='state.s1' start='0x170' end='0x180' type='altera_avalon_pio.s1' /><slave name='shortreal_val.s1' start='0x180' end='0x190' type='altera_avalon_pio.s1' /><slave name='color.s1' start='0x190' end='0x1A0' type='altera_avalon_pio.s1' /><slave name='transition.s1' start='0x1A0' end='0x1B0' type='altera_avalon_pio.s1' /><slave name='leds_pio.s1' start='0x1B0' end='0x1C0' type='altera_avalon_pio.s1' /><slave name='hex_digits_pio.s1' start='0x1C0' end='0x1D0' type='altera_avalon_pio.s1' /><slave name='usb_rst.s1' start='0x1D0' end='0x1E0' type='altera_avalon_pio.s1' /><slave name='usb_gpx.s1' start='0x1E0' end='0x1F0' type='altera_avalon_pio.s1' /><slave name='usb_irq.s1' start='0x1F0' end='0x200' type='altera_avalon_pio.s1' /><slave name='keycode.s1' start='0x200' end='0x210' type='altera_avalon_pio.s1' /><slave name='onchip_flash_0.csr' start='0x228' end='0x230' type='altera_onchip_flash.csr' /><slave name='sysid_qsys_0.control_slave' start='0x230' end='0x238' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x238' end='0x240' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='vga_interface.avalon_slave_0' start='0x2000' end='0x3000' type='vga_interface.avalon_slave_0' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x3000' end='0x3800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='onchip_memory2_1.s1' start='0x10000' end='0x18000' type='altera_avalon_onchip_memory2.s1' /><slave name='onchip_flash_0.data' start='0x100000' end='0x170000' type='altera_onchip_flash.data' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='imag_val.s1' start='0x0' end='0x10' type='altera_avalon_pio.s1' /><slave name='key.s1' start='0x50' end='0x60' type='altera_avalon_pio.s1' /><slave name='timer_0.s1' start='0x80' end='0xC0' type='altera_avalon_timer.s1' /><slave name='spi_0.spi_control_port' start='0xC0' end='0xE0' type='altera_avalon_spi.spi_control_port' /><slave name='state.s1' start='0x170' end='0x180' type='altera_avalon_pio.s1' /><slave name='real_val.s1' start='0x180' end='0x190' type='altera_avalon_pio.s1' /><slave name='color.s1' start='0x190' end='0x1A0' type='altera_avalon_pio.s1' /><slave name='transition.s1' start='0x1A0' end='0x1B0' type='altera_avalon_pio.s1' /><slave name='leds_pio.s1' start='0x1B0' end='0x1C0' type='altera_avalon_pio.s1' /><slave name='hex_digits_pio.s1' start='0x1C0' end='0x1D0' type='altera_avalon_pio.s1' /><slave name='usb_rst.s1' start='0x1D0' end='0x1E0' type='altera_avalon_pio.s1' /><slave name='usb_gpx.s1' start='0x1E0' end='0x1F0' type='altera_avalon_pio.s1' /><slave name='usb_irq.s1' start='0x1F0' end='0x200' type='altera_avalon_pio.s1' /><slave name='keycode.s1' start='0x200' end='0x210' type='altera_avalon_pio.s1' /><slave name='onchip_flash_0.csr' start='0x228' end='0x230' type='altera_onchip_flash.csr' /><slave name='sysid_qsys_0.control_slave' start='0x230' end='0x238' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x238' end='0x240' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='vga_interface_0.avalon_slave_0' start='0x2000' end='0x3000' type='vga_interface.avalon_slave_0' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x3000' end='0x3800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='onchip_memory2_1.s1' start='0x10000' end='0x18000' type='altera_avalon_onchip_memory2.s1' /><slave name='onchip_flash_0.data' start='0x100000' end='0x170000' type='altera_onchip_flash.data' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -636,7 +663,7 @@
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
   <parameter name="instAddrWidth" value="21" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='key.s1' start='0x50' end='0x60' type='altera_avalon_pio.s1' /><slave name='timer_0.s1' start='0x80' end='0xC0' type='altera_avalon_timer.s1' /><slave name='spi_0.spi_control_port' start='0xC0' end='0xE0' type='altera_avalon_spi.spi_control_port' /><slave name='state.s1' start='0x170' end='0x180' type='altera_avalon_pio.s1' /><slave name='shortreal_val.s1' start='0x180' end='0x190' type='altera_avalon_pio.s1' /><slave name='color.s1' start='0x190' end='0x1A0' type='altera_avalon_pio.s1' /><slave name='transition.s1' start='0x1A0' end='0x1B0' type='altera_avalon_pio.s1' /><slave name='leds_pio.s1' start='0x1B0' end='0x1C0' type='altera_avalon_pio.s1' /><slave name='hex_digits_pio.s1' start='0x1C0' end='0x1D0' type='altera_avalon_pio.s1' /><slave name='usb_rst.s1' start='0x1D0' end='0x1E0' type='altera_avalon_pio.s1' /><slave name='usb_gpx.s1' start='0x1E0' end='0x1F0' type='altera_avalon_pio.s1' /><slave name='usb_irq.s1' start='0x1F0' end='0x200' type='altera_avalon_pio.s1' /><slave name='keycode.s1' start='0x200' end='0x210' type='altera_avalon_pio.s1' /><slave name='onchip_flash_0.csr' start='0x228' end='0x230' type='altera_onchip_flash.csr' /><slave name='sysid_qsys_0.control_slave' start='0x230' end='0x238' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x238' end='0x240' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='vga_interface.avalon_slave_0' start='0x2000' end='0x3000' type='vga_interface.avalon_slave_0' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x3000' end='0x3800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='onchip_memory2_1.s1' start='0x10000' end='0x18000' type='altera_avalon_onchip_memory2.s1' /><slave name='onchip_flash_0.data' start='0x100000' end='0x170000' type='altera_onchip_flash.data' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='imag_val.s1' start='0x0' end='0x10' type='altera_avalon_pio.s1' /><slave name='key.s1' start='0x50' end='0x60' type='altera_avalon_pio.s1' /><slave name='timer_0.s1' start='0x80' end='0xC0' type='altera_avalon_timer.s1' /><slave name='spi_0.spi_control_port' start='0xC0' end='0xE0' type='altera_avalon_spi.spi_control_port' /><slave name='state.s1' start='0x170' end='0x180' type='altera_avalon_pio.s1' /><slave name='real_val.s1' start='0x180' end='0x190' type='altera_avalon_pio.s1' /><slave name='color.s1' start='0x190' end='0x1A0' type='altera_avalon_pio.s1' /><slave name='transition.s1' start='0x1A0' end='0x1B0' type='altera_avalon_pio.s1' /><slave name='leds_pio.s1' start='0x1B0' end='0x1C0' type='altera_avalon_pio.s1' /><slave name='hex_digits_pio.s1' start='0x1C0' end='0x1D0' type='altera_avalon_pio.s1' /><slave name='usb_rst.s1' start='0x1D0' end='0x1E0' type='altera_avalon_pio.s1' /><slave name='usb_gpx.s1' start='0x1E0' end='0x1F0' type='altera_avalon_pio.s1' /><slave name='usb_irq.s1' start='0x1F0' end='0x200' type='altera_avalon_pio.s1' /><slave name='keycode.s1' start='0x200' end='0x210' type='altera_avalon_pio.s1' /><slave name='onchip_flash_0.csr' start='0x228' end='0x230' type='altera_onchip_flash.csr' /><slave name='sysid_qsys_0.control_slave' start='0x230' end='0x238' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x238' end='0x240' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='vga_interface_0.avalon_slave_0' start='0x2000' end='0x3000' type='vga_interface.avalon_slave_0' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x3000' end='0x3800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='onchip_memory2_1.s1' start='0x10000' end='0x18000' type='altera_avalon_onchip_memory2.s1' /><slave name='onchip_flash_0.data' start='0x100000' end='0x170000' type='altera_onchip_flash.data' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -808,11 +835,7 @@
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>
- <module
-   name="shortreal_val"
-   kind="altera_avalon_pio"
-   version="19.1"
-   enabled="1">
+ <module name="real_val" kind="altera_avalon_pio" version="19.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
@@ -821,7 +844,7 @@
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
   <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
+  <parameter name="resetValue" value="4294967295" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="32" />
@@ -931,7 +954,7 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="1" />
  </module>
- <module name="vga_interface" kind="vga_interface" version="1.0" enabled="1">
+ <module name="vga_interface_0" kind="vga_interface" version="1.0" enabled="1">
   <parameter name="hpixels" value="799" />
   <parameter name="vlines" value="524" />
  </module>
@@ -948,7 +971,7 @@
    kind="avalon"
    version="19.1"
    start="nios2_gen2_0.data_master"
-   end="vga_interface.avalon_slave_0">
+   end="vga_interface_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x2000" />
   <parameter name="defaultConnection" value="false" />
@@ -1092,7 +1115,7 @@
    kind="avalon"
    version="19.1"
    start="nios2_gen2_0.data_master"
-   end="shortreal_val.s1">
+   end="real_val.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0180" />
   <parameter name="defaultConnection" value="false" />
@@ -1104,6 +1127,15 @@
    end="state.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0170" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="nios2_gen2_0.data_master"
+   end="imag_val.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1128,7 +1160,7 @@
    kind="avalon"
    version="19.1"
    start="nios2_gen2_0.instruction_master"
-   end="vga_interface.avalon_slave_0">
+   end="vga_interface_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x2000" />
   <parameter name="defaultConnection" value="false" />
@@ -1272,7 +1304,7 @@
    kind="avalon"
    version="19.1"
    start="nios2_gen2_0.instruction_master"
-   end="shortreal_val.s1">
+   end="real_val.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0180" />
   <parameter name="defaultConnection" value="false" />
@@ -1284,6 +1316,15 @@
    end="state.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0170" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="nios2_gen2_0.instruction_master"
+   end="imag_val.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1316,10 +1357,11 @@
    version="19.1"
    start="clk_0.clk"
    end="onchip_flash_0.clk" />
- <connection kind="clock" version="19.1" start="clk_0.clk" end="shortreal_val.clk" />
+ <connection kind="clock" version="19.1" start="clk_0.clk" end="real_val.clk" />
  <connection kind="clock" version="19.1" start="clk_0.clk" end="color.clk" />
  <connection kind="clock" version="19.1" start="clk_0.clk" end="transition.clk" />
  <connection kind="clock" version="19.1" start="clk_0.clk" end="state.clk" />
+ <connection kind="clock" version="19.1" start="clk_0.clk" end="imag_val.clk" />
  <connection
    kind="clock"
    version="19.1"
@@ -1329,7 +1371,7 @@
    kind="clock"
    version="19.1"
    start="clk_0.clk"
-   end="vga_interface.clock" />
+   end="vga_interface_0.clock" />
  <connection
    kind="interrupt"
    version="19.1"
@@ -1412,7 +1454,7 @@
    kind="reset"
    version="19.1"
    start="clk_0.clk_reset"
-   end="vga_interface.reset" />
+   end="vga_interface_0.reset" />
  <connection
    kind="reset"
    version="19.1"
@@ -1423,8 +1465,13 @@
    kind="reset"
    version="19.1"
    start="clk_0.clk_reset"
-   end="shortreal_val.reset" />
+   end="real_val.reset" />
  <connection kind="reset" version="19.1" start="clk_0.clk_reset" end="state.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="clk_0.clk_reset"
+   end="imag_val.reset" />
  <connection
    kind="reset"
    version="19.1"
@@ -1499,12 +1546,12 @@
    kind="reset"
    version="19.1"
    start="nios2_gen2_0.debug_reset_request"
-   end="vga_interface.reset" />
+   end="vga_interface_0.reset" />
  <connection
    kind="reset"
    version="19.1"
    start="nios2_gen2_0.debug_reset_request"
-   end="shortreal_val.reset" />
+   end="real_val.reset" />
  <connection
    kind="reset"
    version="19.1"
@@ -1520,6 +1567,11 @@
    version="19.1"
    start="nios2_gen2_0.debug_reset_request"
    end="state.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="nios2_gen2_0.debug_reset_request"
+   end="imag_val.reset" />
  <connection
    kind="reset"
    version="19.1"

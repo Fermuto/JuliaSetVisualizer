@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 6, 2022 5:35:42 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1670369742071</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 7, 2022 6:54:01 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1670460841078</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\zdrag\Documents\GitHub\JuliaSetVisualizer\software\JuliaSetVisualizer_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\zdrag\Documents\GitHub\JuliaSetVisualizer\jsv.sopcinfo</SopcDesignFile>
@@ -899,6 +899,12 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
+                <slaveDescriptor>imag_val</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000000F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>key</slaveDescriptor>
                 <addressRange>0x00000050 - 0x0000005F</addressRange>
                 <addressSpan>16</addressSpan>
@@ -923,7 +929,7 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>shortreal_val</slaveDescriptor>
+                <slaveDescriptor>real_val</slaveDescriptor>
                 <addressRange>0x00000180 - 0x0000018F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
@@ -995,7 +1001,7 @@
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>vga_interface</slaveDescriptor>
+                <slaveDescriptor>vga_interface_0</slaveDescriptor>
                 <addressRange>0x00002000 - 0x00002FFF</addressRange>
                 <addressSpan>4096</addressSpan>
                 <attributes/>

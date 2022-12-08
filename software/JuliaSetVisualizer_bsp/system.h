@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'jsv'
  * SOPC Builder design path: C:/Users/zdrag/Documents/GitHub/JuliaSetVisualizer/jsv.sopcinfo
  *
- * Generated: Tue Dec 06 17:19:23 CST 2022
+ * Generated: Wed Dec 07 18:54:01 CST 2022
  */
 
 /*
@@ -246,6 +246,33 @@
 
 
 /*
+ * imag_val configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_imag_val altera_avalon_pio
+#define IMAG_VAL_BASE 0x0
+#define IMAG_VAL_BIT_CLEARING_EDGE_REGISTER 0
+#define IMAG_VAL_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define IMAG_VAL_CAPTURE 0
+#define IMAG_VAL_DATA_WIDTH 32
+#define IMAG_VAL_DO_TEST_BENCH_WIRING 0
+#define IMAG_VAL_DRIVEN_SIM_VALUE 0
+#define IMAG_VAL_EDGE_TYPE "NONE"
+#define IMAG_VAL_FREQ 50000000
+#define IMAG_VAL_HAS_IN 0
+#define IMAG_VAL_HAS_OUT 1
+#define IMAG_VAL_HAS_TRI 0
+#define IMAG_VAL_IRQ -1
+#define IMAG_VAL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define IMAG_VAL_IRQ_TYPE "NONE"
+#define IMAG_VAL_NAME "/dev/imag_val"
+#define IMAG_VAL_RESET_VALUE -1
+#define IMAG_VAL_SPAN 16
+#define IMAG_VAL_TYPE "altera_avalon_pio"
+
+
+/*
  * jtag_uart_0 configuration
  *
  */
@@ -436,30 +463,30 @@
 
 
 /*
- * shortreal_val configuration
+ * real_val configuration
  *
  */
 
-#define ALT_MODULE_CLASS_shortreal_val altera_avalon_pio
-#define SHORTREAL_VAL_BASE 0x180
-#define SHORTREAL_VAL_BIT_CLEARING_EDGE_REGISTER 0
-#define SHORTREAL_VAL_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define SHORTREAL_VAL_CAPTURE 0
-#define SHORTREAL_VAL_DATA_WIDTH 32
-#define SHORTREAL_VAL_DO_TEST_BENCH_WIRING 0
-#define SHORTREAL_VAL_DRIVEN_SIM_VALUE 0
-#define SHORTREAL_VAL_EDGE_TYPE "NONE"
-#define SHORTREAL_VAL_FREQ 50000000
-#define SHORTREAL_VAL_HAS_IN 0
-#define SHORTREAL_VAL_HAS_OUT 1
-#define SHORTREAL_VAL_HAS_TRI 0
-#define SHORTREAL_VAL_IRQ -1
-#define SHORTREAL_VAL_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define SHORTREAL_VAL_IRQ_TYPE "NONE"
-#define SHORTREAL_VAL_NAME "/dev/shortreal_val"
-#define SHORTREAL_VAL_RESET_VALUE 0
-#define SHORTREAL_VAL_SPAN 16
-#define SHORTREAL_VAL_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_real_val altera_avalon_pio
+#define REAL_VAL_BASE 0x180
+#define REAL_VAL_BIT_CLEARING_EDGE_REGISTER 0
+#define REAL_VAL_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define REAL_VAL_CAPTURE 0
+#define REAL_VAL_DATA_WIDTH 32
+#define REAL_VAL_DO_TEST_BENCH_WIRING 0
+#define REAL_VAL_DRIVEN_SIM_VALUE 0
+#define REAL_VAL_EDGE_TYPE "NONE"
+#define REAL_VAL_FREQ 50000000
+#define REAL_VAL_HAS_IN 0
+#define REAL_VAL_HAS_OUT 1
+#define REAL_VAL_HAS_TRI 0
+#define REAL_VAL_IRQ -1
+#define REAL_VAL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define REAL_VAL_IRQ_TYPE "NONE"
+#define REAL_VAL_NAME "/dev/real_val"
+#define REAL_VAL_RESET_VALUE -1
+#define REAL_VAL_SPAN 16
+#define REAL_VAL_TYPE "altera_avalon_pio"
 
 
 /*
@@ -532,7 +559,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1670367691
+#define SYSID_QSYS_0_TIMESTAMP 1670460533
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -671,16 +698,16 @@
 
 
 /*
- * vga_interface configuration
+ * vga_interface_0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_vga_interface vga_interface
-#define VGA_INTERFACE_BASE 0x2000
-#define VGA_INTERFACE_IRQ -1
-#define VGA_INTERFACE_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define VGA_INTERFACE_NAME "/dev/vga_interface"
-#define VGA_INTERFACE_SPAN 4096
-#define VGA_INTERFACE_TYPE "vga_interface"
+#define ALT_MODULE_CLASS_vga_interface_0 vga_interface
+#define VGA_INTERFACE_0_BASE 0x2000
+#define VGA_INTERFACE_0_IRQ -1
+#define VGA_INTERFACE_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define VGA_INTERFACE_0_NAME "/dev/vga_interface_0"
+#define VGA_INTERFACE_0_SPAN 4096
+#define VGA_INTERFACE_0_TYPE "vga_interface"
 
 #endif /* __SYSTEM_H_ */

@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="24a80590024efbb6e12f"/>
+    <hash md5_digest_80b="331d085a18258cb8d8f3"/>
   </project>
   <file_info>
     <file device="10M50DAF484C7G" path="JuliaSetVisualizer.sof" usercode="0xFFFFFFFF"/>
@@ -139,7 +139,7 @@
   <sld_infos>
     <sld_info hpath="jsv:main" name="main">
       <assignment_values>
-        <assignment_value text="QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670367691"/>
+        <assignment_value text="QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670460533"/>
       </assignment_values>
       <parameters/>
     </sld_info>

@@ -1,5 +1,5 @@
 Flow report for JuliaSetVisualizer
-Tue Dec 06 17:06:18 2022
+Wed Dec 07 18:52:54 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 06 17:06:18 2022           ;
+; Flow Status                        ; Successful - Wed Dec 07 18:52:54 2022           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; JuliaSetVisualizer                              ;
 ; Top-level Entity Name              ; visualizer_top                                  ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C7G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 4,738 / 49,760 ( 10 % )                         ;
-;     Total combinational functions  ; 4,503 / 49,760 ( 9 % )                          ;
-;     Dedicated logic registers      ; 1,993 / 49,760 ( 4 % )                          ;
-; Total registers                    ; 1993                                            ;
+; Total logic elements               ; 4,911 / 49,760 ( 10 % )                         ;
+;     Total combinational functions  ; 4,688 / 49,760 ( 9 % )                          ;
+;     Dedicated logic registers      ; 2,071 / 49,760 ( 4 % )                          ;
+; Total registers                    ; 2071                                            ;
 ; Total pins                         ; 140 / 360 ( 39 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 306,176 / 1,677,312 ( 18 % )                    ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2022 17:05:03 ;
+; Start date & time ; 12/07/2022 18:51:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; JuliaSetVisualizer  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
 ; Assignment Name                     ; Value                                                       ; Default Value      ; Entity Name         ; Section Id                        ;
 +-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 238300912970249.167036790308804                             ; --                 ; --                  ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 238300912970249.167046070435180                             ; --                 ; --                  ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_signal_integrity ;
@@ -103,7 +103,7 @@ https://fpgasoftware.intel.com/eula.
 ; SLD_FILE                            ; jsv/synthesis/jsv.regmap                                    ; --                 ; --                  ; --                                ;
 ; SLD_FILE                            ; jsv/synthesis/jsv.debuginfo                                 ; --                 ; --                  ; --                                ;
 ; SLD_FILE                            ; jsv_sdram/synthesis/jsv_sdram.debuginfo                     ; --                 ; --                  ; --                                ;
-; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670367691       ; --                 ; jsv                 ; --                                ;
+; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670460533       ; --                 ; jsv                 ; --                                ;
 ; SLD_INFO                            ; QSYS_NAME jsv_sdram HAS_SOPCINFO 1 GENERATION_ID 1669421872 ; --                 ; jsv_sdram           ; --                                ;
 ; SOPCINFO_FILE                       ; jsv/synthesis/../../jsv.sopcinfo                            ; --                 ; --                  ; --                                ;
 ; SOPCINFO_FILE                       ; jsv_sdram/synthesis/../../jsv_sdram.sopcinfo                ; --                 ; --                  ; --                                ;
@@ -118,12 +118,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:34     ; 1.0                     ; 5047 MB             ; 00:00:44                           ;
-; Fitter               ; 00:00:21     ; 1.6                     ; 6364 MB             ; 00:00:36                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4719 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:06     ; 2.3                     ; 5008 MB             ; 00:00:11                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4702 MB             ; 00:00:02                           ;
-; Total                ; 00:01:07     ; --                      ; --                  ; 00:01:36                           ;
+; Analysis & Synthesis ; 00:00:35     ; 1.0                     ; 5045 MB             ; 00:00:45                           ;
+; Fitter               ; 00:00:18     ; 1.8                     ; 6372 MB             ; 00:00:35                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4721 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:05     ; 3.0                     ; 5009 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4702 MB             ; 00:00:02                           ;
+; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

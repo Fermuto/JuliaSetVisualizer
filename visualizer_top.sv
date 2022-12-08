@@ -112,7 +112,7 @@ module visualizer_top(
 	logic [1:0] curr_state, transition_indicators;
 	logic calculating;
 	logic [9:0] y_coord, x_coord;
-	logic[31:0] coord_input;
+	logic[31:0] real_input, imag_input;
 	
 	logic SDRAM_DRAW;
 	logic [22:0] SDRAM_ADDR;
@@ -168,7 +168,8 @@ module visualizer_top(
 		
 		.state_to_software_export			(curr_state),
 		.color_val_export						(color_holder),
-		.shortreal_val_export				(coord_input),
+		.real_val_export						(real_input),
+		.imag_val_export						(imag_input),
 		.transition_code_export				(transition_indicators)
 		);
 	
@@ -199,7 +200,8 @@ module visualizer_top(
 	fractal_calc calc(
 		.CLK				(MAX10_CLK1_50),
 		.RESET			(Reset_h),
-		.coord_in		(coord_input),
+		.real_in			(real_input),
+		.imag_in			(imag_input),
 		.state			(curr_state),
 		.y_draw			(y_coord),
 		.x_draw			(x_coord),

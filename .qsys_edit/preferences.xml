@@ -9,7 +9,7 @@
    <export preferredWidth="314" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
+ <library expandedCategories="Project,Library" />
  <window width="2498" height="1440" x="0" y="0" />
  <generation block_symbol_file="0" />
 </preferences>

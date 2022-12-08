@@ -8,7 +8,8 @@ module fractal_calc(
 	input logic CLK,
 	input logic RESET,
 	
-	input logic [31:0] coord_in,
+	input logic [31:0] real_in,
+	input logic [31:0] imag_in,
 	input logic [1:0] state,
 	output logic [9:0] y_draw,
 	output logic [9:0] x_draw,
@@ -46,11 +47,11 @@ module fractal_calc(
 				
 		else 
 		begin
-			if (state == 2'b00)
-				real_var = coord_in;
-			else if (state == 2'b01)
-				imag_var = coord_in;
-				
+			if ((state == 2'b00) && (real_in != 32'hffffffff))
+			begin
+				real_var <= real_in;
+				imag_var <= imag_in;
+			end
 			if ((calculating == 1) && (iteration_start == 0))
 			begin
 				if (hc == hpixels)  //If hc has reached the end of pixel count
@@ -77,7 +78,7 @@ module fractal_calc(
 
 	always_comb
 	begin: pixel_calc
-		if (state == 2'b11 && once == 0)
+		if (state == 2'b10 && once == 0)
 			calculating = 1;
 		else
 			calculating = 0;

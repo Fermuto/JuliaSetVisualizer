@@ -294,7 +294,7 @@ module vga_interface (
 
 	always_ff @ (posedge VGA_Clk)
 	begin
-		if (((state == 0) || (state == 1) || (state == 2)))
+		if (((state == 0) || (state == 1)))
 		begin
 			if(blank == 1'b0)
 			begin
@@ -320,7 +320,7 @@ module vga_interface (
 			end
 		end
 		
-		if (state == 3)
+		if (state == 2)
 		begin
 			if (SDRAM_DRAW == 1)
 			begin
