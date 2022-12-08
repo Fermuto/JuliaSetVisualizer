@@ -247,37 +247,37 @@ module vga_interface (
 					BM_GRE = 16'b00000000_00000000;
 					BM_BLU = 16'b00000000_00000000;
 				end
-			3'b010: //Pure Green
+			3'b100: //Pure Green
 				begin
 					BM_RED = 16'b00000000_00000000;
 					BM_GRE = 16'b00001111_00000000;
 					BM_BLU = 16'b00000000_00000000;
 				end
-			3'b011: //Pure Blue
+			3'b101: //Pure Blue
 				begin
 					BM_RED = 16'b00000000_00000000;
 					BM_GRE = 16'b00000000_00000000;
 					BM_BLU = 16'b00001111_00000000;
 				end
-			3'b100: //Pure Yellow (RG)
+			3'b011: //Pure Yellow (RG)
 				begin
 					BM_RED = 16'b00001111_00000000;
 					BM_GRE = 16'b00001111_00000000;
 					BM_BLU = 16'b00000000_00000000;
 				end
-			3'b101: //Pure Purple (RB)
+			3'b110: //Pure Purple (RB)
 				begin
 					BM_RED = 16'b00001111_00000000;
 					BM_GRE = 16'b00000000_00000000;
 					BM_BLU = 16'b00001111_00000000;
 				end
-			3'b110: //Pure Cyan (GB)
+			3'b111: //Pure Cyan (GB)
 				begin
 					BM_RED = 16'b00000000_00000000;
 					BM_GRE = 16'b00001111_00000000;
 					BM_BLU = 16'b00001111_00000000;
 				end
-			3'b111: //Amber Phosphor
+			3'b010: //Amber Phosphor
 				begin
 					BM_RED = 16'b00001111_00000000;
 					BM_GRE = 16'b00001010_00000000;

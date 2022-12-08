@@ -35,6 +35,8 @@ extern HID_DEVICE hid_device;
 static BYTE addr = 1; 				//hard-wired USB address
 const char* const devclasses[] = { " Uninitialized", " HID Keyboard", " HID Mouse", " Mass storage" };
 
+volatile unsigned int *BTN_PIO = (unsigned int*)0x00000050; //make a pointer to access the PIO block
+
 BYTE GetDriverandReport() {
 	BYTE i;
 	BYTE rcode;
@@ -170,14 +172,11 @@ int main() {
 	printf("initializing USB...\n");
 	USB_init();
 
-	int real_counter = 0;
-	int imag_counter = 0;
-	float real_val = 0;
-	float imag_val = 0;
-
-	char real_prompt[] = "Enter real coordinate.";
-	char imag_prompt[] = "Enter imaginary coordinate.";
+	char coord_prompt[] = "Enter fractal selection.";
 	char color_prompt[] = "Enter color selection.";
+
+	REAL_VAL_BASE = 0xFFFFFFFF;
+    IMAG_VAL_BASE = 0xFFFFFFFF;
 	
 	while (1) {
 		printf(".");
@@ -192,6 +191,12 @@ int main() {
 				device = GetDriverandReport();
 			} else if (device == 1) {
 				//run keyboard debug polling
+				if (*BTN_PIO == 2){
+					TRANSITION_BASE = 0x0;
+					REAL_VAL_BASE = 0xFFFFFFFF;
+    				IMAG_VAL_BASE = 0xFFFFFFFF;
+				}
+				
 				rcode = kbdPoll(&kbdbuf);
 				if (rcode == hrNAK) {
 					continue; //NAK means no new data
@@ -210,38 +215,99 @@ int main() {
 				}
 
 				if (STATE_BASE == 0){ // ASSIGN FRACTAL CONSTANTS
-				memcpy((void*)&vga_ctrl->VRAM[j*COLUMNS]+(ROWS-j),redtest, sizeof(redtest));
+                    for (int j = 0; j < ROWS; j++){
+                        memcpy((void*)&vga_ctrl->VRAM[j*COLUMNS]+(ROWS-j),coord_prompt, sizeof(coord_prompt));
+                    }
+                    if ((prev_keycode == 0x00) && (kbdbuf_keycode[0] != 0x00)){
+                        switch(kbdbuf_keycode[0]){
+                                case KEY_0:
+                                    REAL_VAL_BASE = 0xFFFF3334;
+                                    IMAG_VAL_BASE = 0x000027EF;
+                                case KEY_1:
+                                    REAL_VAL_BASE = 0xFFFF999A;
+                                    IMAG_VAL_BASE = 0x00009999;
+                                case KEY_2:
+                                    REAL_VAL_BASE = 0x000048F5;
+                                    IMAG_VAL_BASE = 0x00000000;
+                                case KEY_3:
+                                    REAL_VAL_BASE = 0x0000416F;
+                                    IMAG_VAL_BASE = 0x00008D0E;
+                                case KEY_4:
+                                    REAL_VAL_BASE = 0xFFFF399A;
+                                    IMAG_VAL_BASE = 0X00000000;
+                                case KEY_5:
+                                    REAL_VAL_BASE = 0xFFFF45EA;
+                                    IMAG_VAL_BASE = 0x0000305B;
+                                // case KEY_6:
+                                //     real_val += (60.1);
+                                // case KEY_7:
+                                //     real_val += (70.1);
+                                // case KEY_8:
+                                //     real_val += (80.1);
+                                // case KEY_9:
+                                //     real_val += (90.1);
+                        }
+						TRANSITION_BASE = 0x1;
+                    }
+					prev_keycode = kbdbuf_keycode[0];
+                }
+                else if (STATE_BASE == 1){ // ASSIGN COLOR
+					for (int j = 0; j < ROWS; j++){
+                        memcpy((void*)&vga_ctrl->VRAM[j*COLUMNS]+(ROWS-j),color_prompt, sizeof(color_prompt));
+                    }
+                    if ((prev_keycode == 0x00) && (kbdbuf_keycode[0] != 0x00)){
+                        switch(kbdbuf_keycode[0]){
+                                case KEY_0:
+                                    COLOR_BASE = 0x00000000;
+                                case KEY_1:
+                                    COLOR_BASE = 0x00000001;
+                                case KEY_2:
+                                    COLOR_BASE = 0x00000002;
+                                case KEY_3:
+                                    COLOR_BASE = 0x00000003;
+                                case KEY_4:
+                                    COLOR_BASE = 0x00000004;
+                                case KEY_5:
+                                    COLOR_BASE = 0x00000005;
+                                case KEY_6:
+                                    COLOR_BASE = 0x00000006;
+                                case KEY_7:
+                                    COLOR_BASE = 0x00000007;
+                                // case KEY_8:
+                                //     real_val += (80.1);
+                                // case KEY_9:
+                                //     real_val += (90.1);
+                        }
+						TRANSITION_BASE = 0x1;
+                    }
+					prev_keycode = kbdbuf_keycode[0];
+                }
 
-
-				}
-				else if (STATE_BASE == 1){ // ASSIGN COLOR
-
-				}
 					
-				int float_value = ;
-				int rem;
-				char hex_string[] = {'0', 'x', '0', '0', '0', '0', '0', '0', '0', '0'};
-				for (int i = 9; i > 1; i--){
-					rem = float_value%16;
-					float_value /= 16;
-					if (rem == 15){
-						hex_string[i] = "f";
-					} else if (rem == 14){
-						hex_string[i] = "e";
-					} else if (rem == 13){
-						hex_string[i] = "d";
-					} else if (rem == 12){
-						hex_string[i] = "c";
-					} else if (rem == 11){
-						hex_string[i] = "b";
-					} else if (rem == 10){
-						hex_string[i] = "a";
-					} else {
-						hex_string[i] = (char) (rem);
-					}
-				}
-				const char * = "0x320";
-  				int hex_value = (int)strtol(, NULL, 0);
+				// int float_value = ;
+				// int rem;
+				// char hex_string[] = {'0', 'x', '0', '0', '0', '0', '0', '0', '0', '0'};
+				// for (int i = 9; i > 1; i--){
+				// 	rem = float_value%16;
+				// 	float_value /= 16;
+				// 	if (rem == 15){
+				// 		hex_string[i] = "f";
+				// 	} else if (rem == 14){
+				// 		hex_string[i] = "e";
+				// 	} else if (rem == 13){
+				// 		hex_string[i] = "d";
+				// 	} else if (rem == 12){
+				// 		hex_string[i] = "c";
+				// 	} else if (rem == 11){
+				// 		hex_string[i] = "b";
+				// 	} else if (rem == 10){
+				// 		hex_string[i] = "a";
+				// 	} else {
+				// 		hex_string[i] = (char) (rem);
+				// 	}
+				// }
+				// const char * = "0x320";
+  				// int hex_value = (int)strtol(, NULL, 0);
 
 				setKeycode(kbdbuf.keycode[0]);
 				printSignedHex0(kbdbuf.keycode[0]);
