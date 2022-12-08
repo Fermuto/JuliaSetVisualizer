@@ -1,5 +1,5 @@
 Flow report for JuliaSetVisualizer
-Wed Dec 07 18:52:54 2022
+Wed Dec  7 22:59:32 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 07 18:52:54 2022           ;
+; Flow Status                        ; Successful - Wed Dec  7 22:59:32 2022           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                      ; JuliaSetVisualizer                              ;
 ; Top-level Entity Name              ; visualizer_top                                  ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C7G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 4,911 / 49,760 ( 10 % )                         ;
-;     Total combinational functions  ; 4,688 / 49,760 ( 9 % )                          ;
+; Total logic elements               ; 4,917 / 49,760 ( 10 % )                         ;
+;     Total combinational functions  ; 4,705 / 49,760 ( 9 % )                          ;
 ;     Dedicated logic registers      ; 2,071 / 49,760 ( 4 % )                          ;
 ; Total registers                    ; 2071                                            ;
 ; Total pins                         ; 140 / 360 ( 39 % )                              ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/07/2022 18:51:45 ;
+; Start date & time ; 12/07/2022 22:58:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; JuliaSetVisualizer  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
 ; Assignment Name                     ; Value                                                       ; Default Value      ; Entity Name         ; Section Id                        ;
 +-------------------------------------+-------------------------------------------------------------+--------------------+---------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 238300912970249.167046070435180                             ; --                 ; --                  ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 225373656116316.167047548319791                             ; --                 ; --                  ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                         ; --                 ; --                  ; eda_board_design_signal_integrity ;
@@ -103,7 +103,7 @@ https://fpgasoftware.intel.com/eula.
 ; SLD_FILE                            ; jsv/synthesis/jsv.regmap                                    ; --                 ; --                  ; --                                ;
 ; SLD_FILE                            ; jsv/synthesis/jsv.debuginfo                                 ; --                 ; --                  ; --                                ;
 ; SLD_FILE                            ; jsv_sdram/synthesis/jsv_sdram.debuginfo                     ; --                 ; --                  ; --                                ;
-; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670460533       ; --                 ; jsv                 ; --                                ;
+; SLD_INFO                            ; QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670473944       ; --                 ; jsv                 ; --                                ;
 ; SLD_INFO                            ; QSYS_NAME jsv_sdram HAS_SOPCINFO 1 GENERATION_ID 1669421872 ; --                 ; jsv_sdram           ; --                                ;
 ; SOPCINFO_FILE                       ; jsv/synthesis/../../jsv.sopcinfo                            ; --                 ; --                  ; --                                ;
 ; SOPCINFO_FILE                       ; jsv_sdram/synthesis/../../jsv_sdram.sopcinfo                ; --                 ; --                  ; --                                ;
@@ -118,26 +118,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:35     ; 1.0                     ; 5045 MB             ; 00:00:45                           ;
-; Fitter               ; 00:00:18     ; 1.8                     ; 6372 MB             ; 00:00:35                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4721 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 3.0                     ; 5009 MB             ; 00:00:09                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4702 MB             ; 00:00:02                           ;
-; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:34                           ;
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 1205 MB             ; 00:01:06                           ;
+; Fitter               ; 00:00:24     ; 1.5                     ; 1733 MB             ; 00:00:39                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 842 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:06     ; 2.0                     ; 947 MB              ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 1110 MB             ; 00:00:03                           ;
+; Total                ; 00:01:22     ; --                      ; --                  ; 00:02:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-JO1SVVN  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-JO1SVVN  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-JO1SVVN  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-JO1SVVN  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-JO1SVVN  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                ;
++----------------------+--------------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname         ; OS Name        ; OS Version ; Processor type ;
++----------------------+--------------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Fitter               ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Assembler            ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Timing Analyzer      ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
++----------------------+--------------------------+----------------+------------+----------------+
 
 
 ------------

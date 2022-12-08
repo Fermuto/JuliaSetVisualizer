@@ -1,0 +1,1358 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                              obj/default/main.o (__divsi3)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+                              obj/default/main.o (__mulsi3)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+                              obj/default/main.o (memcpy)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+                              obj/default/main.o (printf)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+                              obj/default/main.o (putchar)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+                              obj/default/main.o (puts)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o) (strlen)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o) (___vfprintf_internal_r)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o) (__sfvwrite_small_dev)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o) (_impure_ptr)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o) (_putc_r)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o) (errno)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+                              ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o (alt_main)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+                              obj/default/usb_kb/transfer.o (_alt_tick_rate)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+                              obj/default/usb_kb/MAX3421E.o (usleep)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o) (write)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o) (alt_irq_init)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+                              obj/default/usb_kb/MAX3421E.o (alt_avalon_spi_command)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (alt_onchip_flash_read)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o) (alt_busy_sleep)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o) (close)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o) (alt_dcache_flush)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o) (alt_errno)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o) (alt_flash_dev_list)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_ic_isr_register)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o) (open)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o) (alt_release_fd)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o) (alt_find_dev)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o) (alt_find_file)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o) (alt_get_fd)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o) (exit)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+                              ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o) (memcmp)
+/home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o) (__call_exitprocs)
+../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+                              /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+usb_error           0x1               obj/default/usb_kb/transfer.o
+devtable            0x48              obj/default/usb_kb/transfer.o
+bigbuf              0x100             obj/default/usb_kb/HID.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+onchip_memory2_1 0x0000000000010000 0x0000000000008000
+reset            0x0000000000100000 0x0000000000000020
+onchip_flash_0_data 0x0000000000100020 0x000000000006ffe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/main.o
+LOAD obj/default/usb_kb/HID.o
+LOAD obj/default/usb_kb/MAX3421E.o
+LOAD obj/default/usb_kb/transfer.o
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libstdc++.a
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libm.a
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a
+START GROUP
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a
+LOAD ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libm.a
+END GROUP
+LOAD /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a
+                0x0000000000010000                __alt_mem_onchip_memory2_1 = 0x10000
+                0x0000000000100000                __alt_mem_onchip_flash_0_data = 0x100000
+
+.entry          0x0000000000100000        0x0
+ *(.entry)
+ .entry         0x0000000000100000        0x0 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+                0x0000000000100000                __reset
+
+.exceptions     0x0000000000100020      0x204
+                [!provide]                        PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x0000000000100020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000100020        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000100020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000100020        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000100020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000100020       0x54 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000100074       0x10 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000100084        0x4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000100088        0x4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000010008c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000010008c        0x8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000100094       0x14 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000001000a8        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000001000a8        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000001000a8       0x54 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000001000fc       0xc8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+                0x00000000001000fc                alt_irq_handler
+ .exceptions    0x00000000001001c4       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000001001c4                alt_instruction_exception_entry
+                [!provide]                        PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x0000000000100224     0x6704
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000100224       0x38 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+                0x0000000000100224                _start
+ .text          0x000000000010025c      0xa98 obj/default/main.o
+                0x000000000010025c                GetDriverandReport
+                0x0000000000100444                setLED
+                0x0000000000100480                clearLED
+                0x00000000001004c0                printSignedHex0
+                0x00000000001005d0                printSignedHex1
+                0x0000000000100700                setKeycode
+                0x0000000000100730                textVGAClr
+                0x0000000000100780                main
+ .text          0x0000000000100cf4      0x980 obj/default/usb_kb/HID.o
+                0x0000000000100cf4                HIDMProbe
+                0x00000000001010d8                HIDKProbe
+                0x00000000001014bc                HID_init
+                0x00000000001014f4                mousePoll
+                0x0000000000101578                kbdPoll
+                0x00000000001015fc                HIDMEventHandler
+                0x0000000000101638                HIDKEventHandler
+ .text          0x0000000000101674      0x7d4 obj/default/usb_kb/MAX3421E.o
+                0x0000000000101674                SPI_init
+                0x00000000001016b4                SPI_wr
+                0x00000000001016dc                MAXreg_wr
+                0x00000000001017ac                MAXbytes_wr
+                0x0000000000101888                MAXreg_rd
+                0x0000000000101944                MAXbytes_rd
+                0x0000000000101a14                MAX3421E_reset
+                0x0000000000101aac                Vbus_power
+                0x0000000000101ad0                MAX_busprobe
+                0x0000000000101c58                MAX3421E_init
+                0x0000000000101cec                MAX3421E_Task
+                0x0000000000101d48                MaxIntHandler
+                0x0000000000101e14                MaxGpxHandler
+ .text          0x0000000000101e48      0xe94 obj/default/usb_kb/transfer.o
+                0x0000000000101e48                XferCtrlReq
+                0x0000000000101f9c                XferCtrlData
+                0x0000000000102088                XferCtrlND
+                0x0000000000102108                XferDispatchPkt
+                0x0000000000102288                XferInTransfer
+                0x0000000000102410                USB_init
+                0x0000000000102498                USB_Task
+                0x0000000000102ac8                MSDProbe
+                0x0000000000102af4                MSDEventHandler
+                0x0000000000102b30                CDCProbe
+                0x0000000000102b5c                CDCEventHandler
+                0x0000000000102b98                DummyProbe
+                0x0000000000102bc4                DummyEventHandler
+                0x0000000000102c00                GetUsbTaskState
+                0x0000000000102c20                GetDevtable
+                0x0000000000102c58                ConvUTF8ToStr
+ .text          0x0000000000102cdc      0x1b8 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                0x0000000000102cdc                __divsi3
+                0x0000000000102d5c                __modsi3
+                0x0000000000102dd4                __udivsi3
+                0x0000000000102e38                __umodsi3
+ .text          0x0000000000102e94       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+                0x0000000000102e94                __mulsi3
+ .text          0x0000000000102ebc        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000102ebc       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+                0x0000000000102ebc                memcpy
+ .text          0x0000000000102ee4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .text._printf_r
+                0x0000000000102ee4       0x3c /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+                0x0000000000102ee4                _printf_r
+ .text.printf   0x0000000000102f20       0x48 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+                0x0000000000102f20                printf
+ .text          0x0000000000102f68        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .text._putchar_r
+                0x0000000000102f68        0x8 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+                0x0000000000102f68                _putchar_r
+ .text.putchar  0x0000000000102f70       0x1c /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+                0x0000000000102f70                putchar
+ .text          0x0000000000102f8c        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .text._puts_r  0x0000000000102f8c       0x84 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+                0x0000000000102f8c                _puts_r
+ .text.puts     0x0000000000103010       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+                0x0000000000103010                puts
+ .text          0x0000000000103020        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000103020       0x1c /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+                0x0000000000103020                strlen
+ .text          0x000000000010303c        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .text.print_repeat
+                0x000000000010303c       0x6c /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .text.___vfprintf_internal_r
+                0x00000000001030a8      0x518 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+                0x00000000001030a8                ___vfprintf_internal_r
+ .text.__vfprintf_internal
+                0x00000000001035c0       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+                0x00000000001035c0                __vfprintf_internal
+ .text          0x00000000001035d8        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .text.__sfvwrite_small_dev
+                0x00000000001035d8       0xa8 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x00000000001035d8                __sfvwrite_small_dev
+ .text          0x0000000000103680        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .text          0x0000000000103680        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .text.putc     0x0000000000103680       0x50 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+                0x0000000000103680                putc
+ .text._putc_r  0x00000000001036d0       0x54 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+                0x00000000001036d0                _putc_r
+ .text          0x0000000000103724        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .text._write_r
+                0x0000000000103724       0x50 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+                0x0000000000103724                _write_r
+ .text          0x0000000000103774        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .text          0x0000000000103774       0x6c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+                0x0000000000103774                alt_main
+ .text          0x00000000001037e0      0x1a4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+                0x00000000001037e0                alt_alarm_stop
+                0x000000000010387c                alt_tick
+ .text          0x0000000000103984       0x30 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+                0x0000000000103984                usleep
+ .text          0x00000000001039b4      0x140 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+                0x00000000001039f0                write
+ .text          0x0000000000103af4       0xdc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+                0x0000000000103b28                alt_irq_init
+                0x0000000000103b60                alt_sys_init
+ .text          0x0000000000103bd0      0x164 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x0000000000103bd0                altera_avalon_jtag_uart_read_fd
+                0x0000000000103c30                altera_avalon_jtag_uart_write_fd
+                0x0000000000103c90                altera_avalon_jtag_uart_close_fd
+                0x0000000000103ce0                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x0000000000103d34      0x3cc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x0000000000103d34                altera_avalon_jtag_uart_init
+                0x0000000000104098                altera_avalon_jtag_uart_close
+ .text          0x0000000000104100       0xf4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x0000000000104100                altera_avalon_jtag_uart_ioctl
+ .text          0x00000000001041f4      0x21c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00000000001041f4                altera_avalon_jtag_uart_read
+ .text          0x0000000000104410      0x224 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000000000104410                altera_avalon_jtag_uart_write
+ .text          0x0000000000104634      0x1fc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+                0x0000000000104634                alt_avalon_spi_command
+ .text          0x0000000000104830       0xf4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x00000000001048a8                alt_avalon_timer_sc_init
+ .text          0x0000000000104924      0xf00 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+                0x0000000000104958                alt_onchip_flash_read
+                0x0000000000104a24                alt_onchip_flash_get_info
+                0x0000000000104ac0                alt_onchip_flash_erase_block
+                0x0000000000104c28                alt_onchip_flash_write_block
+                0x0000000000104f00                alt_onchip_flash_write
+                0x00000000001051cc                altera_onchip_flash_init
+                0x000000000010566c                alt_onchip_flash_poll_for_status_to_go_idle
+                0x00000000001056fc                alt_onchip_flash_poll_for_status_erase_passed
+                0x0000000000105790                alt_onchip_flash_poll_for_status_write_passed
+ .text          0x0000000000105824      0x12c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+                0x0000000000105824                alt_alarm_start
+ .text          0x0000000000105950      0x158 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+                0x0000000000105950                alt_busy_sleep
+ .text          0x0000000000105aa8      0x118 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+                0x0000000000105ae4                close
+ .text          0x0000000000105bc0       0x28 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+                0x0000000000105bc0                alt_dcache_flush
+ .text          0x0000000000105be8       0x2c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .text          0x0000000000105c14       0xe0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0000000000105c50                alt_dev_llist_insert
+ .text          0x0000000000105cf4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000105cf4       0xbc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+                0x0000000000105cf4                alt_flash_open_dev
+                0x0000000000105d5c                alt_flash_close_dev
+ .text          0x0000000000105db0      0x1b0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+                0x0000000000105db0                alt_ic_isr_register
+                0x0000000000105e00                alt_ic_irq_enable
+                0x0000000000105e88                alt_ic_irq_disable
+                0x0000000000105f14                alt_ic_irq_enabled
+ .text          0x0000000000105f60       0xe4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000000000105f60                alt_iic_isr_register
+ .text          0x0000000000106044      0x150 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+                0x0000000000106118                alt_io_redirect
+ .text          0x0000000000106194        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000000106194        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000000106194        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000106194      0x278 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+                0x00000000001062ac                open
+ .text          0x000000000010640c       0x70 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+                0x000000000010640c                alt_release_fd
+ .text          0x000000000010647c       0x24 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x000000000010647c                altera_nios2_gen2_irq_init
+ .text          0x00000000001064a0        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00000000001064a0       0x90 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+                0x00000000001064a0                alt_find_dev
+ .text          0x0000000000106530      0x108 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+                0x0000000000106530                alt_find_file
+ .text          0x0000000000106638       0xb8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+                0x0000000000106638                alt_get_fd
+ .text          0x00000000001066f0       0x98 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000001066f0                alt_exception_cause_generated_bad_addr
+ .text          0x0000000000106788        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .text.exit     0x0000000000106788       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+                0x0000000000106788                exit
+ .text          0x00000000001067a8        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .text.memcmp   0x00000000001067a8       0x30 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+                0x00000000001067a8                memcmp
+ .text          0x00000000001067d8        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00000000001067d8      0x11c /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+                0x00000000001067d8                __call_exitprocs
+ .text          0x00000000001068f4       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+                0x00000000001068f4                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000000106928                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x0000000000106928                . = ALIGN (0x4)
+
+.rodata         0x0000000000106928      0x2cc
+                [!provide]                        PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x0000000000106928                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000106928      0x16f obj/default/main.o
+                0x0000000000106964                devclasses
+ *fill*         0x0000000000106a97        0x1 
+ .rodata        0x0000000000106a98       0xd5 obj/default/usb_kb/MAX3421E.o
+ *fill*         0x0000000000106b6d        0x3 
+ .rodata        0x0000000000106b70       0x30 obj/default/usb_kb/transfer.o
+ .rodata._puts_r.str1.4
+                0x0000000000106ba0        0x4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+                                          0x2 (size before relaxing)
+ .rodata        0x0000000000106ba4       0x11 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ *fill*         0x0000000000106bb5        0x3 
+ .rodata        0x0000000000106bb8       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ *fill*         0x0000000000106be5        0x3 
+ .rodata        0x0000000000106be8        0xa ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000000000106bf4                . = ALIGN (0x4)
+ *fill*         0x0000000000106bf2        0x2 
+                [!provide]                        PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x0000000000010000     0x1474
+                [!provide]                        PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x0000000000010000                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000010000        0x0 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000010000        0x0 obj/default/main.o
+ .data          0x0000000000010000        0x0 obj/default/usb_kb/HID.o
+ .data          0x0000000000010000        0x0 obj/default/usb_kb/MAX3421E.o
+ .data          0x0000000000010000       0x30 obj/default/usb_kb/transfer.o
+                0x0000000000010000                ClientDriverTable
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x0000000000010030        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000010030       0xe4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .data          0x0000000000010114        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .data          0x0000000000010114        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .data          0x0000000000010114        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000000000010114        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .data          0x0000000000010114        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .data          0x0000000000010114        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .data          0x0000000000010114        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .data          0x0000000000010114     0x1160 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .data          0x0000000000011274        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .data          0x0000000000011274      0x1a8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+                0x0000000000011274                alt_dev_null
+                0x000000000001129c                alt_fd_list
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x000000000001141c        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .data          0x000000000001141c        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .data          0x000000000001141c        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .data          0x000000000001141c        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+                0x000000000001941c                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x000000000001141c        0xc obj/default/main.o
+                0x0000000000011424                BTN_PIO
+ .sdata         0x0000000000011428        0x4 obj/default/usb_kb/MAX3421E.o
+                0x0000000000011428                SPI_MASTER_BASE
+ .sdata         0x000000000001142c        0x9 obj/default/usb_kb/transfer.o
+                0x000000000001142c                ctrl_xfers
+                0x0000000000011434                usb_task_state
+ *fill*         0x0000000000011435        0x3 
+ .sdata._global_impure_ptr
+                0x0000000000011438        0x4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                0x0000000000011438                _global_impure_ptr
+ .sdata._impure_ptr
+                0x000000000001143c        0x4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                0x000000000001143c                _impure_ptr
+ .sdata         0x0000000000011440        0x8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+                0x0000000000011440                alt_alarm_list
+ .sdata         0x0000000000011448        0x8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+                0x0000000000011448                altera_onchip_flash_list
+ .sdata         0x0000000000011450       0x14 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+                0x0000000000011450                alt_fs_list
+                0x0000000000011458                alt_dev_list
+                0x0000000000011460                alt_max_fd
+ .sdata         0x0000000000011464        0x4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+                0x0000000000011464                alt_errno
+ .sdata         0x0000000000011468        0x8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+                0x0000000000011468                alt_flash_dev_list
+ .sdata         0x0000000000011470        0x4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000011470                alt_priority_mask
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000011474                . = ALIGN (0x4)
+                0x0000000000011474                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x0000000000011474      0x2a8
+                0x0000000000011474                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000011474        0x2 obj/default/usb_kb/HID.o
+                0x0000000000011474                hid_device
+ *fill*         0x0000000000011476        0x2 
+ .sbss          0x0000000000011478       0x11 obj/default/usb_kb/transfer.o
+                0x0000000000011478                dev0ep
+                0x0000000000011480                last_usb_task_state
+ .sbss          0x0000000000011489        0x1 obj/default/usb_kb/transfer.o
+                0x0000000000011489                usb_error
+ *fill*         0x000000000001148a        0x2 
+ .sbss          0x000000000001148c        0x4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+                0x000000000001148c                errno
+ .sbss          0x0000000000011490        0xc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+                0x0000000000011490                alt_argc
+                0x0000000000011494                alt_argv
+                0x0000000000011498                alt_envp
+ .sbss          0x000000000001149c        0x8 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+                0x000000000001149c                _alt_tick_rate
+                0x00000000000114a0                _alt_nticks
+ .sbss          0x00000000000114a4        0x4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+                0x00000000000114a4                alt_irq_active
+ .sbss          0x00000000000114a8        0x4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000000114a8                alt_instruction_exception_handler
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000000114ac        0x0 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .bss           0x00000000000114ac        0x0 obj/default/main.o
+ .bss           0x00000000000114ac       0x10 obj/default/usb_kb/HID.o
+                0x00000000000114ac                hid_ep
+ .bss           0x00000000000114bc        0x0 obj/default/usb_kb/MAX3421E.o
+ .bss           0x00000000000114bc       0x18 obj/default/usb_kb/transfer.o
+                0x00000000000114bc                msd_ep
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .bss           0x00000000000114d4        0x0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000000114d4        0x0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x00000000000114d4      0x100 obj/default/usb_kb/HID.o
+                0x00000000000114d4                bigbuf
+ COMMON         0x00000000000115d4       0x48 obj/default/usb_kb/transfer.o
+                0x00000000000115d4                devtable
+ COMMON         0x000000000001161c      0x100 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+                0x000000000001161c                alt_irq
+                0x000000000001171c                . = ALIGN (0x4)
+                0x000000000001171c                __bss_end = ABSOLUTE (.)
+
+.onchip_memory2_1
+                0x000000000001171c        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_1_start = ABSOLUTE (.))
+ *(.onchip_memory2_1 .onchip_memory2_1. onchip_memory2_1.*)
+                0x000000000001171c                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_1_end = ABSOLUTE (.))
+                0x000000000001171c                _end = ABSOLUTE (.)
+                0x000000000001171c                end = ABSOLUTE (.)
+                0x000000000001171c                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_1_load_addr = LOADADDR (.onchip_memory2_1))
+
+.onchip_flash_0_data
+                0x0000000000106bf4        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_flash_0_data_start = ABSOLUTE (.))
+ *(.onchip_flash_0_data .onchip_flash_0_data. onchip_flash_0_data.*)
+                0x0000000000106bf4                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_flash_0_data_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_onchip_flash_0_data_load_addr = LOADADDR (.onchip_flash_0_data))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2c
+ *(.comment)
+ .comment       0x0000000000000000       0x2c obj/default/main.o
+                                         0x2d (size before relaxing)
+ .comment       0x000000000000002c       0x2d obj/default/usb_kb/HID.o
+ .comment       0x000000000000002c       0x2d obj/default/usb_kb/MAX3421E.o
+ .comment       0x000000000000002c       0x2d obj/default/usb_kb/transfer.o
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .comment       0x000000000000002c       0x2d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .comment       0x000000000000002c       0x2d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x760
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000020       0x20 obj/default/main.o
+ .debug_aranges
+                0x0000000000000040       0x20 obj/default/usb_kb/HID.o
+ .debug_aranges
+                0x0000000000000060       0x20 obj/default/usb_kb/MAX3421E.o
+ .debug_aranges
+                0x0000000000000080       0x20 obj/default/usb_kb/transfer.o
+ .debug_aranges
+                0x00000000000000a0       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000100       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_aranges
+                0x0000000000000128       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_aranges
+                0x0000000000000150       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_aranges
+                0x0000000000000178       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000198       0x30 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x00000000000001e8       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000200       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_aranges
+                0x0000000000000228       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x0000000000000248       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000260       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000280       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x00000000000002e0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000300       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x0000000000000320       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x0000000000000340       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x0000000000000360       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x0000000000000380       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000000000003a0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .debug_aranges
+                0x00000000000003c0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x00000000000003e0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .debug_aranges
+                0x0000000000000400       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x0000000000000420       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .debug_aranges
+                0x0000000000000440       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x0000000000000460       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .debug_aranges
+                0x0000000000000480       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000000000004a0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000000000004c0       0x18 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000000000004d8       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .debug_aranges
+                0x00000000000004f8       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x0000000000000518       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x0000000000000538       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x0000000000000558       0x30 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000588       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000000000005a8       0x18 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000000000005c0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000000000005e0       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x0000000000000600       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000620       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000658       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x0000000000000678       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x0000000000000698       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000000000006b8       0x28 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x00000000000006e0       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000700       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x0000000000000720       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000740       0x20 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000    0x226a8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x26 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000026      0xecb obj/default/main.o
+ .debug_info    0x0000000000000ef1     0x11a5 obj/default/usb_kb/HID.o
+ .debug_info    0x0000000000002096      0xc7a obj/default/usb_kb/MAX3421E.o
+ .debug_info    0x0000000000002d10     0x1514 obj/default/usb_kb/transfer.o
+ .debug_info    0x0000000000004224      0x368 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_info    0x000000000000458c       0xcb /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_info    0x0000000000004657      0xc00 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000005257      0x92f /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_info    0x0000000000005b86      0x8aa /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_info    0x0000000000006430      0x8ef /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_info    0x0000000000006d1f      0x649 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000007368     0x140e /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_info    0x0000000000008776      0x8c4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x000000000000903a      0x6e8 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_info    0x0000000000009722      0x8fa /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_info    0x000000000000a01c      0x720 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_info    0x000000000000a73c      0x614 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x000000000000ad50      0xe72 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .debug_info    0x000000000000bbc2      0xb8b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_info    0x000000000000c74d      0x10b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x000000000000c858      0xeb4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .debug_info    0x000000000000d70c     0x118e ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000000000000e89a      0x566 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x000000000000ee00      0xcc5 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x000000000000fac5      0xb94 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000000000010659      0xc5b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00000000000112b4      0xc51 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000000000011f05      0x19f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .debug_info    0x00000000000120a4      0xb12 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x0000000000012bb6     0x12ae ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .debug_info    0x0000000000013e64      0xbab ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x0000000000014a0f      0x96f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x000000000001537e      0xc5d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .debug_info    0x0000000000015fdb      0x95c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .debug_info    0x0000000000016937      0xe91 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00000000000177c8      0xa6b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x0000000000018233      0x96f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000018ba2      0xeb3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .debug_info    0x0000000000019a55      0xc18 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_info    0x000000000001a66d      0xabe ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000000000001b12b      0xe71 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x000000000001bf9c       0x22 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x000000000001bfbe      0xa4d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000000000001ca0b       0x8b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x000000000001ca96      0xc9c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .debug_info    0x000000000001d732      0x2e9 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x000000000001da1b      0x952 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x000000000001e36d       0x22 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000000000001e38f      0xbaf ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x000000000001ef3e      0xba0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x000000000001fade      0xbe7 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00000000000206c5      0x1f1 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00000000000208b6      0x6c4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_info    0x0000000000020f7a      0x684 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000215fe      0x6f9 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000000000021cf7      0x9b1 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x7237
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000014      0x2f3 obj/default/main.o
+ .debug_abbrev  0x0000000000000307      0x2d7 obj/default/usb_kb/HID.o
+ .debug_abbrev  0x00000000000005de      0x2fb obj/default/usb_kb/MAX3421E.o
+ .debug_abbrev  0x00000000000008d9      0x3a8 obj/default/usb_kb/transfer.o
+ .debug_abbrev  0x0000000000000c81      0x103 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x0000000000000d84       0x7d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x0000000000000e01      0x1e3 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000fe4      0x24e /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_abbrev  0x0000000000001232      0x20f /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_abbrev  0x0000000000001441      0x225 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_abbrev  0x0000000000001666      0x1a8 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x000000000000180e      0x34f /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_abbrev  0x0000000000001b5d      0x238 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x0000000000001d95      0x18d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000001f22      0x209 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_abbrev  0x000000000000212b      0x1ec /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x0000000000002317      0x186 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x000000000000249d      0x21e ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000026bb      0x2be ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000002979       0x82 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .debug_abbrev  0x00000000000029fb      0x255 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x0000000000002c50      0x287 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000002ed7      0x159 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x0000000000003030      0x2ce ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x00000000000032fe      0x235 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x0000000000003533      0x2dc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x000000000000380f      0x2d3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000000000003ae2       0x92 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .debug_abbrev  0x0000000000003b74      0x2d3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x0000000000003e47      0x2f1 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .debug_abbrev  0x0000000000004138      0x2cc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x0000000000004404      0x202 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .debug_abbrev  0x0000000000004606      0x23f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x0000000000004845      0x202 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .debug_abbrev  0x0000000000004a47      0x212 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000004c59      0x268 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x0000000000004ec1      0x1df ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00000000000050a0      0x24e ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .debug_abbrev  0x00000000000052ee      0x2f1 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x00000000000055df      0x2b0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x000000000000588f      0x232 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x0000000000005ac1       0x12 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000005ad3      0x274 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000005d47       0x44 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000005d8b      0x26c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x0000000000005ff7       0xea ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00000000000060e1      0x1e5 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x00000000000062c6       0x12 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00000000000062d8      0x21a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x00000000000064f2      0x21a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x000000000000670c      0x22d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000000000006939       0xea ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000006a23      0x1e1 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000006c04      0x1c0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000000000006dc4      0x21d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000006fe1      0x256 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x0000000000000000     0x8656
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x51 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000051      0x496 obj/default/main.o
+ .debug_line    0x00000000000004e7      0x3e5 obj/default/usb_kb/HID.o
+ .debug_line    0x00000000000008cc      0x3cf obj/default/usb_kb/MAX3421E.o
+ .debug_line    0x0000000000000c9b      0x6c2 obj/default/usb_kb/transfer.o
+ .debug_line    0x000000000000135d      0x307 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000001664       0xb3 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000001717      0x27a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000001991      0x261 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_line    0x0000000000001bf2      0x23a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_line    0x0000000000001e2c      0x261 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_line    0x000000000000208d      0x1f7 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000002284      0x74a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_line    0x00000000000029ce      0x270 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x0000000000002c3e      0x15a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_line    0x0000000000002d98      0x27b /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_line    0x0000000000003013      0x226 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_line    0x0000000000003239      0x1cb /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000003404      0x2dd ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000000000036e1      0x259 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_line    0x000000000000393a       0xcd ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x0000000000003a07      0x34c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000000000003d53      0x29f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000003ff2      0x149 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x000000000000413b      0x3a3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x00000000000044de      0x2b3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x0000000000004791      0x32d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000004abe      0x332 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000004df0      0x122 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .debug_line    0x0000000000004f12      0x22a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x000000000000513c      0x73d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .debug_line    0x0000000000005879      0x22f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x0000000000005aa8      0x1d2 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x0000000000005c7a      0x25a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .debug_line    0x0000000000005ed4      0x1bf ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .debug_line    0x0000000000006093      0x2ae ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000000000006341      0x1ff ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x0000000000006540      0x14d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_line    0x000000000000668d      0x20e ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .debug_line    0x000000000000689b      0x21f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000006aba      0x1f1 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000000000006cab      0x2d6 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000000000006f81       0x6b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000006fec      0x1d0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000000000071bc       0x50 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x000000000000720c      0x29d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .debug_line    0x00000000000074a9       0xb6 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x000000000000755f      0x153 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000076b2       0xb3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000007765      0x1c6 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x000000000000792b      0x1f4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x0000000000007b1f      0x1f7 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000000000007d16       0xd4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000007dea      0x209 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_line    0x0000000000007ff3      0x206 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x00000000000081f9      0x2e4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00000000000084dd      0x179 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x0000000000000000     0x157c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x138 obj/default/main.o
+ .debug_frame   0x0000000000000138      0x11c obj/default/usb_kb/HID.o
+ .debug_frame   0x0000000000000254      0x20c obj/default/usb_kb/MAX3421E.o
+ .debug_frame   0x0000000000000460      0x270 obj/default/usb_kb/transfer.o
+ .debug_frame   0x00000000000006d0       0x50 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_frame   0x0000000000000720       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_frame   0x0000000000000740       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000760       0x48 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_frame   0x00000000000007a8       0x30 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_frame   0x00000000000007d8       0x48 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_frame   0x0000000000000820       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000840       0x90 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_frame   0x00000000000008d0       0x3c /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x000000000000090c       0x50 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_frame   0x000000000000095c       0x30 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x000000000000098c       0x2c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000009b8       0x5c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000000000000a14       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+ .debug_frame   0x0000000000000a4c       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+ .debug_frame   0x0000000000000aac       0x88 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000b34       0xb0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x0000000000000be4       0xa4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x0000000000000c88       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x0000000000000cbc       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x0000000000000cf4       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000000000000d2c       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+ .debug_frame   0x0000000000000d60       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x0000000000000dc0      0x1a4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+ .debug_frame   0x0000000000000f64       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x0000000000000f98       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .debug_frame   0x0000000000000fd0       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+ .debug_frame   0x0000000000001030       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+ .debug_frame   0x0000000000001064       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000001098       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000000000010f8       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+ .debug_frame   0x0000000000001158       0xa4 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x00000000000011fc       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x0000000000001234       0x60 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x0000000000001294       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000000000012cc       0x84 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+ .debug_frame   0x0000000000001350       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x0000000000001384       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x00000000000013b8       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x00000000000013f0       0x38 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x0000000000001428       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x000000000000145c       0x5c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x00000000000014b8       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_frame   0x00000000000014e0       0x20 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000001500       0x50 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000001550       0x2c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x0000000000000000     0x32bf
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x79 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .debug_str     0x0000000000000079      0x638 obj/default/main.o
+                                        0x749 (size before relaxing)
+ .debug_str     0x00000000000006b1      0x360 obj/default/usb_kb/HID.o
+                                        0x99c (size before relaxing)
+ .debug_str     0x0000000000000a11      0x13e obj/default/usb_kb/MAX3421E.o
+                                        0x69e (size before relaxing)
+ .debug_str     0x0000000000000b4f      0x312 obj/default/usb_kb/transfer.o
+                                        0xa24 (size before relaxing)
+ .debug_str     0x0000000000000e61      0x193 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                                        0x1de (size before relaxing)
+ .debug_str     0x0000000000000ff4       0x42 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+                                        0x19f (size before relaxing)
+ .debug_str     0x0000000000001036      0x403 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+                                        0x7f4 (size before relaxing)
+ .debug_str     0x0000000000001439      0x223 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+                                        0x65b (size before relaxing)
+ .debug_str     0x000000000000165c       0x5a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+                                        0x618 (size before relaxing)
+ .debug_str     0x00000000000016b6       0x65 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+                                        0x624 (size before relaxing)
+ .debug_str     0x000000000000171b       0x3f /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+                                        0x4d1 (size before relaxing)
+ .debug_str     0x000000000000175a      0x1dc /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+                                        0xb4e (size before relaxing)
+ .debug_str     0x0000000000001936       0x65 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                        0x637 (size before relaxing)
+ .debug_str     0x000000000000199b      0x11e /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                                        0x528 (size before relaxing)
+ .debug_str     0x0000000000001ab9       0x48 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+                                        0x622 (size before relaxing)
+ .debug_str     0x0000000000001b01       0x47 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+                                        0x50d (size before relaxing)
+ .debug_str     0x0000000000001b48       0x41 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+                                        0x4ce (size before relaxing)
+ .debug_str     0x0000000000001b89      0x1dc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_main.o)
+                                        0x7e9 (size before relaxing)
+ .debug_str     0x0000000000001d65       0xa0 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_tick.o)
+                                        0x669 (size before relaxing)
+ .debug_str     0x0000000000001e05       0x29 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_usleep.o)
+                                        0x1a3 (size before relaxing)
+ .debug_str     0x0000000000001e2e       0x2c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_write.o)
+                                        0x7d7 (size before relaxing)
+ .debug_str     0x0000000000001e5a      0x36f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_sys_init.o)
+                                        0xa3e (size before relaxing)
+ .debug_str     0x00000000000021c9       0xb3 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                        0x3c7 (size before relaxing)
+ .debug_str     0x000000000000227c       0xbc ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                                        0x76d (size before relaxing)
+ .debug_str     0x0000000000002338       0x4a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                                        0x6c8 (size before relaxing)
+ .debug_str     0x0000000000002382       0x48 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                        0x71d (size before relaxing)
+ .debug_str     0x00000000000023ca       0x4a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x71e (size before relaxing)
+ .debug_str     0x0000000000002414       0xa5 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_spi.o)
+                                        0x20a (size before relaxing)
+ .debug_str     0x00000000000024b9       0x6d ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+                                        0x69c (size before relaxing)
+ .debug_str     0x0000000000002526      0x2d5 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_onchip_flash.o)
+                                        0xb0c (size before relaxing)
+ .debug_str     0x00000000000027fb       0x4a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_alarm_start.o)
+                                        0x695 (size before relaxing)
+ .debug_str     0x0000000000002845       0x42 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+                                        0x56b (size before relaxing)
+ .debug_str     0x0000000000002887       0x1b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_close.o)
+                                        0x66d (size before relaxing)
+ .debug_str     0x00000000000028a2       0x2c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dcache_flush.o)
+                                        0x565 (size before relaxing)
+ .debug_str     0x00000000000028ce       0x32 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev.o)
+                                        0x7c6 (size before relaxing)
+ .debug_str     0x0000000000002900       0x34 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+                                        0x5e3 (size before relaxing)
+ .debug_str     0x0000000000002934       0x14 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_errno.o)
+                                        0x55c (size before relaxing)
+ .debug_str     0x0000000000002948       0x3f ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_flash_dev.o)
+                                        0x79a (size before relaxing)
+ .debug_str     0x0000000000002987       0xab ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic.o)
+                                        0x643 (size before relaxing)
+ .debug_str     0x0000000000002a32       0x4c ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x5ff (size before relaxing)
+ .debug_str     0x0000000000002a7e       0x56 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_io_redirect.o)
+                                        0x7de (size before relaxing)
+ .debug_str     0x0000000000002ad4       0x18 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+                                         0x82 (size before relaxing)
+ .debug_str     0x0000000000002aec       0x3a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+                                        0x5ae (size before relaxing)
+ .debug_str     0x0000000000002b26       0x29 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_vars.o)
+                                        0x164 (size before relaxing)
+ .debug_str     0x0000000000002b4f       0x29 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_open.o)
+                                        0x66e (size before relaxing)
+ .debug_str     0x0000000000002b78       0x28 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_release_fd.o)
+                                        0x21b (size before relaxing)
+ .debug_str     0x0000000000002ba0       0x3b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x573 (size before relaxing)
+ .debug_str     0x0000000000002bdb       0x1e ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+                                         0x88 (size before relaxing)
+ .debug_str     0x0000000000002bf9       0x24 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_dev.o)
+                                        0x60f (size before relaxing)
+ .debug_str     0x0000000000002c1d       0x26 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_find_file.o)
+                                        0x611 (size before relaxing)
+ .debug_str     0x0000000000002c43       0x30 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_get_fd.o)
+                                        0x63f (size before relaxing)
+ .debug_str     0x0000000000002c73      0x48b ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5ca (size before relaxing)
+ .debug_str     0x00000000000030fe       0xe4 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+                                        0x513 (size before relaxing)
+ .debug_str     0x00000000000031e2       0x46 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+                                        0x4cb (size before relaxing)
+ .debug_str     0x0000000000003228       0x6d /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+                                        0x510 (size before relaxing)
+ .debug_str     0x0000000000003295       0x2a ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exit.o)
+                                        0x568 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x1aa3
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x5f7 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_loc     0x00000000000005f7       0xa7 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_loc     0x000000000000069e      0x118 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_loc     0x00000000000007b6      0x10a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_loc     0x00000000000008c0       0x91 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_loc     0x0000000000000951       0xab /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_loc     0x00000000000009fc       0x44 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x0000000000000a40      0xb4a /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_loc     0x000000000000158a      0x123 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x00000000000016ad       0xe0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_loc     0x000000000000178d       0xd0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x000000000000185d       0x22 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_loc     0x000000000000187f       0xb0 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x000000000000192f      0x174 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x40
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../JuliaSetVisualizer_Linux_bsp//obj/HAL/src/crt0.o
+ .debug_alt_sim_info
+                0x0000000000000010       0x30 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_busy_sleep.o)
+                0x0000000000018000                __alt_data_end = 0x18000
+                0x0000000000018000                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0x18000)
+OUTPUT(JuliaSetVisualizer_Linux.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x320
+ .debug_ranges  0x0000000000000000       0x18 obj/default/main.o
+ .debug_ranges  0x0000000000000018       0x70 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x0000000000000088       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000098       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-printf.o)
+ .debug_ranges  0x00000000000000b0       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putchar.o)
+ .debug_ranges  0x00000000000000c8       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-puts.o)
+ .debug_ranges  0x00000000000000e0       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-strlen.o)
+ .debug_ranges  0x00000000000000f0       0xe8 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-vfprintf.o)
+ .debug_ranges  0x00000000000001d8       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_ranges  0x00000000000001e8       0x18 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-putc.o)
+ .debug_ranges  0x0000000000000200       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-writer.o)
+ .debug_ranges  0x0000000000000210       0x30 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_ranges  0x0000000000000240       0x18 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x0000000000000258       0x28 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000280       0x10 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x0000000000000290       0x30 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000000000002c0       0x18 ../JuliaSetVisualizer_Linux_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x00000000000002d8       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-exit.o)
+ .debug_ranges  0x00000000000002e8       0x10 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-memcmp.o)
+ .debug_ranges  0x00000000000002f8       0x28 /home/ajinusnlch/intelFPGA/19.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/8.3.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-__call_atexit.o)

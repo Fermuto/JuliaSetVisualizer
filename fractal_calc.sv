@@ -23,7 +23,7 @@ module fractal_calc(
 	logic once, iter_done, iteration_start;
 	
 	parameter [9:0] hpixels = 10'b1100011111;
-    parameter [9:0] vlines = 10'b1000001100;
+   parameter [9:0] vlines = 10'b1000001100;
 	
 
 	initial

@@ -798,8 +798,8 @@
   <parameter name="READ_BURST_MODE" value="Incrementing" />
   <parameter name="SECTOR_ACCESS_MODE">Read and write,Read and write,Read only,Hidden,Hidden</parameter>
   <parameter name="autoInitializationFileName">$${FILENAME}_onchip_flash_0</parameter>
-  <parameter name="initFlashContent" value="true" />
-  <parameter name="initializationFileName">altera_onchip_flash.hex</parameter>
+  <parameter name="initFlashContent" value="false" />
+  <parameter name="initializationFileName">/home/ajinusnlch/Documents/GitHub/JuliaSetVisualizer/software/JuliaSetVisualizer_Linux/mem_init/onchip_flash_0.hex</parameter>
   <parameter name="initializationFileNameForSim">altera_onchip_flash.dat</parameter>
   <parameter name="useNonDefaultInitFile" value="true" />
  </module>
@@ -954,10 +954,7 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="1" />
  </module>
- <module name="vga_interface_0" kind="vga_interface" version="1.0" enabled="1">
-  <parameter name="hpixels" value="799" />
-  <parameter name="vlines" value="524" />
- </module>
+ <module name="vga_interface_0" kind="vga_interface" version="1.0" enabled="1" />
  <connection
    kind="avalon"
    version="19.1"

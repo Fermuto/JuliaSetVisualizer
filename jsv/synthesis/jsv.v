@@ -266,8 +266,8 @@ module jsv (
 	);
 
 	altera_onchip_flash #(
-		.INIT_FILENAME                       ("altera_onchip_flash.hex"),
-		.INIT_FILENAME_SIM                   ("altera_onchip_flash.dat"),
+		.INIT_FILENAME                       (""),
+		.INIT_FILENAME_SIM                   (""),
 		.DEVICE_FAMILY                       ("MAX 10"),
 		.PART_NAME                           ("10M50DAF484C7G"),
 		.DEVICE_ID                           ("50"),
@@ -435,11 +435,7 @@ module jsv (
 		.out_port   (usb_rst_export)                           // external_connection.export
 	);
 
-//	vga_controller #(
-//		.hpixels (12'b001100011111),
-//		.vlines  (12'b001000001100)
-//	) 
-	vga_interface vga_interface_0(
+	vga_interface vga_interface_0 (
 		.CLK              (clk_clk),                                                     //          clock.clk
 		.RESET            (rst_controller_reset_out_reset),                              //          reset.reset
 		.hs               (vga_interface_vga_export_hs),                                 //     vga_export.hs
