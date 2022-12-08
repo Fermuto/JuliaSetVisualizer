@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 7, 2022 6:54:01 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1670460841078</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 7, 2022 8:40:37 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1670467237839</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\zdrag\Documents\GitHub\JuliaSetVisualizer\software\JuliaSetVisualizer_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\zdrag\Documents\GitHub\JuliaSetVisualizer\jsv.sopcinfo</SopcDesignFile>

@@ -19,7 +19,7 @@ struct TEXT_VGA_STRUCT {
     alt_u32 CTRL;
 };
 
-static volatile struct TEXT_VGA_STRUCT* vga_ctrl = VGA_INTERFACE_BASE;
+static volatile struct TEXT_VGA_STRUCT* vga_ctrl = VGA_INTERFACE_0_BASE;
 
 void textVGAClr();
 
