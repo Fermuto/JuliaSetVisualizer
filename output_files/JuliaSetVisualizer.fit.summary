@@ -1,18 +1,18 @@
-Fitter Status : Successful - Wed Dec  7 22:59:15 2022
+Fitter Status : Successful - Fri Dec  9 21:00:24 2022
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 Revision Name : JuliaSetVisualizer
 Top-level Entity Name : visualizer_top
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 4,917 / 49,760 ( 10 % )
-    Total combinational functions : 4,705 / 49,760 ( 9 % )
-    Dedicated logic registers : 2,071 / 49,760 ( 4 % )
-Total registers : 2071
+Total logic elements : 8,644 / 49,760 ( 17 % )
+    Total combinational functions : 7,116 / 49,760 ( 14 % )
+    Dedicated logic registers : 4,682 / 49,760 ( 9 % )
+Total registers : 4724
 Total pins : 140 / 360 ( 39 % )
 Total virtual pins : 0
-Total memory bits : 306,176 / 1,677,312 ( 18 % )
-Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total memory bits : 324,352 / 1,677,312 ( 19 % )
+Embedded Multiplier 9-bit elements : 6 / 288 ( 2 % )
+Total PLLs : 1 / 4 ( 25 % )
 UFM blocks : 1 / 1 ( 100 % )
 ADC blocks : 0 / 2 ( 0 % )

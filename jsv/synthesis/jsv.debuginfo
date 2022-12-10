@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="jsv" kind="system" version="19.1" fabric="QSYS">
  <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
- <!-- 2022.12.07.22:32:35 -->
+ <!-- 2022.12.08.06:56:37 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1670473944</value>
+  <value>1670504187</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -9272,6 +9272,10 @@ the requested settings for a module instance. -->
    <value>32</value>
   </assignment>
   <assignment>
+   <name>embeddedsw.memoryInfo.MEM_INIT_FILENAME</name>
+   <value>onchip_flash_0</value>
+  </assignment>
+  <assignment>
    <name>embeddedsw.memoryInfo.USE_BYTE_ADDRESSING_FOR_HEX</name>
    <value>1</value>
   </assignment>
@@ -9365,7 +9369,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="initFlashContent">
    <type>boolean</type>
-   <value>false</value>
+   <value>true</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9375,7 +9379,7 @@ the requested settings for a module instance. -->
    <type>boolean</type>
    <value>true</value>
    <derived>false</derived>
-   <enabled>false</enabled>
+   <enabled>true</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -9383,7 +9387,7 @@ the requested settings for a module instance. -->
    <type>java.lang.String</type>
    <value>/home/ajinusnlch/Documents/GitHub/JuliaSetVisualizer/software/JuliaSetVisualizer_Linux/mem_init/onchip_flash_0.hex</value>
    <derived>false</derived>
-   <enabled>false</enabled>
+   <enabled>true</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -9391,7 +9395,7 @@ the requested settings for a module instance. -->
    <type>java.lang.String</type>
    <value>altera_onchip_flash.dat</value>
    <derived>false</derived>
-   <enabled>false</enabled>
+   <enabled>true</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -9406,7 +9410,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="INIT_FILENAME">
    <type>java.lang.String</type>
-   <value></value>
+   <value>/home/ajinusnlch/Documents/GitHub/JuliaSetVisualizer/software/JuliaSetVisualizer_Linux/mem_init/onchip_flash_0.hex</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -9414,7 +9418,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="INIT_FILENAME_SIM">
    <type>java.lang.String</type>
-   <value></value>
+   <value>altera_onchip_flash.dat</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -13938,7 +13942,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1670473944</value>
+   <value>1670504187</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -13958,7 +13962,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1670473944</value>
+   <value>1670504187</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -13974,7 +13978,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1670473944</value>
+   <value>1670504187</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -31069,5 +31073,5 @@ parameters are a RESULT of the module parameters. -->
   <version>19.1</version>
  </plugin>
  <reportVersion>19.1 670</reportVersion>
- <uniqueIdentifier>CCF9E4B6EC5C00000184F0019A60</uniqueIdentifier>
+ <uniqueIdentifier>CCF9E4B6EC5C00000184F1CF10D9</uniqueIdentifier>
 </EnsembleReport>

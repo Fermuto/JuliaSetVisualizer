@@ -266,8 +266,8 @@ module jsv (
 	);
 
 	altera_onchip_flash #(
-		.INIT_FILENAME                       (""),
-		.INIT_FILENAME_SIM                   (""),
+		.INIT_FILENAME                       ("/home/ajinusnlch/Documents/GitHub/JuliaSetVisualizer/software/JuliaSetVisualizer_Linux/mem_init/onchip_flash_0.hex"),
+		.INIT_FILENAME_SIM                   ("altera_onchip_flash.dat"),
 		.DEVICE_FAMILY                       ("MAX 10"),
 		.PART_NAME                           ("10M50DAF484C7G"),
 		.DEVICE_ID                           ("50"),

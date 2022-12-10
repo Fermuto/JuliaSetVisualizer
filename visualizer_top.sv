@@ -51,10 +51,6 @@ module visualizer_top(
 	//=======================================================
 	logic SPI0_CS_N, SPI0_SCLK, SPI0_MISO, SPI0_MOSI, USB_GPX, USB_IRQ, USB_RST;
 	logic [3:0] hex_num_4, hex_num_3, hex_num_1, hex_num_0; //4 bit input hex digits
-	logic [1:0] signs;
-	logic [1:0] hundreds;
-	logic [9:0] drawxsig, drawysig, ballxsig, ballysig, ballsizesig;
-	logic [7:0] Red, Blue, Green;
 	logic [7:0] keycode;
 
 	//=======================================================
@@ -92,12 +88,14 @@ module visualizer_top(
 	assign HEX0[7] = 1'b1;
 	
 	//fill in the hundreds digit as well as the negative sign
-	assign HEX5 = {1'b1, ~signs[1], 3'b111, ~hundreds[1], ~hundreds[1], 1'b1};
-	assign HEX2 = {1'b1, ~signs[0], 3'b111, ~hundreds[0], ~hundreds[0], 1'b1};
-	
+//	assign HEX5 = {1'b1, ~signs[1], 3'b111, ~hundreds[1], ~hundreds[1], 1'b1};
+//	assign HEX2 = {1'b1, ~signs[0], 3'b111, ~hundreds[0], ~hundreds[0], 1'b1};
+//	
 	
 	//Assign one button to reset
-	assign {Reset_h}=~ (KEY[0]);
+//	assign {Reset_h}=~ (KEY[0]);
+	assign Reset_h = ~(KEY[0]);
+	assign Reset_n = KEY[0];
 
 	//Our A/D converter is only 12 bit
 //	assign VGA_R = Red[7:4];
@@ -126,7 +124,7 @@ module visualizer_top(
 	
 	jsv main(
 		.clk_clk 								(MAX10_CLK1_50),
-		.reset_reset_n 						(Reset_h),
+		.reset_reset_n 						(Reset_n),
 		.hex_digits_export 					({hex_num_4, hex_num_3, hex_num_1, hex_num_0}),
 		.key_external_connection_export 	(KEY),
 		.keycode_export 						(keycode),
@@ -184,17 +182,17 @@ module visualizer_top(
 		.bridge_0_ext_acknowledge	(),
 		.bridge_0_ext_read_data		(bitmap_intensity),
 		.clk_clk			(MAX10_CLK1_50),
-		.reset_reset_n	(Reset_h),
-		.sdram_clk_clk		(sdram_clk_clk),
-		.sdram_wire_addr	(sdram_wire_addr),
-		.sdram_wire_ba		(sdram_wire_ba),
-		.sdram_wire_cas_n	(sdram_wire_cas_n),
-		.sdram_wire_cke	(sdram_wire_cke),
-		.sdram_wire_cs_n	(sdram_wire_cs_n),
-		.sdram_wire_dq		(sdram_wire_dq),
-		.sdram_wire_dqm	(sdram_wire_dqm),
-		.sdram_wire_ras_n	(sdram_wire_ras_n),
-		.sdram_wire_we_n	(sdram_wire_we_n)
+		.reset_reset_n	(Reset_n),
+		.sdram_clk_clk		(DRAM_CLK),
+		.sdram_wire_addr	(DRAM_ADDR),
+		.sdram_wire_ba		(DRAM_BA),
+		.sdram_wire_cas_n	(DRAM_CAS_N),
+		.sdram_wire_cke	(DRAM_CKE),
+		.sdram_wire_cs_n	(DRAM_CS_N),
+		.sdram_wire_dq		(DRAM_DQ),
+		.sdram_wire_dqm	({DRAM_UDQM, DRAM_LDQM}),
+		.sdram_wire_ras_n	(DRAM_RAS_N),
+		.sdram_wire_we_n	(DRAM_WE_N)
 		);
 	
 	fractal_calc calc(

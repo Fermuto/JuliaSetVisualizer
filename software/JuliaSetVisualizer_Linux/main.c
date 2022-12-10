@@ -172,7 +172,7 @@ int main() {
 	printf("initializing USB...\n");
 	USB_init();
 
-	char coord_prompt[] = "Enter fractal selection.";
+	char coord_prompt[] = "BRUH";
 	char color_prompt[] = "Enter color selection.";
 
 	IOWR_ALTERA_AVALON_PIO_DATA(REAL_VAL_BASE, 0xFFFFFFFF);
@@ -191,11 +191,12 @@ int main() {
 				device = GetDriverandReport();
 			} else if (device == 1) {
 				//run keyboard debug polling
-//				if (*BTN_PIO == 2){
-//					IOWR_ALTERA_AVALON_PIO_DATA(TRANSITION_BASE, 0x0);
-//					IOWR_ALTERA_AVALON_PIO_DATA(REAL_VAL_BASE, 0xFFFFFFFF);
-//					IOWR_ALTERA_AVALON_PIO_DATA(IMAG_VAL_BASE, 0xFFFFFFFF);
-//				}
+				if (*BTN_PIO == 2){
+					textVGAClr();
+					IOWR_ALTERA_AVALON_PIO_DATA(TRANSITION_BASE, 0x0);
+					IOWR_ALTERA_AVALON_PIO_DATA(REAL_VAL_BASE, 0xFFFFFFFF);
+					IOWR_ALTERA_AVALON_PIO_DATA(IMAG_VAL_BASE, 0xFFFFFFFF);
+				}
 				
 				int state = IORD_ALTERA_AVALON_PIO_DATA(STATE_BASE);
 
@@ -255,6 +256,7 @@ int main() {
                                 // case KEY_9:
                                 //     real_val += (90.1);
                         }
+                        textVGAClr();
                         IOWR_ALTERA_AVALON_PIO_DATA(TRANSITION_BASE, 0x1);
                     }
 					prev_keycode = kbdbuf.keycode[0];
@@ -294,6 +296,7 @@ int main() {
                                 // case KEY_9:
                                 //     real_val += (90.1);
                         }
+                        textVGAClr();
                         IOWR_ALTERA_AVALON_PIO_DATA(TRANSITION_BASE, 0x1);
                     }
 					prev_keycode = kbdbuf.keycode[0];

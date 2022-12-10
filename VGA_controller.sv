@@ -54,6 +54,7 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
     always_ff @ (posedge Clk or posedge Reset )
     begin 
         if (Reset) 
+//			if (0)
             clkdiv <= 1'b0;
         else 
             clkdiv <= ~ (clkdiv);

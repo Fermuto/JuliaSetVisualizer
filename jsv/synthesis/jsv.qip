@@ -2,7 +2,7 @@ set_global_assignment -entity "jsv" -library "jsv" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "jsv" -library "jsv" -name IP_TOOL_VERSION "19.1"
 set_global_assignment -entity "jsv" -library "jsv" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "jsv" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../jsv.sopcinfo"]
-set_global_assignment -entity "jsv" -library "jsv" -name SLD_INFO "QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670473944"
+set_global_assignment -entity "jsv" -library "jsv" -name SLD_INFO "QSYS_NAME jsv HAS_SOPCINFO 1 GENERATION_ID 1670504187"
 set_global_assignment -library "jsv" -name MISC_FILE [file join $::quartus(qip_path) "../jsv.cmp"]
 set_global_assignment -library "jsv" -name SLD_FILE [file join $::quartus(qip_path) "jsv.regmap"]
 set_global_assignment -library "jsv" -name SLD_FILE [file join $::quartus(qip_path) "jsv.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_DISPLAY_NA
 set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY3MDQ3Mzk0NA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY3MDUwNDE4Nw==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::TUFYIDEw::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBNNTBEQUY0ODRDN0c=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "jsv" -library "jsv" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -672,7 +672,10 @@ set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMP
 set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "UkVBRF9CVVJTVF9DT1VOVA==::OA==::UmVhZCBidXJzdCBjb3VudA=="
 set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "Q09ORklHVVJBVElPTl9NT0RF::U2luZ2xlIFVuY29tcHJlc3NlZCBJbWFnZQ==::Q29uZmlndXJhdGlvbiBNb2Rl"
 set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "U0VDVE9SX0FDQ0VTU19NT0RF::UmVhZCBhbmQgd3JpdGUsUmVhZCBhbmQgd3JpdGUsUmVhZCBvbmx5LEhpZGRlbixIaWRkZW4=::QWNjZXNzIE1vZGU="
-set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "aW5pdEZsYXNoQ29udGVudA==::ZmFsc2U=::SW5pdGlhbGl6ZSBmbGFzaCBjb250ZW50"
+set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "aW5pdEZsYXNoQ29udGVudA==::dHJ1ZQ==::SW5pdGlhbGl6ZSBmbGFzaCBjb250ZW50"
+set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "dXNlTm9uRGVmYXVsdEluaXRGaWxl::dHJ1ZQ==::RW5hYmxlIG5vbi1kZWZhdWx0IGluaXRpYWxpemF0aW9uIGZpbGU="
+set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "aW5pdGlhbGl6YXRpb25GaWxlTmFtZQ==::L2hvbWUvYWppbnVzbmxjaC9Eb2N1bWVudHMvR2l0SHViL0p1bGlhU2V0VmlzdWFsaXplci9zb2Z0d2FyZS9KdWxpYVNldFZpc3VhbGl6ZXJfTGludXgvbWVtX2luaXQvb25jaGlwX2ZsYXNoXzAuaGV4::VXNlciBjcmVhdGVkIGhleCBvciBtaWYgZmlsZQ=="
+set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "aW5pdGlhbGl6YXRpb25GaWxlTmFtZUZvclNpbQ==::YWx0ZXJhX29uY2hpcF9mbGFzaC5kYXQ=::VXNlciBjcmVhdGVkIGRhdCBmaWxlIGZvciBzaW11bGF0aW9u"
 set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "YXV0b0luaXRpYWxpemF0aW9uRmlsZU5hbWU=::anN2X29uY2hpcF9mbGFzaF8w::YXV0b0luaXRpYWxpemF0aW9uRmlsZU5hbWU="
 set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "REVWSUNFX0ZBTUlMWQ==::TUFYIDEw::REVWSUNFX0ZBTUlMWQ=="
 set_global_assignment -entity "altera_onchip_flash" -library "jsv" -name IP_COMPONENT_PARAMETER "UEFSVF9OQU1F::MTBNNTBEQUY0ODRDN0c=::UEFSVF9OQU1F"

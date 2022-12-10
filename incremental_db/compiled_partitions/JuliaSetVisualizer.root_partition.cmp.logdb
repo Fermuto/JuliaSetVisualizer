@@ -1,1 +1,5 @@
 v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fractal_calc:calc|iteration_calc:iter_pixel|lpm_mult:Mult3|mult_krs:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fractal_calc:calc|iteration_calc:iter_pixel|lpm_mult:Mult3|mult_krs:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fractal_calc:calc|iteration_calc:iter_pixel|lpm_mult:Mult3|mult_krs:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,fractal_calc:calc|iteration_calc:iter_pixel|lpm_mult:Mult3|mult_krs:auto_generated|mac_mult3,

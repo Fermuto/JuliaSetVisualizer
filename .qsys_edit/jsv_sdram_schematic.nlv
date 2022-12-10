@@ -1,8 +1,18 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
-preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
-preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
-levelinfo -pg 1 0 50 270
-levelinfo -hier unsaved 60 90 260
+preplace inst jsv_sdram.bridge_0 -pg 1 -lvl 2 -y 80
+preplace inst jsv_sdram.sdram_pll -pg 1 -lvl 3 -y 40
+preplace inst jsv_sdram.clk_0 -pg 1 -lvl 1 -y 40
+preplace inst jsv_sdram.bitmap_sdram -pg 1 -lvl 3 -y 120
+preplace inst jsv_sdram -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc FAN_OUT<net_container>jsv_sdram</net_container>(SLAVE)sdram_pll.pll_slave,(SLAVE)bitmap_sdram.s1,(MASTER)bridge_0.avalon_master) 1 2 1 600
+preplace netloc EXPORT<net_container>jsv_sdram</net_container>(SLAVE)jsv_sdram.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>jsv_sdram</net_container>(SLAVE)bitmap_sdram.clk,(MASTER)sdram_pll.c0) 1 2 2 620 30 850
+preplace netloc EXPORT<net_container>jsv_sdram</net_container>(MASTER)sdram_pll.c1,(MASTER)jsv_sdram.sdram_clk) 1 3 1 N
+preplace netloc EXPORT<net_container>jsv_sdram</net_container>(SLAVE)jsv_sdram.sdram_wire,(SLAVE)bitmap_sdram.wire) 1 0 3 NJ 190 NJ 190 NJ
+preplace netloc EXPORT<net_container>jsv_sdram</net_container>(SLAVE)bridge_0.external_interface,(SLAVE)jsv_sdram.bridge_0_ext) 1 0 2 NJ 110 NJ
+preplace netloc FAN_OUT<net_container>jsv_sdram</net_container>(SLAVE)bitmap_sdram.reset,(SLAVE)bridge_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)sdram_pll.inclk_interface_reset) 1 1 2 300 70 580
+preplace netloc FAN_OUT<net_container>jsv_sdram</net_container>(SLAVE)bridge_0.clk,(SLAVE)sdram_pll.inclk_interface,(MASTER)clk_0.clk) 1 1 2 320 50 NJ
+preplace netloc EXPORT<net_container>jsv_sdram</net_container>(SLAVE)jsv_sdram.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+levelinfo -pg 1 0 90 960
+levelinfo -hier jsv_sdram 100 130 350 660 870

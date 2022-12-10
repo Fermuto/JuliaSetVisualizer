@@ -3,10 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(10M50DA) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/ajinusnlch/Documents/GitHub/JuliaSetVisualizer/output_files/") File("JuliaSetVisualizer.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("/home/ajinusnlch/Documents/GitHub/JuliaSetVisualizer/output_files/") File("JuliaSetVisualizer.pof") MfrSpec(OpMask(1) Child_OpMask(2 1 1));
 
 ChainEnd;
 
